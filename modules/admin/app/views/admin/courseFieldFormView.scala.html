@@ -1,0 +1,23 @@
+@(courseFieldForm: Form[models.web.CourseField])
+@import helper._
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(), 'id->"coursefieldform",'name->"coursefieldform", 'method->"post"){
+        <fieldset>
+            <legend>Add New Course Field</legend>
+            <!--Used to differentiate new form or form editing-->
+            <input type="hidden"  value="@courseFieldForm("course_field_id").valueOr("")" name="course_field_id"/>
+            @helper.inputText(courseFieldForm("course_field_name"), 'id->"course_field_name", 'name->"course_field_name", '_label -> "Course field name (e.g. Engineering, Business etc..)")
+            @helper.textarea(courseFieldForm("course_field_description"), 'rows->"5", 'cols->"32", 'id->"course_field_description", 'name->"course_field_description", '_label -> "Course field description")
+            <input type="submit" value="Save" id="course_field_submit_btn">
+
+
+        </fieldset>
+    }
+</body>
+
+</html>

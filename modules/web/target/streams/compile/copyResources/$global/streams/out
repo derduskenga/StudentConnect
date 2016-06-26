@@ -1,0 +1,8 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/web.conf,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/web.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/messages,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/messages)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/shared.prod.conf,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/shared.prod.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/prod.conf,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/prod.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/application.conf,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/web.routes,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/web.routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/web/conf/shared.dev.conf,/home/derdus/studentconnect/modules/web/target/scala-2.11/classes/shared.dev.conf)[0m

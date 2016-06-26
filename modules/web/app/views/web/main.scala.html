@@ -1,0 +1,454 @@
+@import helper._
+@import formfieldtemplates._
+@(title: String)(content: Html)(extra_content: Html=null)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap -css -->
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("components/bootstrap/dist/css/bootstrap.min.css")'>
+
+    <!-- font awesome css -->
+
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("components/font-awesome/css/font-awesome.min.css")'>
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/custom.css")'>
+
+    <!-- subscription css -->
+
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/subscription.css")'>
+
+    <!-- fonts -->
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Lobster' rel='stylesheet' type='text/css'>
+
+    <!-- jquery js -->
+
+    <script type="text/javascript" src='@routes.Assets.at("components/jquery/dist/jquery.min.js")'></script>
+
+    <!-- bootstrap js -->
+
+    <script type="text/javascript" src='@routes.Assets.at("components/bootstrap/dist/js/bootstrap.min.js")'></script>
+
+
+
+    <!-- custom js -->
+
+    <script type="text/javascript" src='@routes.Assets.at("js/custom.js")'></script>
+
+
+
+    <!----Navigation here ---->
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="campus_navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="@controllers.web.routes.Application.index()">Seeking</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav col-md-5">
+
+
+                    <form  class="navbar-form" role="search" class="form-inline">
+                        <div class="form-group" >
+
+                            <input type="text" id="navbar_input" class="form-control" placeholder="Search">
+                        </div>
+
+
+                        <button class="btn btn-primary search_btn" stype="submit"><i class="fa fa-search"></i></button>
+
+                    </form>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="index.php">Home</a></li>
+
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu mega-dropdown-menu">
+
+
+                            <li class="col-md-12" id="about_content">
+                                <div class="row" id="section_company">
+
+                                    <div class="col-md-2">
+
+
+                                        <ul style="list-style: none;">
+
+
+                                            <li><h5>Public</h5></li>
+                                            <li><a href="university_details.php">JKUAT</a></li>
+                                            <li><a href="university_details.php">KU</a></li>
+                                            <li><a href="university_details.php">Nairobi</a></li>
+                                            <li><a href="university_details.php">Moi Univsersity</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+
+                                    </div>
+
+                                    <div class="col-md-2">
+
+                                        <ul style="list-style: none;">
+                                            <li><h5>Private</h5></li>
+                                            <li><a href="university_details.php">Strathmore</a></li>
+                                            <li><a href="university_details.php">MKU</a></li>
+                                            <li><a href="university_details.php">CUEA</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Colleges</h5></li>
+                                            <li><a href="university_details.php">Strathmore</a></li>
+                                            <li><a href="university_details.php">MKU</a></li>
+                                            <li><a href="university_details.php">CUEA</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+
+
+
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Research Institutes</h5></li>
+                                            <li><a href="university_details.php">KEMRI</a></li>
+                                            <li><a href="university_details.php">AMREF</a></li>
+                                            <li><a href="university_details.php">ILRI</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Special Schools</h5></li>
+                                            <li><a href="university_details.php">KSMS</a></li>
+                                            <li><a href="university_details.php">AMREF</a></li>
+                                            <li><a href="university_details.php">ILRI</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<span class="caret"></span></a>
+                        <ul class="dropdown-menu mega-dropdown-menu">
+
+                            <li class="col-md-12" id="about_content">
+                                <div class="row" id="section_company">
+
+                                    <div class="col-md-2">
+
+                                        <ul style="list-style: none;">
+                                            <li><h5>Engineering</h5></li>
+                                            <li><a href="university_details.php">Civil</a></li>
+                                            <li><a href="university_details.php">Mechanical</a></li>
+                                            <li><a href="university_details.php">Electrical</a></li>
+                                            <li><a href="university_details.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>IT & Technology</h5></li>
+                                            <li><a href="university_details.php">Computer Science</a></li>
+                                            <li><a href="university_details.php">Information Technology</a></li>
+                                            <li><a href="university_details.php">Computer Technology</a></li>
+                                            <li><a href="university_details.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-2">
+
+
+                                        <ul style="list-style: none;">
+                                            <li><h5>Business</h5></li>
+                                            <li><a href="university_details.php">Business Commerce</a></li>
+                                            <li><a href="university_details.php">Business Adminstration</a></li>
+                                            <li><a href="university_details.php">Business IT</a></li>
+                                            <li><a href="university_details.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+
+
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Social Sciences</h5></li>
+                                            <li><a href="university_details.php">Business Commerce</a></li>
+                                            <li><a href="university_details.php">Business Adminstration</a></li>
+                                            <li><a href="university_details.php">Business IT</a></li>
+                                            <li><a href="university_details.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Arts</h5></li>
+                                            <li><a href="university_details.php">Business Commerce</a></li>
+                                            <li><a href="university_details.php">Business Adminstration</a></li>
+                                            <li><a href="university_details.php">Business IT</a></li>
+                                            <li><a href="university_details.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!----Navigation End ---->
+</head>
+<body>
+
+
+    <div class="col-md-12 col-sm-12 col-lg-12" id="slider-row">
+
+        <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main_slider" data-slide-to="1"></li>
+                <li data-target="#main_slider" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src='@routes.Assets.at("images/1.jpg")' alt="...">
+                    <div class="carousel-caption">
+                        <div class="caption-container">
+                            <h5 class="slider-caption">Search for Universities and Colleges</h5>
+                            <p>his is a one stop portal where you will find most institutions of higher learning in Kenya.Get to know if the university
+                                you are looking for has been accredited by the Commission of Higher Education(CHE) or wheather the college or
+                                technical institute you want to study in is registered
+                                by the Ministry of Higher Education Science and Technology (MOHEST).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src='@routes.Assets.at("images/2.png")' alt="...">
+                    <div class="carousel-caption">
+                        <div class="caption-container">
+                            <h5 class="slider-caption">Browse, search and compare Colleges</h5>
+                            <p>The portal has listed all courses from top institutions in Kenya.This provides a good platform to search and compare
+                                courses in terms of content and price in more than one institution.It also gives you an insight whether a course offered
+                                in an institution is accredited by relevant bodies</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src='@routes.Assets.at("images/3.jpg")' alt="...">
+                    <div class="carousel-caption">
+                        <div class="caption-container">
+                            <h4 class="slider-caption">Find Scholarship Opportunities</h4>
+                            <p>We will list scholarships opportunities from Kenya and outside Kenya as they come.We also inform you of the institutions
+                                and individual who give regular scholarships</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#main_slider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#main_slider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        @content
+    </div>
+    @extra_content
+    <!---Footer here--->
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3">
+                <ul style="list-style: none;" class="footer_menu">
+
+
+                    <li><h5>Institutions</h5></li>
+                    <li><a href="#">Public</a></li>
+                    <li><a href="#">Private</a></li>
+                    <li><a href="#">Research Institutions</a></li>
+                    <li><a href="#">Special Schools</a></li>
+
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-3">
+                <ul style="list-style: none;" class="footer_menu">
+
+
+                    <li><h5>Courses</h5></li>
+                    <li><a href="#">Enginnering</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Socail Sciences</a></li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-3">
+                <ul style="list-style: none;" class="footer_menu">
+
+
+                    <li><h5>About Us</h5></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Sponsors</a></li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-3">
+                <ul style="list-style: none;" class="footer_menu">
+
+
+                    <li><h5>Find us On Social Media</h5></li>
+                    <li><i class="fa fa-letter-B fa-2x fa-fw">B</i>Blog</li>
+                    <li><i class="fa fa-facebook fa-2x fa-fw fb_link"></i>Facebook</li>
+                    <li><i class="fa fa-twitter fa-fw fa-2x fa-fw twitter_link"></i>Twitter</li>
+                    <li><i class="fa fa-linkedin fa-fw fa-2x fa-fw linked_ln"></i>likedin</li>
+
+
+                </ul>
+
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+
+            <div class="col-md-4 col-sm-4">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 footer_text">
+
+            </div>
+            <div class="clearfix"> </div>
+            <div class="copy">
+                <p>Copyright © 2015 Seeking . All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Subscription End--->
+    <div class="row subscribe-row">
+        <div class="col-md-2">
+
+
+
+        </div>
+        <div class="col-md-10">
+
+            <form class="form-inline">
+
+                <div class="form-group">
+
+
+
+
+                    <label for="subscribe_email">Subscribe</label>
+
+                    <input type="text" placeholder="Email" id="subscribe_email" class="form-control"/>
+
+                    <div class="btn btn-primary">Subscribe</div>
+
+
+
+                </div>
+
+                <a href="#" class="btn close_subscribe">X</a>
+
+            </form>
+
+
+
+        </div>
+
+        <!--Subscription End--->
+
+        <!------Ask question --->
+
+        <div id="bit" class="loggedout-follow-normal" style="bottom: 0px; right: 0px;">
+
+            <div id="bitsubscribe" class="open">
+                <h3><label for="loggedout-follow-field">Have a Question?</label></h3>
+                <p id="bsub-subscribe-button"><input type="submit" value="Ask"/></p>
+
+            </div>
+        </div>
+        <!------ask question ends---->
+
+    </div>
+
+        <!--Footer ends here----->
+</body>
+</html>

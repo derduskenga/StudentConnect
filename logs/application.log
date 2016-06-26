@@ -1,0 +1,331 @@
+2016-06-25 16:38:53,459 - [INFO] - from play in pool-4-thread-2 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-06-25 16:39:26,455 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:39:28,943 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:41:00,055 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:41:00,240 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:42:04,065 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:42:04,199 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:42:42,723 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:42:42,865 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:43:54,038 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:43:54,190 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:44:39,384 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:44:39,484 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:47:23,035 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:47:23,157 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:57:09,612 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:57:09,739 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:57:35,878 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:57:36,020 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:58:05,099 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:58:05,213 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 16:58:32,095 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 16:58:32,208 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:12:03,318 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:12:03,410 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in play-internal-execution-context-1 
+Error in deployment
+javax.persistence.PersistenceException: Error on models.web.Institution.countyList  Can not find mappedBy property [institution] in [models.web.County]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.checkMappedByOneToMany(BeanDescriptorManager.java:910) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.checkMappedBy(BeanDescriptorManager.java:687) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityRelationships(BeanDescriptorManager.java:586) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:239) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) [avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) [avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) [avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) [avaje-ebeanorm-3.3.4.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:89) [play-java-ebean_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.collection.immutable.List.foreach(List.scala:383) [scala-library-2.11.1.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:91) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) [play_2.11-2.3.3.jar:2.3.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$.start(Play.scala:90) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:157) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.util.Success.flatMap(Try.scala:230) [scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+
+2016-06-25 17:12:03,465 - [ERROR] - from application in New I/O worker #2 
+
+
+! @70gb2bodj - Internal server error, for (GET) [/institutions/detail] ->
+
+play.api.UnexpectedException: Unexpected exception[PersistenceException: Error on models.web.Institution.countyList  Can not find mappedBy property [institution] in [models.web.County]]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:166) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.util.Success.flatMap(Try.scala:230) ~[scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+Caused by: javax.persistence.PersistenceException: Error on models.web.Institution.countyList  Can not find mappedBy property [institution] in [models.web.County]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.checkMappedByOneToMany(BeanDescriptorManager.java:910) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.checkMappedBy(BeanDescriptorManager.java:687) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityRelationships(BeanDescriptorManager.java:586) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:239) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:89) ~[play-java-ebean_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.collection.immutable.List.foreach(List.scala:383) ~[scala-library-2.11.1.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$.start(Play.scala:90) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:157) ~[play_2.11-2.3.3.jar:2.3.3]
+	... 14 common frames omitted
+
+2016-06-25 17:14:11,847 - [ERROR] - from application in New I/O worker #3 
+
+
+! @70gb2bodj - Internal server error, for (GET) [/institutions/detail] ->
+
+play.api.UnexpectedException: Unexpected exception[PersistenceException: Error on models.web.Institution.countyList  Can not find mappedBy property [institution] in [models.web.County]]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:166) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.util.Success.flatMap(Try.scala:230) ~[scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+Caused by: javax.persistence.PersistenceException: Error on models.web.Institution.countyList  Can not find mappedBy property [institution] in [models.web.County]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.checkMappedByOneToMany(BeanDescriptorManager.java:910) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.checkMappedBy(BeanDescriptorManager.java:687) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityRelationships(BeanDescriptorManager.java:586) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:239) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:89) ~[play-java-ebean_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.collection.immutable.List.foreach(List.scala:383) ~[scala-library-2.11.1.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$.start(Play.scala:90) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:157) ~[play_2.11-2.3.3.jar:2.3.3]
+	... 14 common frames omitted
+
+2016-06-25 17:14:53,951 - [WARN] - from play in play-internal-execution-context-1 
+Error stopping plugin
+java.lang.NullPointerException: null
+	at play.libs.ws.ning.NingWSPlugin.onStop(NingWSPlugin.java:31) ~[play-java-ws_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:108) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:107) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.collection.immutable.List.foreach(List.scala:383) [scala-library-2.11.1.jar:na]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply$mcV$sp(Play.scala:107) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:107) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:107) [play_2.11-2.3.3.jar:2.3.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$stop$1.apply(Play.scala:106) [play_2.11-2.3.3.jar:2.3.3]
+	at play.api.Play$$anonfun$stop$1.apply(Play.scala:105) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.Play$.stop(Play.scala:105) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:142) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.util.Success.flatMap(Try.scala:230) [scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+
+2016-06-25 17:14:54,074 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:15:04,745 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:15:06,540 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:15:06,716 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:16:36,537 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:16:36,631 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:18:17,796 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:18:17,906 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:25:38,169 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:25:38,295 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:26:55,341 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:26:55,424 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:31:10,994 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:31:11,139 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 17:37:38,044 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 17:37:38,402 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 20:35:50,923 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 20:35:57,766 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 20:35:59,528 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 20:35:59,625 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 21:04:31,913 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 21:04:32,154 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 21:07:00,769 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 21:07:00,857 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 21:52:38,783 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 21:52:46,775 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 22:03:34,892 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 22:03:35,083 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 22:05:23,947 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 22:05:24,035 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 22:14:32,995 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 22:14:33,077 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 22:15:29,435 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 22:15:29,521 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-25 22:15:57,139 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-25 22:15:57,207 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

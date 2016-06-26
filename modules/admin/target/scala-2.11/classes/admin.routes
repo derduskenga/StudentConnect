@@ -1,0 +1,16 @@
+# ADMIN Routes
+# This file defines ADMIN application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /       controllers.admincontrollers.AdminActions.index()
+GET     /course/field/new        controllers.admincontrollers.CourseActions.newCourseField()
+POST    /course/field/save       controllers.admincontrollers.CourseActions.saveCourseField()
+GET     /course/field/edit/:course_field_id       controllers.admincontrollers.CourseActions.editCourseField(course_field_id: Long)
+GET     /create/course/level       controllers.admincontrollers.CourseActions.newCourseLevel()
+
+
+#GET     /assets/*file               controllers.admincontrollers.Assets.versioned(path="/public", file: Asset)
+
+
+->  / common.Routes

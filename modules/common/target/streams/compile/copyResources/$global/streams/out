@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/common/conf/application.conf,/home/derdus/studentconnect/modules/common/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/common/conf/common.routes,/home/derdus/studentconnect/modules/common/target/scala-2.11/classes/common.routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/common/conf/common.conf,/home/derdus/studentconnect/modules/common/target/scala-2.11/classes/common.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/derdus/studentconnect/modules/common/conf/shared.dev.conf,/home/derdus/studentconnect/modules/common/target/scala-2.11/classes/shared.dev.conf)[0m
