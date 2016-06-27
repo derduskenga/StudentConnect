@@ -26,11 +26,11 @@ object all_institutions extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appe
   def apply():play.twirl.api.HtmlFormat.Appendable = {
       _display_ {
 
-Seq[Any](_display_(/*1.2*/main("Student Connect | All Institutions")/*1.44*/{_display_(Seq[Any](format.raw/*1.45*/("""
+Seq[Any](_display_(/*1.2*/other_main("Student Connect | All Institutions")/*1.50*/{_display_(Seq[Any](format.raw/*1.51*/("""
         """),format.raw/*2.9*/("""<div class="row" id="content">
             <div class="col-md-offset-2 col-md-8">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#unis">Universities</a></li>
+                    <li role="presentation" class="active"><a href="#">Universities</a></li>
 
                 </ul>
 
@@ -121,10 +121,10 @@ Seq[Any](_display_(/*1.2*/main("Student Connect | All Institutions")/*1.44*/{_di
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 25 16:58:30 EAT 2016
+                  DATE: Mon Jun 27 23:56:31 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/web/app/views/web/all_institutions.scala.html
-                  HASH: 0bef67a17820b66b04235d8337c1b2067a09bff5
-                  MATRIX: 813->1|863->43|901->44|936->53|1691->781|1706->787|1763->822|2893->1925|2908->1931|2962->1963|4184->3158|4199->3164|4254->3197|5233->4158|5271->4159
+                  HASH: 2dd56e90cbf227a791b17e2369bc2058ee0b2718
+                  MATRIX: 813->1|869->49|907->50|942->59|1693->783|1708->789|1765->824|2895->1927|2910->1933|2964->1965|4186->3160|4201->3166|4256->3199|5235->4160|5273->4161
                   LINES: 29->1|29->1|29->1|30->2|47->19|47->19|47->19|68->40|68->40|68->40|87->59|87->59|87->59|112->84|112->84
                   -- GENERATED --
               */

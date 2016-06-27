@@ -21,3 +21,14 @@ ALTER USER postgres PASSWORD 'slimkk33..'; - change password of user postgres
 ...........................
 
 Bootstrap and all CSS files put in the 'public' folder in commom module 
+
+#GIT commands 
+
+git add --all
+git commit -a -m 'commit message here'
+
+git push origin master 
+
+git pull 
+
+#Creating branches, merging then commiting........... 

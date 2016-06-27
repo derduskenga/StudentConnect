@@ -9,7 +9,7 @@ import java.util.List;
  * Created by derdus on 6/16/16.
  */
 /*Values examples: Public University, Private University, Colleges,
-Technical institutions/Institutes, Research Institutions, Special Schools, Business Incubators etc...*/
+Technical institutions/Institutes, Research Institutions, Special Schools, Business Incubators, Online Learning etc...*/
 @Entity
 public class InstitutionCategory extends Model {
     @Id

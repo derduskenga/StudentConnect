@@ -119,13 +119,10 @@ Seq[Any](format.raw/*3.58*/("""
 
 
                                         <ul style="list-style: none;">
-
-
                                             <li><h5>Public</h5></li>
                                             <li><a href="university_details.php">JKUAT</a></li>
                                             <li><a href="university_details.php">KU</a></li>
                                             <li><a href="university_details.php">Nairobi</a></li>
-                                            <li><a href="university_details.php">Moi Univsersity</a></li>
                                             <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
                                         </ul>
 
@@ -133,7 +130,6 @@ Seq[Any](format.raw/*3.58*/("""
                                     </div>
 
                                     <div class="col-md-2">
-
                                         <ul style="list-style: none;">
                                             <li><h5>Private</h5></li>
                                             <li><a href="university_details.php">Strathmore</a></li>
@@ -179,16 +175,29 @@ Seq[Any](format.raw/*3.58*/("""
 
                                     </div>
 
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Online Learning</h5></li>
+                                            <li><a href="university_details.php">University of People</a></li>
+                                            <li><a href="university_details.php">Coursera</a></li>
+                                            <li><a href="university_details.php">Edx</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+                                    </div>
 
+                                    <div class="col-md-2">
+                                        <ul style="list-style: none;">
+                                            <li><h5>Business Incubators </h5></li>
+                                            <li><a href="university_details.php">iHub</a></li>
+                                            <li><a href="university_details.php">iBiz</a></li>
+                                            <li><a href="university_details.php">NaiLab</a></li>
+                                            <li><a href="universities.php"><i class="fa fa-plus"></i>See More</a></li>
+                                        </ul>
+                                    </div>
 
                                 </div>
 
-
-
-
                             </li>
-
-
 
                         </ul>
                     </li>
@@ -288,7 +297,7 @@ Seq[Any](format.raw/*3.58*/("""
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src='"""),_display_(/*264.32*/routes/*264.38*/.Assets.at("images/1.jpg")),format.raw/*264.64*/("""' alt="...">
+                    <img src='"""),_display_(/*273.32*/routes/*273.38*/.Assets.at("images/1.jpg")),format.raw/*273.64*/("""' alt="...">
                     <div class="carousel-caption">
                         <div class="caption-container">
                             <h5 class="slider-caption">Search for Universities and Colleges</h5>
@@ -300,7 +309,7 @@ Seq[Any](format.raw/*3.58*/("""
                     </div>
                 </div>
                 <div class="item">
-                    <img src='"""),_display_(/*276.32*/routes/*276.38*/.Assets.at("images/2.png")),format.raw/*276.64*/("""' alt="...">
+                    <img src='"""),_display_(/*285.32*/routes/*285.38*/.Assets.at("images/2.png")),format.raw/*285.64*/("""' alt="...">
                     <div class="carousel-caption">
                         <div class="caption-container">
                             <h5 class="slider-caption">Browse, search and compare Colleges</h5>
@@ -313,7 +322,7 @@ Seq[Any](format.raw/*3.58*/("""
                 </div>
 
                 <div class="item">
-                    <img src='"""),_display_(/*289.32*/routes/*289.38*/.Assets.at("images/3.jpg")),format.raw/*289.64*/("""' alt="...">
+                    <img src='"""),_display_(/*298.32*/routes/*298.38*/.Assets.at("images/3.jpg")),format.raw/*298.64*/("""' alt="...">
                     <div class="carousel-caption">
                         <div class="caption-container">
                             <h4 class="slider-caption">Find Scholarship Opportunities</h4>
@@ -340,10 +349,10 @@ Seq[Any](format.raw/*3.58*/("""
 
 
     <div class="container">
-        """),_display_(/*316.10*/content),format.raw/*316.17*/("""
-    """),format.raw/*317.5*/("""</div>
-    """),_display_(/*318.6*/extra_content),format.raw/*318.19*/("""
-    """),format.raw/*319.5*/("""<!---Footer here--->
+        """),_display_(/*325.10*/content),format.raw/*325.17*/("""
+    """),format.raw/*326.5*/("""</div>
+    """),_display_(/*327.6*/extra_content),format.raw/*327.19*/("""
+    """),format.raw/*328.5*/("""<!---Footer here--->
     <div class="footer">
         <div class="container">
             <div class="col-md-3">
@@ -464,10 +473,10 @@ Seq[Any](format.raw/*3.58*/("""
 
         <!------Ask question --->
 
-        <div id="bit" class="loggedout-follow-normal" style="bottom: 0px; right: 0px;">
+        <div id="bit" class="loggedout-follow-normal" style="bottom: 0px; right: 0px; height:110px">
 
             <div id="bitsubscribe" class="open">
-                <h3><label for="loggedout-follow-field">Have a Question?</label></h3>
+                <h3><label for="loggedout-follow-field">Have a Question?</h3>
                 <p id="bsub-subscribe-button"><input type="submit" value="Ask"/></p>
 
             </div>
@@ -490,11 +499,11 @@ Seq[Any](format.raw/*3.58*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 25 22:15:55 EAT 2016
+                  DATE: Tue Jun 28 00:19:28 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/web/app/views/web/main.scala.html
-                  HASH: f7d9983b76c333c50ca4c3a6bfac17efedc8333d
-                  MATRIX: 779->47|923->103|950->104|1018->146|1043->151|1316->397|1331->403|1414->464|1526->549|1541->555|1625->617|1731->696|1746->702|1795->730|1907->815|1922->821|1977->855|2201->1052|2216->1058|2287->1108|2395->1189|2410->1195|2491->1254|2598->1334|2613->1340|2660->1366|3418->2097|3438->2108|3490->2139|13568->12189|13584->12195|13632->12221|14510->13071|14526->13077|14574->13103|15355->13856|15371->13862|15419->13888|16605->15046|16634->15053|16667->15058|16706->15070|16741->15083|16774->15088
-                  LINES: 27->3|30->3|31->4|34->7|34->7|40->13|40->13|40->13|44->17|44->17|44->17|48->21|48->21|48->21|52->25|52->25|52->25|60->33|60->33|60->33|64->37|64->37|64->37|70->43|70->43|70->43|86->59|86->59|86->59|291->264|291->264|291->264|303->276|303->276|303->276|316->289|316->289|316->289|343->316|343->316|344->317|345->318|345->318|346->319
+                  HASH: 1b9495b3deab1f459440c1870e0d2325a6c67247
+                  MATRIX: 779->47|923->103|950->104|1018->146|1043->151|1316->397|1331->403|1414->464|1526->549|1541->555|1625->617|1731->696|1746->702|1795->730|1907->815|1922->821|1977->855|2201->1052|2216->1058|2287->1108|2395->1189|2410->1195|2491->1254|2598->1334|2613->1340|2660->1366|3418->2097|3438->2108|3490->2139|14882->13503|14898->13509|14946->13535|15824->14385|15840->14391|15888->14417|16669->15170|16685->15176|16733->15202|17919->16360|17948->16367|17981->16372|18020->16384|18055->16397|18088->16402
+                  LINES: 27->3|30->3|31->4|34->7|34->7|40->13|40->13|40->13|44->17|44->17|44->17|48->21|48->21|48->21|52->25|52->25|52->25|60->33|60->33|60->33|64->37|64->37|64->37|70->43|70->43|70->43|86->59|86->59|86->59|300->273|300->273|300->273|312->285|312->285|312->285|325->298|325->298|325->298|352->325|352->325|353->326|354->327|354->327|355->328
                   -- GENERATED --
               */
           

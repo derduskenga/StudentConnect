@@ -38,7 +38,7 @@ Seq[Any]()}
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 25 16:38:15 EAT 2016
+                  DATE: Sun Jun 26 14:31:12 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/common/app/views/formfieldtemplates/checkbox.scala.html
                   HASH: 66b241d4daa4592a94909d15c3d366d3f5903ab6
                   MATRIX: 

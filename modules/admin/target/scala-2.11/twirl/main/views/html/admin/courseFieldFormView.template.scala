@@ -59,7 +59,7 @@ Seq[Any](format.raw/*1.49*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 25 16:38:15 EAT 2016
+                  DATE: Sun Jun 26 14:31:12 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/admin/app/views/admin/courseFieldFormView.scala.html
                   HASH: cd34904b859eceb0c8505a1324f50b3a8f09b65f
                   MATRIX: 765->1|915->48|942->66|1022->121|1036->127|1192->274|1231->275|1267->284|1463->453|1506->487|1539->499|1606->539|1621->545|1812->714|1853->728|1868->734|2076->920|2117->933|2238->1024|2266->1025

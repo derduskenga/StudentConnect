@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/conf/routes
 // @HASH:5408eb4d3ffc5b5cdf921533bb06fc7ee979f0dc
-// @DATE:Sat Jun 25 16:39:14 EAT 2016
+// @DATE:Sun Jun 26 15:19:25 EAT 2016
 
 
 import play.core._

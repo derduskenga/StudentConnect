@@ -26,7 +26,7 @@ object institution_detail extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Ap
   def apply():play.twirl.api.HtmlFormat.Appendable = {
       _display_ {
 
-Seq[Any](_display_(/*1.2*/main("Student Connect | Strathmore University")/*1.49*/{_display_(Seq[Any](format.raw/*1.50*/("""
+Seq[Any](_display_(/*1.2*/other_main("Student Connect | Strathmore University")/*1.55*/{_display_(Seq[Any](format.raw/*1.56*/("""
 
 """),format.raw/*3.1*/("""<div class="row" id="campus-title-row">
 
@@ -553,10 +553,10 @@ Seq[Any](_display_(/*1.2*/main("Student Connect | Strathmore University")/*1.49*
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 25 21:06:59 EAT 2016
+                  DATE: Mon Jun 27 23:46:38 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/web/app/views/web/institution_detail.scala.html
-                  HASH: f2cb14735ddc5daeb1de3de14a5d46a052c31df9
-                  MATRIX: 815->1|870->48|908->49|936->51|17733->16829|17772->16830|17801->16831
+                  HASH: 126195225857e683f67ea3a858e96f8e9c9a679a
+                  MATRIX: 815->1|876->54|914->55|942->57|17739->16835|17778->16836|17807->16837
                   LINES: 29->1|29->1|29->1|31->3|467->439|467->439|468->440
                   -- GENERATED --
               */
