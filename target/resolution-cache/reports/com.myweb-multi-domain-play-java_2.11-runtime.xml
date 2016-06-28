@@ -7,10 +7,10 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
-		date="20160626143106"/>
+		date="20160628213634"/>
 	<dependencies>
 		<module organisation="com.myweb" name="admin_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160626143100" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="78">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160628213623" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="78">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="multi-domain-play-java_2.11" conf="compile, runtime" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -29,7 +29,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="web_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160626143100" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="79">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160628213615" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="79">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.myweb" name="multi-domain-play-java_2.11" conf="compile, runtime" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
@@ -49,7 +49,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="common_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160626143053" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160628213547" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.myweb" name="web_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>

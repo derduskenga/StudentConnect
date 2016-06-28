@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160626143104"/>
+		date="20160628213623"/>
 	<dependencies>
 		<module organisation="org.webjars" name="bootswatch-cerulean">
 			<revision name="3.2.0-1" status="release" pubdate="20140705192232" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="80">
@@ -21,7 +21,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="web_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160626143100" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="78">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160628213615" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="78">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -40,7 +40,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="common_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160626143053" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160628213547" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.myweb" name="web_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>

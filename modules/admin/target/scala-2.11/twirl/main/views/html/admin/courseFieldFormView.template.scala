@@ -25,29 +25,44 @@ object courseFieldFormView extends BaseScalaTemplate[play.twirl.api.HtmlFormat.A
   /**/
   def apply/*1.2*/(courseFieldForm: Form[models.web.CourseField]):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {import helper._
+import formfieldtemplates._
 
 Seq[Any](format.raw/*1.49*/("""
-"""),format.raw/*3.1*/("""<html>
-<head>
-    <title></title>
-</head>
-
-<body>
-    """),_display_(/*9.6*/helper/*9.12*/.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(), 'id->"coursefieldform",'name->"coursefieldform", 'method->"post")/*9.159*/{_display_(Seq[Any](format.raw/*9.160*/("""
-        """),format.raw/*10.9*/("""<fieldset>
+"""),format.raw/*4.1*/("""
+"""),_display_(/*5.2*/admin_main("New Course Fiels | Admin")/*5.40*/{_display_(Seq[Any](format.raw/*5.41*/("""
+    """),_display_(/*6.6*/helper/*6.12*/.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(), 'id->"coursefieldform",'name->"coursefieldform", 'method->"post")/*6.159*/{_display_(Seq[Any](format.raw/*6.160*/("""
+        """),_display_(/*7.10*/if(flash.containsKey("coursefieldformsuccess"))/*7.57*/{_display_(Seq[Any](format.raw/*7.58*/("""
+        """),format.raw/*8.9*/("""<div class="alert alert-success">
+            """),_display_(/*9.14*/flash/*9.19*/.get("coursefieldformsuccess")),format.raw/*9.49*/("""
+        """),format.raw/*10.9*/("""</div>
+        """)))}),format.raw/*11.10*/("""
+        """),format.raw/*12.9*/("""<fieldset>
             <legend>Add New Course Field</legend>
             <!--Used to differentiate new form or form editing-->
-            <input type="hidden"  value=""""),_display_(/*13.43*/courseFieldForm("course_field_id")/*13.77*/.valueOr("")),format.raw/*13.89*/("""" name="course_field_id"/>
-            """),_display_(/*14.14*/helper/*14.20*/.inputText(courseFieldForm("course_field_name"), 'id->"course_field_name", 'name->"course_field_name", '_label -> "Course field name (e.g. Engineering, Business etc..)")),format.raw/*14.189*/("""
-            """),_display_(/*15.14*/helper/*15.20*/.textarea(courseFieldForm("course_field_description"), 'rows->"5", 'cols->"32", 'id->"course_field_description", 'name->"course_field_description", '_label -> "Course field description")),format.raw/*15.206*/("""
-            """),format.raw/*16.13*/("""<input type="submit" value="Save" id="course_field_submit_btn">
+            <input type="hidden"  value=""""),_display_(/*15.43*/courseFieldForm("course_field_id")/*15.77*/.valueOr("")),format.raw/*15.89*/("""" name="course_field_id"/>
+
+            """),_display_(/*17.14*/text(courseFieldForm("course_field_name"),
+            label = "Course Field name",
+            placeholder = "Course Field name (e.g. Engineering, Business etc..)",
+            divClass="col-sm-9")),format.raw/*20.33*/("""
+
+            """),_display_(/*22.14*/formfieldtemplates/*22.32*/.textarea(courseFieldForm("course_field_description"),
+            label="Course field description",
+            placeholder = "Type your course description here...... ",
+            rows="4",
+            divClass="col-sm-9")),format.raw/*26.33*/("""
+
+        """),format.raw/*28.9*/("""</fieldset>
+
+                    <p align="right"><input  type="submit" class="btn btn-primary" value="Save" id="course-field-submit-btn"></p>
 
 
-        </fieldset>
-    """)))}),format.raw/*20.6*/("""
-"""),format.raw/*21.1*/("""</body>
 
-</html>"""))}
+
+
+    """)))}),format.raw/*36.6*/("""
+""")))}),format.raw/*37.2*/("""
+"""))}
   }
 
   def render(courseFieldForm:Form[models.web.CourseField]): play.twirl.api.HtmlFormat.Appendable = apply(courseFieldForm)
@@ -59,11 +74,11 @@ Seq[Any](format.raw/*1.49*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Jun 26 14:31:12 EAT 2016
+                  DATE: Wed Jun 29 01:43:19 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/admin/app/views/admin/courseFieldFormView.scala.html
-                  HASH: cd34904b859eceb0c8505a1324f50b3a8f09b65f
-                  MATRIX: 765->1|915->48|942->66|1022->121|1036->127|1192->274|1231->275|1267->284|1463->453|1506->487|1539->499|1606->539|1621->545|1812->714|1853->728|1868->734|2076->920|2117->933|2238->1024|2266->1025
-                  LINES: 26->1|29->1|30->3|36->9|36->9|36->9|36->9|37->10|40->13|40->13|40->13|41->14|41->14|41->14|42->15|42->15|42->15|43->16|47->20|48->21
+                  HASH: e6d8912a3db94c2755945500ffabf5d6953dc2bd
+                  MATRIX: 765->1|943->48|970->95|997->97|1043->135|1081->136|1112->142|1126->148|1282->295|1321->296|1357->306|1412->353|1450->354|1485->363|1558->410|1571->415|1621->445|1657->454|1704->470|1740->479|1936->648|1979->682|2012->694|2080->735|2299->933|2341->948|2368->966|2614->1191|2651->1201|2834->1354|2866->1356
+                  LINES: 26->1|30->1|31->4|32->5|32->5|32->5|33->6|33->6|33->6|33->6|34->7|34->7|34->7|35->8|36->9|36->9|36->9|37->10|38->11|39->12|42->15|42->15|42->15|44->17|47->20|49->22|49->22|53->26|55->28|63->36|64->37
                   -- GENERATED --
               */
           

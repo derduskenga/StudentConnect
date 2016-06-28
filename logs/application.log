@@ -1,189 +1,924 @@
-2016-06-27 23:22:07,097 - [INFO] - from play in pool-4-thread-2 
+2016-06-28 21:01:24,568 - [INFO] - from play in pool-4-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-06-27 23:25:15,448 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:01:51,292 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:25:18,647 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:01:55,255 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:31:01,067 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:37:12,355 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:31:01,236 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:37:13,894 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:31:34,736 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:41:03,078 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:31:34,945 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:41:03,324 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:32:17,010 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:44:04,185 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:32:17,203 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:44:04,411 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:32:57,969 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:51:41,498 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:32:58,148 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:51:41,664 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:36:11,290 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:52:33,340 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:36:11,508 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 21:52:33,586 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:37:16,357 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:00:58,716 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:37:16,553 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:00:59,140 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:38:48,815 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:02:26,451 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:38:49,018 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:02:26,612 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:42:43,243 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:02:58,803 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:42:43,392 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:02:58,933 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:44:25,035 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:03:23,240 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:44:25,152 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:03:23,359 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:44:49,105 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:04:00,426 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:44:49,229 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:04:00,534 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:45:09,609 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:04:43,903 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:45:09,723 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:04:44,031 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:45:41,470 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:05:36,312 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:45:41,583 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:05:36,443 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:46:40,328 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:06:18,891 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:46:40,478 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:06:19,052 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:51:20,759 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:06:51,313 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:51:20,890 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:06:51,410 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:51:49,442 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:07:11,136 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:51:49,602 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:07:11,256 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:52:45,425 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:07:33,026 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:52:45,544 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:07:33,244 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:52:58,272 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:08:21,757 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:52:58,390 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:08:21,888 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:53:14,668 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:08:56,893 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:53:14,793 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:08:56,992 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:53:38,400 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:09:18,388 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:53:38,500 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:09:18,484 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:53:53,958 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:09:31,273 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:53:54,131 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:09:31,367 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:54:03,791 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:10:18,037 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:54:03,902 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:10:18,152 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:54:44,877 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:12:12,387 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:54:44,968 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:12:12,482 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:55:43,114 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:13:40,091 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:55:43,262 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:13:40,242 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:56:23,559 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:14:42,386 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:56:23,654 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:14:42,475 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-27 23:56:32,945 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:15:19,286 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-27 23:56:33,036 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:15:19,397 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-28 00:13:22,813 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:24:51,948 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-28 00:13:23,331 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:24:52,043 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-28 00:16:33,386 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:25:20,773 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-28 00:16:33,506 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:25:20,868 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-28 00:17:17,240 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:26:30,916 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-28 00:17:17,333 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:26:50,853 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-28 00:17:36,297 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:27:21,069 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-28 00:17:36,385 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:27:21,166 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-28 00:19:30,431 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:30:17,972 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-28 00:19:30,511 - [INFO] - from play in play-internal-execution-context-1 
+2016-06-28 22:30:18,065 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
+
+2016-06-28 22:30:37,468 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:30:37,592 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:34:16,958 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:34:17,050 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:36:07,144 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:36:07,250 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:36:51,214 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:36:51,311 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:42:12,623 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:42:12,709 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:46:25,356 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:46:25,451 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:50:54,270 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:50:54,406 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:53:42,536 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:53:42,631 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:58:44,857 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:58:44,945 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 22:59:17,393 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 22:59:17,502 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:01:18,849 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:01:18,938 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:08:36,293 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:08:36,399 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:10:26,300 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:10:26,394 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:23:07,792 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:23:07,936 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:25:59,398 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:25:59,787 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:29:23,054 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:29:23,152 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:30:19,112 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:30:19,210 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-28 23:30:49,713 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-28 23:30:49,806 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:02:14,696 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:02:14,803 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:02:37,066 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:02:37,172 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:04:30,385 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:04:30,482 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:07:24,622 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:07:24,713 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:13:08,041 - [ERROR] - from application in New I/O worker #2 
+
+
+! @70h90ok05 - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:14:20,077 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:14:20,234 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:17:35,879 - [ERROR] - from application in New I/O worker #3 
+
+
+! @70h91e08j - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[missing arguments for method apply in object admin_main;
+follow this method with `_' if you want to treat it as a partially applied function]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:17:57,656 - [ERROR] - from application in New I/O worker #3 
+
+
+! @70h91f6eb - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[type mismatch;
+ found   : Unit
+ required: play.twirl.api.Html]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:18:16,009 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:18:16,101 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:20:28,102 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:20:28,190 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:21:55,394 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:21:55,570 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:22:44,426 - [ERROR] - from application in New I/O worker #1 
+
+
+! @70h925ek1 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value newCourseField is not a member of controllers.admincontrollers.ReverseAdminActions]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:23:09,248 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:23:09,345 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:24:06,222 - [ERROR] - from application in New I/O worker #1 
+
+
+! @70h92a5k1 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[not found: value fieldtemplates]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:24:48,245 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:24:48,345 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:26:15,341 - [ERROR] - from application in New I/O worker #1 
+
+
+! @70h92hek3 - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[not found: value clientForm]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:27:27,626 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:27:28,597 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:29:03,726 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:29:03,821 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:34:53,981 - [ERROR] - from application in New I/O worker #1 
+
+
+! @70h93l1pl - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[reference to textarea is ambiguous;
+it is imported twice in the same scope by
+import formfieldtemplates._
+and import helper._]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:35:26,727 - [ERROR] - from application in New I/O worker #1 
+
+
+! @70h93mob5 - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[not found: value fieldtemplates]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 00:35:45,538 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:35:45,636 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:36:40,909 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:36:40,990 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:41:32,474 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:41:32,871 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:41:59,071 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:41:59,161 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:42:43,508 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:42:43,626 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:43:12,674 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:43:12,765 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:44:45,018 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:44:45,134 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:45:59,582 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:45:59,667 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:46:14,224 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:46:14,312 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:46:52,385 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:46:52,486 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:47:14,946 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:47:15,040 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-06-29 00:47:58,160 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:47:58,295 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:50:32,381 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:50:32,473 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:51:12,714 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:51:12,802 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:51:42,950 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:51:43,045 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:52:04,569 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:52:04,655 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:53:35,335 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:53:35,462 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:53:56,062 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:53:56,159 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:54:35,447 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:54:35,572 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:56:02,965 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:56:03,056 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:56:21,906 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:56:21,997 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:56:39,230 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:56:39,341 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:57:20,047 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:57:20,140 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:57:52,586 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:57:52,673 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:58:06,790 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:58:06,895 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:58:50,751 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:58:50,863 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 00:59:35,085 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 00:59:35,174 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:00:05,073 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:00:05,172 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:00:25,892 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:00:25,979 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:00:46,129 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:00:46,225 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:01:19,337 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:01:19,428 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:01:38,478 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:01:38,592 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:02:08,518 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:02:08,699 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:02:29,358 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:02:29,447 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:02:47,173 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:02:47,831 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:03:11,956 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:03:12,077 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:03:26,636 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:03:26,730 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:03:48,840 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:03:48,941 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:04:24,889 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:04:25,007 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:04:26,458 - [INFO] - from application in play-akka.actor.default-dispatcher-543 
+Id is null
+
+2016-06-29 01:04:56,979 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:04:57,119 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:04:58,388 - [WARN] - from play in play-akka.actor.default-dispatcher-513 
+You are using status code '400' with flashing, which should only be used with a redirect status!
+
+2016-06-29 01:14:18,229 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:14:19,336 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:14:19,474 - [INFO] - from application in play-akka.actor.default-dispatcher-553 
+Id is null
+
+2016-06-29 01:16:12,385 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:16:12,819 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:16:19,535 - [WARN] - from play in play-akka.actor.default-dispatcher-564 
+You are using status code '400' with flashing, which should only be used with a redirect status!
+
+2016-06-29 01:17:05,421 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:17:05,536 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:17:05,609 - [INFO] - from application in play-akka.actor.default-dispatcher-562 
+Id is null
+
+2016-06-29 01:17:20,546 - [INFO] - from application in play-akka.actor.default-dispatcher-571 
+Id is null
+
+2016-06-29 01:17:33,798 - [INFO] - from application in play-akka.actor.default-dispatcher-569 
+Id is null
+
+2016-06-29 01:18:04,688 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:18:04,786 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:18:04,843 - [WARN] - from play in play-akka.actor.default-dispatcher-576 
+You are using status code '400' with flashing, which should only be used with a redirect status!
+
+2016-06-29 01:43:37,041 - [ERROR] - from application in New I/O worker #1 
+
+
+! @70h9clh3f - Internal server error, for (GET) [/course/field/new] ->
+
+play.PlayExceptions$CompilationException: Compilation error[reference to admin is ambiguous;
+it is imported twice in the same scope by
+import views.html._
+and import models._]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2016-06-29 01:45:01,609 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:45:03,296 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:45:33,289 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-06-29 01:45:33,413 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-06-29 01:46:34,092 - [WARN] - from play in play-akka.actor.default-dispatcher-595 
+You are using status code '400' with flashing, which should only be used with a redirect status!
 

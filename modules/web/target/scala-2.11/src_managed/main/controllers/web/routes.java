@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/web/conf/web.routes
 // @HASH:77431746f8138e55085fd542ef637faa0a670b1d
-// @DATE:Sun Jun 26 14:31:10 EAT 2016
+// @DATE:Tue Jun 28 20:58:35 EAT 2016
 
 package controllers.web;
 

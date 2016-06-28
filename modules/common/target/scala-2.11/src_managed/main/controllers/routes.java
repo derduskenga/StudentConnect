@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/common/conf/common.routes
 // @HASH:8e2702944896a93aa335fcd091a7ae12ecf3df6b
-// @DATE:Sun Jun 26 14:31:10 EAT 2016
+// @DATE:Tue Jun 28 20:58:34 EAT 2016
 
 package controllers;
 

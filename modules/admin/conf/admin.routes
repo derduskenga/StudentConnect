@@ -6,6 +6,7 @@
 GET     /       controllers.admincontrollers.AdminActions.index()
 GET     /course/field/new        controllers.admincontrollers.CourseActions.newCourseField()
 POST    /course/field/save       controllers.admincontrollers.CourseActions.saveCourseField()
+GET     /course/field/all           controllers.admincontrollers.CourseActions.fetchAllCourseFields()
 GET     /course/field/edit/:course_field_id       controllers.admincontrollers.CourseActions.editCourseField(course_field_id: Long)
 GET     /create/course/level       controllers.admincontrollers.CourseActions.newCourseLevel()
 

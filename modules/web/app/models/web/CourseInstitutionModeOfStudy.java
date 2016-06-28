@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 /**
  * Created by derdus on 6/22/16.
  */
-/*We link course in an institution to a mode of study*/
+/*We link course in an institution to a mode of study then we assign its fees*/
 @Entity
 public class CourseInstitutionModeOfStudy extends Model {
     @Id

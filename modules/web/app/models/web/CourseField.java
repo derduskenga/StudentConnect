@@ -57,4 +57,8 @@ public class CourseField extends Model {
         return CourseField.find().byId(id);
     }
 
+    public List<CourseField> fetchAllCourseFields(){
+        return find().all();
+    }
+
 }

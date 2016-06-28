@@ -1,0 +1,135 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!----Custom css files --->
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/style.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/reset.css")'>
+    <!-- fonts -->
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Lobster' rel='stylesheet' type='text/css'>
+
+    <!-- jquery js -->
+
+    <script type="text/javascript" src='@routes.Assets.at("components/jquery/dist/jquery.min.js")'></script>
+
+    <!-- bootstrap js -->
+
+    <script type="text/javascript" src='@routes.Assets.at("components/bootstrap/dist/js/bootstrap.min.js")'></script>
+
+    <!-- bootstrap -css -->
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("components/bootstrap/dist/css/bootstrap.min.css")'>
+
+    <!-- font awesome css -->
+
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("components/font-awesome/css/font-awesome.min.css")'>
+</head>
+<body>
+
+<div id="container">
+
+    <!-- header -->
+    <header id="header">
+        <p align="right" style="color:white;padding-right:20px">
+            Logged in as Derdus
+            <a href="#" class="btn btn-warning">Logout</a>
+        </p>
+        <h2 id="title">Student Connect Admin panel</h2>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav id="menu" class="clearfix"></nav>
+
+    <!-- Main Content area -->
+    <section id="content">
+        @content
+    </section>
+
+    <!-- Sidebar -->
+    <aside  id="sidebar">
+
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Course Fields</div>
+            <div class="panel-body">
+                <a href="@controllers.admincontrollers.routes.CourseActions.newCourseField()"> New Course field</a><br>
+                <a href="@controllers.admincontrollers.routes.CourseActions.fetchAllCourseFields()"> View all fields</a>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Course Levels</div>
+            <div class="panel-body">
+                <a href="#"> New Course level</a><br>
+                <a href="#"> View all levels</a>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Courses</div>
+            <div class="panel-body">
+                <a href="#"> New Course</a><br>
+                <a href="#"> Upload Course excel file</a> | <a href="#"> Get Sample </a> <br>
+                <a href="#"> View all courses</a><br>
+                <a href="#"> Add Job Placement</a> <br><!--we add job placement areas/titles or institutions where i can work---->
+                <a href="#"> Add course specialization</a><br>
+                <a href="#"> Add course certifications</a>
+             </div>
+
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Institution categories </div>
+            <div class="panel-body">
+                <a href="#"> New Institution category</a><br>
+                <a href="#"> View all categories</a>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Institutions</div>
+            <div class="panel-body">
+                <a href="#"> New Institution</a><br>
+                <a href="#"> View all Institutions</a><br>
+                <a href="#"> Add campuses</a><br>
+                <a href="#"> Add Schools/Faculty</a><br>
+                <a href="#"> Add Courses</a><br> <!----state the examination body---->
+                <a href="#"> Add Course Mode of study</a><br>
+                <a href="#"> Add Course Fees</a> <br><!----Mode of study has to be selected--->
+                <a href="#"> Add Clubs/Societies</a><br>
+                <a href="#"> Add Partners</a><br>
+                <a href="#"> Add Research Centers/Labs</a>
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Users</div>
+            <div class="panel-body">
+                <a href="#">New role</a><br>
+                <a href="#">View roles</a>
+                <hr>
+                <a href="#">New user</a><br>
+                <a href="#"> View all users</a>
+            </div>
+        </div>
+
+    </aside>
+
+
+
+    <!-- Navigation -->
+    <footer id="footer" class="clearfix">
+        Copyright &copy2016 Student Connect
+    </footer>
+
+</div>
+
+</body>
+</html>
