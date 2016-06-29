@@ -61,4 +61,10 @@ public class CourseField extends Model {
         return find().all();
     }
 
+    public void deleteCourseField(Long id){
+        if(getCourseById(id) != null){
+            getCourseById(id).delete();
+        }
+    }
+
 }

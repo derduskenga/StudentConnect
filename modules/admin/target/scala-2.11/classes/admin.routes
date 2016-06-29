@@ -8,7 +8,9 @@ GET     /course/field/new        controllers.admincontrollers.CourseActions.newC
 POST    /course/field/save       controllers.admincontrollers.CourseActions.saveCourseField()
 GET     /course/field/all           controllers.admincontrollers.CourseActions.fetchAllCourseFields()
 GET     /course/field/edit/:course_field_id       controllers.admincontrollers.CourseActions.editCourseField(course_field_id: Long)
+GET    /course/field/delete/:course_field_id      controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id: Long)
 GET     /create/course/level       controllers.admincontrollers.CourseActions.newCourseLevel()
+
 
 
 #GET     /assets/*file               controllers.admincontrollers.Assets.versioned(path="/public", file: Asset)

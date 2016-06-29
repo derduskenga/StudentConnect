@@ -3,5 +3,33 @@
 @(coursefields: List[CourseField])
 
 @admin_main("All Course Fields | Admin Panel"){
-<table> </table>
+    @if(coursefields.isEmpty){
+        <div class="alert-info">
+            No Course fields were found. <a href="@controllers.admincontrollers.routes.CourseActions.newCourseField()" title="Click here to start adding course fields"><i class="fa fa-plus-square" aria-hidden="true"></i>
+            Add here</a>
+        </div>
+    }else{
+        @if(flash.containsKey("coursefielddeleted")){
+        <div class="alert alert-success">
+            @flash.get("coursefielddeleted")
+        </div>
+        }
+        <a href="@controllers.admincontrollers.routes.CourseActions.newCourseField()" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i>
+            Add Course Field</a>
+        <table>
+            <tr>
+                <th>Course field</th>
+                <th><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Edit"></i></th>
+                <th><i class="fa fa-trash-o fa-2x" aria-hidden="true" title="Delete"></i></th>
+            </tr>
+        @for(fields <- coursefields){
+            <tr>
+                <td>@fields.course_field_name</td>
+                <td><a href="@controllers.admincontrollers.routes.CourseActions.editCourseField(fields.course_field_id)" title="Edit"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Edit"></i></a></td>
+                <td><a href="@controllers.admincontrollers.routes.CourseActions.deleteCourseField(fields.course_field_id)" title="Edit" class="delete-course-field"><i class="fa fa-trash-o fa-2x delete_course" aria-hidden="true" title="Delete @fields.course_field_name"></i></a></td>
+            </tr>
+        }
+
+            </table>
+    }
 }

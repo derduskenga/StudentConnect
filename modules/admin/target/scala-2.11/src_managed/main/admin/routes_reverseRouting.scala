@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:565a54bf5068042418f47d33a4fa11c78d2e9e46
-// @DATE:Wed Jun 29 01:43:18 EAT 2016
+// @HASH:5d5563cf92f2a112dcc69fc61c2ba51528ce5f81
+// @DATE:Wed Jun 29 15:59:57 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,7 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -23,6 +24,7 @@ import Router.queryString
 // @LINE:6
 package controllers.admincontrollers {
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -30,6 +32,13 @@ package controllers.admincontrollers {
 // @LINE:7
 class ReverseCourseActions {
 
+
+// @LINE:11
+def deleteCourseField(course_field_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/field/delete/" + implicitly[PathBindable[Long]].unbind("course_field_id", course_field_id))
+}
+                        
 
 // @LINE:10
 def editCourseField(course_field_id:Long): Call = {
@@ -45,7 +54,7 @@ def newCourseField(): Call = {
 }
                         
 
-// @LINE:11
+// @LINE:12
 def newCourseLevel(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "create/course/level")
@@ -86,6 +95,7 @@ def index(): Call = {
                   
 
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -95,6 +105,7 @@ def index(): Call = {
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -102,6 +113,17 @@ import ReverseRouteContext.empty
 // @LINE:7
 class ReverseCourseActions {
 
+
+// @LINE:11
+def deleteCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.deleteCourseField",
+   """
+      function(course_field_id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/field/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_field_id", course_field_id)})
+      }
+   """
+)
+                        
 
 // @LINE:10
 def editCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -125,7 +147,7 @@ def newCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:11
+// @LINE:12
 def newCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.newCourseLevel",
    """
@@ -182,6 +204,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -191,6 +214,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.admincontrollers.ref {
 
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -198,6 +222,12 @@ package controllers.admincontrollers.ref {
 // @LINE:7
 class ReverseCourseActions {
 
+
+// @LINE:11
+def deleteCourseField(course_field_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "deleteCourseField", Seq(classOf[Long]), "GET", """""", _prefix + """course/field/delete/$course_field_id<[^/]+>""")
+)
+                      
 
 // @LINE:10
 def editCourseField(course_field_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
@@ -211,7 +241,7 @@ def newCourseField(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:11
+// @LINE:12
 def newCourseLevel(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.newCourseLevel(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourseLevel", Seq(), "GET", """""", _prefix + """create/course/level""")
 )

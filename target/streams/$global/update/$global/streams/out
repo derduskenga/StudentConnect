@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3636c0a9[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53c21b8[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -452,6 +452,7 @@
 [0m[[0mdebug[0m] [0m	found xerces#xercesImpl;2.11.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.3.3->xerces#xercesImpl;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.11.0->xml-apis#xml-apis;1.4.01 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mno default cache defined: set to /home/derdus/.ivy2/cache[0m
 [0m[[0minfo[0m] [0mResolving xml-apis#xml-apis;1.4.01 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xml-apis#xml-apis;1.4.01 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xml-apis#xml-apis;1.4.01[0m
@@ -1066,7 +1067,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.11;2.3.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-ebean_2.11;2.3.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-ebean_2.11;2.3.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mno default cache defined: set to /home/derdus/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-ebean_2.11;2.3.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java-ebean_2.11;2.3.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ebean_2.11;2.3.3 in sbt-chain[0m
@@ -10590,7 +10590,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.15!log4j.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.6!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6818ms :: artifacts dl 80ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2599ms :: artifacts dl 71ms[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT compile produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT runtime produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT test produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-test.xml[0m
@@ -10608,5 +10608,5 @@
 [0m[[0mdebug[0m] [0m	report for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT echo-trace-test produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-trace-test.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT echo-weave produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-weave.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#multi-domain-play-java_2.11;1.0-SNAPSHOT echo-sigar produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (6818ms resolve - 80ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (2599ms resolve - 71ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

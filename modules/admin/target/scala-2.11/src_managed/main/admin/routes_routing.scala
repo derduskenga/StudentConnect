@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:565a54bf5068042418f47d33a4fa11c78d2e9e46
-// @DATE:Wed Jun 29 01:43:18 EAT 2016
+// @HASH:5d5563cf92f2a112dcc69fc61c2ba51528ce5f81
+// @DATE:Wed Jun 29 15:59:57 EAT 2016
 package admin
 
 import play.core._
@@ -68,16 +68,23 @@ HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.
         
 
 // @LINE:11
-private[this] lazy val controllers_admincontrollers_CourseActions_newCourseLevel5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("create/course/level"))))
-private[this] lazy val controllers_admincontrollers_CourseActions_newCourseLevel5_invoker = createInvoker(
+private[this] lazy val controllers_admincontrollers_CourseActions_deleteCourseField5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/field/delete/"),DynamicPart("course_field_id", """[^/]+""",true))))
+private[this] lazy val controllers_admincontrollers_CourseActions_deleteCourseField5_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.deleteCourseField(fakeValue[Long]),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "deleteCourseField", Seq(classOf[Long]),"GET", """""", Routes.prefix + """course/field/delete/$course_field_id<[^/]+>"""))
+        
+
+// @LINE:12
+private[this] lazy val controllers_admincontrollers_CourseActions_newCourseLevel6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("create/course/level"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_newCourseLevel6_invoker = createInvoker(
 controllers.admincontrollers.CourseActions.newCourseLevel(),
 HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "newCourseLevel", Nil,"GET", """""", Routes.prefix + """create/course/level"""))
         
 
-// @LINE:17
-lazy val common_Routes6 = Include(common.Routes)
+// @LINE:19
+lazy val common_Routes7 = Include(common.Routes)
         
-def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """create/course/level""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """create/course/level""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -126,15 +133,23 @@ case controllers_admincontrollers_CourseActions_editCourseField4_route(params) =
         
 
 // @LINE:11
-case controllers_admincontrollers_CourseActions_newCourseLevel5_route(params) => {
-   call { 
-        controllers_admincontrollers_CourseActions_newCourseLevel5_invoker.call(controllers.admincontrollers.CourseActions.newCourseLevel())
+case controllers_admincontrollers_CourseActions_deleteCourseField5_route(params) => {
+   call(params.fromPath[Long]("course_field_id", None)) { (course_field_id) =>
+        controllers_admincontrollers_CourseActions_deleteCourseField5_invoker.call(controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id))
    }
 }
         
 
-// @LINE:17
-case common_Routes6(handler) => handler
+// @LINE:12
+case controllers_admincontrollers_CourseActions_newCourseLevel6_route(params) => {
+   call { 
+        controllers_admincontrollers_CourseActions_newCourseLevel6_invoker.call(controllers.admincontrollers.CourseActions.newCourseLevel())
+   }
+}
+        
+
+// @LINE:19
+case common_Routes7(handler) => handler
         
 }
 
