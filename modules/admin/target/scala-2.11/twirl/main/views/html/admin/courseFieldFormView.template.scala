@@ -29,30 +29,31 @@ import formfieldtemplates._
 
 Seq[Any](format.raw/*1.49*/("""
 """),format.raw/*4.1*/("""
-"""),_display_(/*5.2*/admin_main("New Course Fiels | Admin")/*5.40*/{_display_(Seq[Any](format.raw/*5.41*/("""
-    """),_display_(/*6.6*/helper/*6.12*/.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(), 'id->"coursefieldform",'name->"coursefieldform", 'method->"post")/*6.159*/{_display_(Seq[Any](format.raw/*6.160*/("""
-        """),_display_(/*7.10*/if(flash.containsKey("coursefieldformsuccess"))/*7.57*/{_display_(Seq[Any](format.raw/*7.58*/("""
-        """),format.raw/*8.9*/("""<div class="alert alert-success">
-            """),_display_(/*9.14*/flash/*9.19*/.get("coursefieldformsuccess")),format.raw/*9.49*/("""
-        """),format.raw/*10.9*/("""</div>
-        """)))}),format.raw/*11.10*/("""
-        """),format.raw/*12.9*/("""<fieldset>
+"""),_display_(/*5.2*/admin_main("New Course Fields | Admin")/*5.41*/{_display_(Seq[Any](format.raw/*5.42*/("""
+    """),_display_(/*6.6*/helper/*6.12*/.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(),
+'id->"coursefieldform",'name->"coursefieldform", 'method->"post")/*7.66*/{_display_(Seq[Any](format.raw/*7.67*/("""
+        """),_display_(/*8.10*/if(flash.containsKey("coursefieldformsuccess"))/*8.57*/{_display_(Seq[Any](format.raw/*8.58*/("""
+        """),format.raw/*9.9*/("""<div class="alert alert-success">
+            """),_display_(/*10.14*/flash/*10.19*/.get("coursefieldformsuccess")),format.raw/*10.49*/("""
+        """),format.raw/*11.9*/("""</div>
+        """)))}),format.raw/*12.10*/("""
+        """),format.raw/*13.9*/("""<fieldset>
             <legend>Add New Course Field</legend>
             <!--Used to differentiate new form or form editing-->
-            <input type="hidden"  value=""""),_display_(/*15.43*/courseFieldForm("course_field_id")/*15.77*/.valueOr("")),format.raw/*15.89*/("""" name="course_field_id"/>
+            <input type="hidden"  value=""""),_display_(/*16.43*/courseFieldForm("course_field_id")/*16.77*/.valueOr("")),format.raw/*16.89*/("""" name="course_field_id"/>
 
-            """),_display_(/*17.14*/text(courseFieldForm("course_field_name"),
+            """),_display_(/*18.14*/text(courseFieldForm("course_field_name"),
             label = "Course Field name",
             placeholder = "Course Field name (e.g. Engineering, Business etc..)",
-            divClass="col-sm-9")),format.raw/*20.33*/("""
+            divClass="col-sm-9")),format.raw/*21.33*/("""
 
-            """),_display_(/*22.14*/formfieldtemplates/*22.32*/.textarea(courseFieldForm("course_field_description"),
+            """),_display_(/*23.14*/formfieldtemplates/*23.32*/.textarea(courseFieldForm("course_field_description"),
             label="Course field description",
             placeholder = "Type your course description here...... ",
             rows="4",
-            divClass="col-sm-9")),format.raw/*26.33*/("""
+            divClass="col-sm-9")),format.raw/*27.33*/("""
 
-        """),format.raw/*28.9*/("""</fieldset>
+        """),format.raw/*29.9*/("""</fieldset>
 
                     <p align="right"><input  type="submit" class="btn btn-primary" value="Save" id="course-field-submit-btn"></p>
 
@@ -60,8 +61,8 @@ Seq[Any](format.raw/*1.49*/("""
 
 
 
-    """)))}),format.raw/*36.6*/("""
-""")))}),format.raw/*37.2*/("""
+    """)))}),format.raw/*37.6*/("""
+""")))}),format.raw/*38.2*/("""
 """))}
   }
 
@@ -74,11 +75,11 @@ Seq[Any](format.raw/*1.49*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 29 01:43:19 EAT 2016
+                  DATE: Wed Jun 29 20:57:30 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/admin/app/views/admin/courseFieldFormView.scala.html
-                  HASH: e6d8912a3db94c2755945500ffabf5d6953dc2bd
-                  MATRIX: 765->1|943->48|970->95|997->97|1043->135|1081->136|1112->142|1126->148|1282->295|1321->296|1357->306|1412->353|1450->354|1485->363|1558->410|1571->415|1621->445|1657->454|1704->470|1740->479|1936->648|1979->682|2012->694|2080->735|2299->933|2341->948|2368->966|2614->1191|2651->1201|2834->1354|2866->1356
-                  LINES: 26->1|30->1|31->4|32->5|32->5|32->5|33->6|33->6|33->6|33->6|34->7|34->7|34->7|35->8|36->9|36->9|36->9|37->10|38->11|39->12|42->15|42->15|42->15|44->17|47->20|49->22|49->22|53->26|55->28|63->36|64->37
+                  HASH: f8f98133f7504e0fde7009660cb7eb9b632b4b86
+                  MATRIX: 765->1|943->48|970->95|997->97|1044->136|1082->137|1113->143|1127->149|1282->296|1320->297|1356->307|1411->354|1449->355|1484->364|1558->411|1572->416|1623->446|1659->455|1706->471|1742->480|1938->649|1981->683|2014->695|2082->736|2301->934|2343->949|2370->967|2616->1192|2653->1202|2836->1355|2868->1357
+                  LINES: 26->1|30->1|31->4|32->5|32->5|32->5|33->6|33->6|34->7|34->7|35->8|35->8|35->8|36->9|37->10|37->10|37->10|38->11|39->12|40->13|43->16|43->16|43->16|45->18|48->21|50->23|50->23|54->27|56->29|64->37|65->38
                   -- GENERATED --
               */
           

@@ -14,8 +14,11 @@ GET    /course/field/delete/:course_field_id      controllers.admincontrollers.C
 #Course levels
 GET    /course/level/new       controllers.admincontrollers.CourseActions.newCourseLevel()
 POST    /course/level/save     controllers.admincontrollers.CourseActions.saveCourseLevel()
-GET     /course/level/edit/: course_level_id    controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id: Long)
+GET     /course/level/all       controllers.admincontrollers.CourseActions.fetchAllCourseLevels()
+GET     /course/level/edit/:course_level_id    controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id: Long)
 GET     /course/level/delete/:course_level_id   controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id: Long)
+
+
 
 #Mobile api routes
 

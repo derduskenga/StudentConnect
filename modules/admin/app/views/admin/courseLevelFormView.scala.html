@@ -1,10 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@(courseLevelForm: Form[models.web.CourseLevel])
+@import helper._
+@import formfieldtemplates._
 
-</body>
-</html>
+@admin_main("New Course Level | Admin"){
+    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseLevel(),
+    'id->"courselevelform",'name->"courselevelform", 'method->"post"){
+    @if(flash.containsKey("courselevelformsuccess")){
+    <div class="alert alert-success">
+        @flash.get("courselevelformsuccess")
+    </div>
+    }
+    <fieldset>
+        <legend>Add New Course Level</legend>
+        <!--Used to differentiate new form or form editing-->
+        <input type="hidden"  value="@courseLevelForm("course_level_id").valueOr("")" name="course_level_id"/>
+
+        @text(courseLevelForm("course_level_name"),
+        label = "Course Level name",
+        placeholder = "Course Level name (e.g. Bachalor, PhD etc..)",
+        divClass="col-sm-9")
+
+        @formfieldtemplates.textarea(courseLevelForm("course_level_description"),
+        label="Course level description",
+        placeholder = "Type your course description here...... ",
+        rows="4",
+        divClass="col-sm-9")
+
+    </fieldset>
+
+    <p align="right"><input  type="submit" class="btn btn-primary" value="Save" id="course-level-submit-btn"></p>
+
+
+
+
+
+    }
+}

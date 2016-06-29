@@ -74,7 +74,6 @@ create table course_institution_mode_of_study (
 create table course_level (
   course_level_id           bigint not null,
   course_level_name         varchar(255),
-  course_level_abbreviation varchar(255),
   course_level_description  TEXT,
   constraint pk_course_level primary key (course_level_id))
 ;

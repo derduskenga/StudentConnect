@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:5d5563cf92f2a112dcc69fc61c2ba51528ce5f81
-// @DATE:Wed Jun 29 15:59:57 EAT 2016
+// @HASH:d0f7273b2f7551c98cfd84e38e354e01fdfd1332
+// @DATE:Wed Jun 29 18:00:58 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,60 +15,96 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:19
+// @LINE:18
+// @LINE:17
+// @LINE:16
+// @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
-// @LINE:8
-// @LINE:7
 // @LINE:6
 package controllers.admincontrollers {
 
+// @LINE:19
+// @LINE:18
+// @LINE:17
+// @LINE:16
+// @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
-// @LINE:8
-// @LINE:7
 class ReverseCourseActions {
 
 
-// @LINE:11
+// @LINE:19
+def deleteCourseLevel(course_level_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/level/delete/" + implicitly[PathBindable[Long]].unbind("course_level_id", course_level_id))
+}
+                        
+
+// @LINE:18
+def editCourseLevel(course_level_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/level/edit/" + implicitly[PathBindable[Long]].unbind("course_level_id", course_level_id))
+}
+                        
+
+// @LINE:13
 def deleteCourseField(course_field_id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/field/delete/" + implicitly[PathBindable[Long]].unbind("course_field_id", course_field_id))
 }
                         
 
-// @LINE:10
+// @LINE:17
+def fetchAllCourseLevels(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/level/all")
+}
+                        
+
+// @LINE:12
 def editCourseField(course_field_id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/field/edit/" + implicitly[PathBindable[Long]].unbind("course_field_id", course_field_id))
 }
                         
 
-// @LINE:7
+// @LINE:9
 def newCourseField(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/field/new")
 }
                         
 
-// @LINE:12
-def newCourseLevel(): Call = {
+// @LINE:16
+def saveCourseLevel(): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "create/course/level")
+   Call("POST", _prefix + { _defaultPrefix } + "course/level/save")
 }
                         
 
-// @LINE:9
+// @LINE:15
+def newCourseLevel(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/level/new")
+}
+                        
+
+// @LINE:11
 def fetchAllCourseFields(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/field/all")
 }
                         
 
-// @LINE:8
+// @LINE:10
 def saveCourseField(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "course/field/save")
@@ -95,26 +131,56 @@ def index(): Call = {
                   
 
 
+// @LINE:19
+// @LINE:18
+// @LINE:17
+// @LINE:16
+// @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
-// @LINE:8
-// @LINE:7
 // @LINE:6
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:19
+// @LINE:18
+// @LINE:17
+// @LINE:16
+// @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
-// @LINE:8
-// @LINE:7
 class ReverseCourseActions {
 
 
-// @LINE:11
+// @LINE:19
+def deleteCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.deleteCourseLevel",
+   """
+      function(course_level_id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_level_id", course_level_id)})
+      }
+   """
+)
+                        
+
+// @LINE:18
+def editCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.editCourseLevel",
+   """
+      function(course_level_id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/edit/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_level_id", course_level_id)})
+      }
+   """
+)
+                        
+
+// @LINE:13
 def deleteCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.deleteCourseField",
    """
@@ -125,7 +191,18 @@ def deleteCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:10
+// @LINE:17
+def fetchAllCourseLevels : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.fetchAllCourseLevels",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/all"})
+      }
+   """
+)
+                        
+
+// @LINE:12
 def editCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.editCourseField",
    """
@@ -136,7 +213,7 @@ def editCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:7
+// @LINE:9
 def newCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.newCourseField",
    """
@@ -147,18 +224,29 @@ def newCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:12
-def newCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.admincontrollers.CourseActions.newCourseLevel",
+// @LINE:16
+def saveCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.saveCourseLevel",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "create/course/level"})
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/save"})
       }
    """
 )
                         
 
-// @LINE:9
+// @LINE:15
+def newCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.newCourseLevel",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/new"})
+      }
+   """
+)
+                        
+
+// @LINE:11
 def fetchAllCourseFields : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.fetchAllCourseFields",
    """
@@ -169,7 +257,7 @@ def fetchAllCourseFields : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:8
+// @LINE:10
 def saveCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.saveCourseField",
    """
@@ -204,56 +292,89 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:19
+// @LINE:18
+// @LINE:17
+// @LINE:16
+// @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
-// @LINE:8
-// @LINE:7
 // @LINE:6
 package controllers.admincontrollers.ref {
 
 
+// @LINE:19
+// @LINE:18
+// @LINE:17
+// @LINE:16
+// @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
-// @LINE:8
-// @LINE:7
 class ReverseCourseActions {
 
 
-// @LINE:11
+// @LINE:19
+def deleteCourseLevel(course_level_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "deleteCourseLevel", Seq(classOf[Long]), "GET", """""", _prefix + """course/level/delete/$course_level_id<[^/]+>""")
+)
+                      
+
+// @LINE:18
+def editCourseLevel(course_level_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "editCourseLevel", Seq(classOf[Long]), "GET", """""", _prefix + """course/level/edit/$course_level_id<[^/]+>""")
+)
+                      
+
+// @LINE:13
 def deleteCourseField(course_field_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "deleteCourseField", Seq(classOf[Long]), "GET", """""", _prefix + """course/field/delete/$course_field_id<[^/]+>""")
 )
                       
 
-// @LINE:10
+// @LINE:17
+def fetchAllCourseLevels(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.fetchAllCourseLevels(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "fetchAllCourseLevels", Seq(), "GET", """""", _prefix + """course/level/all""")
+)
+                      
+
+// @LINE:12
 def editCourseField(course_field_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.editCourseField(course_field_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "editCourseField", Seq(classOf[Long]), "GET", """""", _prefix + """course/field/edit/$course_field_id<[^/]+>""")
 )
                       
 
-// @LINE:7
-def newCourseField(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.admincontrollers.CourseActions.newCourseField(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourseField", Seq(), "GET", """""", _prefix + """course/field/new""")
-)
-                      
-
-// @LINE:12
-def newCourseLevel(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.admincontrollers.CourseActions.newCourseLevel(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourseLevel", Seq(), "GET", """""", _prefix + """create/course/level""")
-)
-                      
-
 // @LINE:9
+def newCourseField(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.newCourseField(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourseField", Seq(), "GET", """Other pages
+course fields""", _prefix + """course/field/new""")
+)
+                      
+
+// @LINE:16
+def saveCourseLevel(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.saveCourseLevel(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "saveCourseLevel", Seq(), "POST", """""", _prefix + """course/level/save""")
+)
+                      
+
+// @LINE:15
+def newCourseLevel(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.newCourseLevel(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourseLevel", Seq(), "GET", """Course levels""", _prefix + """course/level/new""")
+)
+                      
+
+// @LINE:11
 def fetchAllCourseFields(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.fetchAllCourseFields(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "fetchAllCourseFields", Seq(), "GET", """""", _prefix + """course/field/all""")
 )
                       
 
-// @LINE:8
+// @LINE:10
 def saveCourseField(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.saveCourseField(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "saveCourseField", Seq(), "POST", """""", _prefix + """course/field/save""")
 )

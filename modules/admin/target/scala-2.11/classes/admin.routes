@@ -4,12 +4,27 @@
 
 # Home page
 GET     /       controllers.admincontrollers.AdminActions.index()
+#Other pages
+#course fields
 GET     /course/field/new        controllers.admincontrollers.CourseActions.newCourseField()
 POST    /course/field/save       controllers.admincontrollers.CourseActions.saveCourseField()
 GET     /course/field/all           controllers.admincontrollers.CourseActions.fetchAllCourseFields()
 GET     /course/field/edit/:course_field_id       controllers.admincontrollers.CourseActions.editCourseField(course_field_id: Long)
 GET    /course/field/delete/:course_field_id      controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id: Long)
-GET     /create/course/level       controllers.admincontrollers.CourseActions.newCourseLevel()
+#Course levels
+GET    /course/level/new       controllers.admincontrollers.CourseActions.newCourseLevel()
+POST    /course/level/save     controllers.admincontrollers.CourseActions.saveCourseLevel()
+GET     /course/level/all       controllers.admincontrollers.CourseActions.fetchAllCourseLevels()
+GET     /course/level/edit/:course_level_id    controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id: Long)
+GET     /course/level/delete/:course_level_id   controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id: Long)
+
+
+
+#Mobile api routes
+
+
+
+
 
 
 

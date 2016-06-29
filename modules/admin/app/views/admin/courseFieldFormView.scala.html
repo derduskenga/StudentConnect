@@ -2,8 +2,9 @@
 @import helper._
 @import formfieldtemplates._
 
-@admin_main("New Course Fiels | Admin"){
-    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(), 'id->"coursefieldform",'name->"coursefieldform", 'method->"post"){
+@admin_main("New Course Fields | Admin"){
+    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(),
+'id->"coursefieldform",'name->"coursefieldform", 'method->"post"){
         @if(flash.containsKey("coursefieldformsuccess")){
         <div class="alert alert-success">
             @flash.get("coursefieldformsuccess")
