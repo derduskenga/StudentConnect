@@ -21,13 +21,13 @@ public class Course extends Model {
     //Other details
 
     //Entity relationships
-    @OneToMany(mappedBy = "course")
-    public List<InstitutionCourse> institutionCourseList;
     @ManyToOne
     public CourseLevel courseLevel;
     @ManyToOne
     public CourseField courseField;
     //.................................................
+    @OneToMany(mappedBy = "course")
+    public List<InstitutionCourse> institutionCourseList;
     @OneToMany(mappedBy = "course")
     public List<CourseSpecialization> courseSpecializationList;
     @OneToMany(mappedBy = "course")

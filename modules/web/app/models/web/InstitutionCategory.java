@@ -24,4 +24,30 @@ public class InstitutionCategory extends Model {
     //..........................................
     @OneToMany(mappedBy = "institutionCategory")
     public List<Institution> institutionList;
+
+    //methods
+    public static Finder<Long, InstitutionCategory> find(){
+        return new Finder<Long, InstitutionCategory>(Long.class,InstitutionCategory.class);
+    }
+    public Long saveInstitutionCategory(){
+        if(this.institution_category_id == null){
+            save();
+            return institution_category_id;
+        }
+        update();
+        return institution_category_id;
+    }
+    public InstitutionCategory fetchInstitutionCategoryById(Long id){
+        return find().byId(id);
+    }
+    public List<InstitutionCategory> fetchAllInstitutionCategories(){
+        return find().all();
+    }
+    public void deleteInstitutionCategoryById(Long id){
+        if(fetchInstitutionCategoryById(id) != null){
+            fetchInstitutionCategoryById(id).delete();
+        }
+
+    }
+
 }

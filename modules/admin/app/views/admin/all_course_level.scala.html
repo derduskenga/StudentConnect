@@ -3,5 +3,33 @@
 @(courselevels: List[CourseLevel])
 
 @admin_main("All Course Levels | Admin Panel"){
-    <hr>
+    @if(courselevels.isEmpty){
+    <div class="alert-info">
+        No Course levels were found. <a href="@controllers.admincontrollers.routes.CourseActions.newCourseLevel()" title="Click here to start adding course levels"><i class="fa fa-plus-square" aria-hidden="true"></i>
+        Add here</a>
+    </div>
+    }else{
+    @if(flash.containsKey("deletecourselevelsuccess")){
+    <div class="alert alert-success">
+        @flash.get("deletecourselevelsuccess")
+    </div>
+    }
+    <a href="@controllers.admincontrollers.routes.CourseActions.newCourseLevel()" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i>
+        Add Course Level</a>
+    <table>
+        <tr>
+            <th>Course level</th>
+            <th><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Edit"></i></th>
+            <th><i class="fa fa-trash-o fa-2x" aria-hidden="true" title="Delete"></i></th>
+        </tr>
+        @for(levels <- courselevels){
+        <tr>
+            <td>@levels.course_level_name</td>
+            <td><a href="@controllers.admincontrollers.routes.CourseActions.editCourseLevel(levels.course_level_id)" title="Edit"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Edit"></i></a></td>
+            <td><a href="@controllers.admincontrollers.routes.CourseActions.deleteCourseLevel(levels.course_level_id)" title="Edit" class="delete-course-level"><i class="fa fa-trash-o fa-2x delete_level" aria-hidden="true" title="Delete @levels.course_level_name"></i></a></td>
+        </tr>
+        }
+
+    </table>
+    }
 }

@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="echo-trace-test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
-		date="20160629134452"/>
+		date="20160630215115"/>
 	<dependencies>
 		<module organisation="com.typesafe.trace" name="trace-play-2.3.3_2.11">
 			<revision name="0.1.6" status="release" pubdate="20150421183439" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="78">
@@ -148,7 +148,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="admin_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160629134447" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="74">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160630215113" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="74">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="multi-domain-play-java_2.11" conf="echo-trace-test, compile, test, echo-trace-compile, runtime-internal, provided, test-internal, runtime, optional" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -167,7 +167,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="web_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160629134447" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="75">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160630215110" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="75">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.myweb" name="multi-domain-play-java_2.11" conf="echo-trace-test, compile, test, echo-trace-compile, runtime-internal, provided, test-internal, runtime, optional" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
@@ -187,7 +187,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="common_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160629134442" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160630215104" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.myweb" name="web_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>

@@ -2,94 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1bc3af2-fffc-40bb-918e-5b8c6a010499" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$admin$Routes$$controllers_admincontrollers_CourseActions_saveCourseField2_invoker$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$admin$Routes$$controllers_admincontrollers_CourseActions_saveCourseField2_invoker$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$documentation$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$documentation$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$$anonfun$routes$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin/Routes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/common/public/js/course_level.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/CourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/CourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ReverseAdminActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ReverseAdminActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ReverseCourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ReverseCourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/javascript/ReverseAdminActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/javascript/ReverseAdminActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/javascript/ReverseCourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/javascript/ReverseCourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseAdminActions$$anonfun$index$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseAdminActions$$anonfun$index$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseAdminActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseAdminActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$editCourseField$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$editCourseField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseField$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseLevel$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseLevel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$saveCourseField$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$saveCourseField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/controllers/admincontrollers/ref/ReverseCourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/views/html/admin/courseFieldFormView$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/views/html/admin/courseFieldFormView$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/views/html/admin/courseFieldFormView$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/views/html/admin/courseFieldFormView$$anonfun$f$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/views/html/admin/courseFieldFormView$.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/views/html/admin/courseFieldFormView$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$admin$Routes$$controllers_admincontrollers_CourseActions_saveCourseField2_invoker$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$admin$Routes$$controllers_admincontrollers_CourseActions_saveCourseField2_invoker$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$documentation$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$documentation$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$$anonfun$routes$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/admin/Routes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ReverseAdminActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ReverseAdminActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ReverseCourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ReverseCourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/javascript/ReverseAdminActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/javascript/ReverseAdminActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/javascript/ReverseCourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/javascript/ReverseCourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseAdminActions$$anonfun$index$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseAdminActions$$anonfun$index$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseAdminActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseAdminActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$editCourseField$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$editCourseField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseField$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseLevel$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$newCourseLevel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$saveCourseField$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions$$anonfun$saveCourseField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/controllers/admincontrollers/ref/ReverseCourseActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/views/html/admin/courseFieldFormView$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/views/html/admin/courseFieldFormView$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/views/html/admin/courseFieldFormView$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/views/html/admin/courseFieldFormView$$anonfun$f$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/views/html/admin/courseFieldFormView$.class" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes_managed/views/html/admin/courseFieldFormView$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/modules/admin/target/streams/compile/copyResources/$global/streams/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/modules/admin/target/streams/$global/update/$global/streams/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/public/components/bootstrap-dropdown-hover" afterPath="$PROJECT_DIR$/modules/common/public/components/bootstrap-dropdown-hover" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/scala-2.11/classes/models/web/CourseLevel.class" afterPath="$PROJECT_DIR$/modules/web/target/scala-2.11/classes/models/web/CourseLevel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/streams/$global/assets/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/modules/common/target/streams/$global/assets/$global/streams/sync-mappings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/modules/common/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/modules/web/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/admin.iml" afterPath="$PROJECT_DIR$/.idea/modules/admin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/common.iml" afterPath="$PROJECT_DIR$/.idea/modules/common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/web.iml" afterPath="$PROJECT_DIR$/.idea/modules/web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/evolutions/default/1.sql" afterPath="$PROJECT_DIR$/conf/evolutions/default/1.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java" afterPath="$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html" afterPath="$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/app/views/admin/courseFieldFormView.scala.html" afterPath="$PROJECT_DIR$/modules/admin/app/views/admin/courseFieldFormView.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/app/views/admin/courseLevelFormView.scala.html" afterPath="$PROJECT_DIR$/modules/admin/app/views/admin/courseLevelFormView.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/conf/admin.routes" afterPath="$PROJECT_DIR$/modules/admin/conf/admin.routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html" afterPath="$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/com.myweb/admin_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/com.myweb/admin_2.11/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/com.myweb/admin_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/com.myweb/admin_2.11/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-compile.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-docs.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-optional.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-plugin.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-pom.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-provided.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-runtime.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-sources.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-test.xml" afterPath="$PROJECT_DIR$/modules/admin/target/resolution-cache/reports/com.myweb-admin_2.11-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/cache/admin/compile/play_instrumentation" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/cache/admin/compile/play_instrumentation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin.routes" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/classes/admin.routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/src_managed/main/admin/routes_reverseRouting.scala" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/src_managed/main/admin/routes_reverseRouting.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/src_managed/main/admin/routes_routing.scala" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/src_managed/main/admin/routes_routing.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/src_managed/main/controllers/admincontrollers/routes.java" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/src_managed/main/controllers/admincontrollers/routes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/scala-2.11/twirl/main/views/html/admin/courseFieldFormView.template.scala" afterPath="$PROJECT_DIR$/modules/admin/target/scala-2.11/twirl/main/views/html/admin/courseFieldFormView.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/modules/admin/target/streams/$global/update/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/modules/admin/target/streams/compile/compile/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/modules/admin/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/com.myweb/common_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/com.myweb/common_2.11/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/com.myweb/common_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/com.myweb/common_2.11/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-compile.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-docs.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-optional.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-plugin.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-pom.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-provided.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-runtime.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-sources.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-test.xml" afterPath="$PROJECT_DIR$/modules/common/target/resolution-cache/reports/com.myweb-common_2.11-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/scala-2.11/cache/common/compile/play_instrumentation" afterPath="$PROJECT_DIR$/modules/common/target/scala-2.11/cache/common/compile/play_instrumentation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/app/models/web/CourseLevel.java" afterPath="$PROJECT_DIR$/modules/web/app/models/web/CourseLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/modules/common/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/app/models/web/Course.java" afterPath="$PROJECT_DIR$/modules/web/app/models/web/Course.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/app/models/web/InstitutionCategory.java" afterPath="$PROJECT_DIR$/modules/web/app/models/web/InstitutionCategory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/com.myweb/web_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/com.myweb/web_2.11/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/com.myweb/web_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/com.myweb/web_2.11/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-compile.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-docs.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-optional.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-plugin.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-pom.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-provided.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-runtime.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-sources.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-test.xml" afterPath="$PROJECT_DIR$/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/scala-2.11/cache/web/compile/play_instrumentation" afterPath="$PROJECT_DIR$/modules/web/target/scala-2.11/cache/web/compile/play_instrumentation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/modules/web/target/streams/compile/compile/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/modules/web/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/modules/web/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/studentconnect-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/studentconnect-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/studentconnect-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/studentconnect-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-studentconnect-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/com.myweb/multi-domain-play-java_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/com.myweb/multi-domain-play-java_2.11/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/com.myweb/multi-domain-play-java_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/com.myweb/multi-domain-play-java_2.11/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-sigar.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-sigar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-trace-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-trace-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-trace-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-trace-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-weave.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-echo-weave.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.myweb-multi-domain-play-java_2.11-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/cache/root/compile/play_instrumentation" afterPath="$PROJECT_DIR$/target/scala-2.11/cache/root/compile/play_instrumentation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/evolutions/default/1.sql" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/evolutions/default/1.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
     </list>
     <ignored path="studentconnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,8 +170,8 @@
       <file leaf-file-name="admin_main.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="76" column="96" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="96" />
+            <state relative-caret-position="268">
+              <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -157,89 +179,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courseFieldFormView.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/courseFieldFormView.scala.html">
+      <file leaf-file-name="Course.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="390">
+              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseActions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java">
+      <file leaf-file-name="InstitutionCategory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/InstitutionCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+            <state relative-caret-position="438">
+              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#fetchAllCourseFields#0;class#CourseActions#0" expanded="false" />
-                <element signature="method#deleteCourseField#0;class#CourseActions#0" expanded="false" />
-                <element signature="method#newCourseLevel#0;class#CourseActions#0" expanded="false" />
-                <element signature="method#fetchAllCourseLevels#0;class#CourseActions#0" expanded="false" />
-                <element signature="method#editCourseLevel#0;class#CourseActions#0" expanded="false" />
-                <element signature="method#deleteCourseLevel#0;class#CourseActions#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_course_level.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courseLevelFormView.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/courseLevelFormView.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="78" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.routes" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/conf/admin.routes">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/CourseField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1419#1420#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseLevel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/CourseLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1545#1546#0" expanded="true" />
-                <element signature="e#1580#1581#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1371#1372#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -248,9 +207,69 @@
       <file leaf-file-name="all_course_fields.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_fields.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseActions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#fetchAllCourseFields#0;class#CourseActions#0" expanded="false" />
+                <element signature="method#deleteCourseField#0;class#CourseActions#0" expanded="false" />
+                <element signature="method#newCourseLevel#0;class#CourseActions#0" expanded="false" />
+                <element signature="method#editCourseLevel#0;class#CourseActions#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course_level.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/common/public/js/course_level.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all_course_level.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="139" selection-start-line="28" selection-start-column="139" selection-end-line="28" selection-end-column="158" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/CourseField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/CourseLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -258,8 +277,8 @@
       <file leaf-file-name="course_field.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/common/public/js/course_field.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+            <state relative-caret-position="150">
+              <caret line="10" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -296,14 +315,17 @@
         <option value="$PROJECT_DIR$/modules/admin/app/views/admin/edit_course_field.scala.html" />
         <option value="$PROJECT_DIR$/modules/common/public/js/course_field.js" />
         <option value="$PROJECT_DIR$/modules/admin/app/views/admin/all_course_fields.scala.html" />
-        <option value="$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html" />
         <option value="$PROJECT_DIR$/modules/admin/conf/admin.routes" />
         <option value="$PROJECT_DIR$/modules/admin/app/views/admin/courseFieldFormView.scala.html" />
-        <option value="$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html" />
-        <option value="$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java" />
         <option value="$PROJECT_DIR$/modules/admin/app/views/admin/courseLevelFormView.scala.html" />
         <option value="$PROJECT_DIR$/modules/web/app/models/web/CourseField.java" />
         <option value="$PROJECT_DIR$/modules/web/app/models/web/CourseLevel.java" />
+        <option value="$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java" />
+        <option value="$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html" />
+        <option value="$PROJECT_DIR$/modules/common/public/js/course_level.js" />
+        <option value="$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html" />
+        <option value="$PROJECT_DIR$/modules/web/app/models/web/Course.java" />
+        <option value="$PROJECT_DIR$/modules/web/app/models/web/InstitutionCategory.java" />
       </list>
     </option>
   </component>
@@ -409,40 +431,8 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="studentconnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="studentconnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="studentconnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="studentconnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -450,7 +440,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,11 +458,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentconnect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -770,7 +818,7 @@
     </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1467196847064" />
+    <option name="lastUpdateTimestamp" value="1467312262116" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -863,8 +911,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17689243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -875,6 +922,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -891,7 +939,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -900,6 +948,52 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/courseFieldFormView.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fetchAllCourseFields#0;class#CourseActions#0" expanded="false" />
+            <element signature="method#deleteCourseField#0;class#CourseActions#0" expanded="false" />
+            <element signature="method#newCourseLevel#0;class#CourseActions#0" expanded="false" />
+            <element signature="method#editCourseLevel#0;class#CourseActions#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/courseLevelFormView.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="78" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/conf/admin.routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -927,9 +1021,7 @@
             <element signature="method#fetchAllCourseFields#0;class#CourseActions#0" expanded="false" />
             <element signature="method#deleteCourseField#0;class#CourseActions#0" expanded="false" />
             <element signature="method#newCourseLevel#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#fetchAllCourseLevels#0;class#CourseActions#0" expanded="false" />
             <element signature="method#editCourseLevel#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#deleteCourseLevel#0;class#CourseActions#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -947,8 +1039,7 @@
         <state relative-caret-position="795">
           <caret line="59" column="49" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="49" />
           <folding>
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,9 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,14 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,13 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/InstitutionCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1133,9 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,23 +1218,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/edit_course_field.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/edit_course_field.scala.html" />
     <entry file="file://$PROJECT_DIR$/modules/web/app/views/web/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="42" column="84" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,25 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/public/js/course_field.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="76" column="96" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="96" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,50 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_fields.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#fetchAllCourseFields#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#deleteCourseField#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#newCourseLevel#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#fetchAllCourseLevels#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#editCourseLevel#0;class#CourseActions#0" expanded="false" />
-            <element signature="method#deleteCourseLevel#0;class#CourseActions#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/CourseField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/courseLevelFormView.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1271,10 +1266,93 @@
           <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_fields.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/public/js/course_field.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/all_course_level.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="139" selection-start-line="28" selection-start-column="139" selection-end-line="28" selection-end-column="158" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/public/js/course_level.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/controllers/admincontrollers/CourseActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fetchAllCourseFields#0;class#CourseActions#0" expanded="false" />
+            <element signature="method#deleteCourseField#0;class#CourseActions#0" expanded="false" />
+            <element signature="method#newCourseLevel#0;class#CourseActions#0" expanded="false" />
+            <element signature="method#editCourseLevel#0;class#CourseActions#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/app/views/admin/admin_main.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/CourseField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/app/models/web/InstitutionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+          <folding>
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
           </folding>
         </state>
       </provider>

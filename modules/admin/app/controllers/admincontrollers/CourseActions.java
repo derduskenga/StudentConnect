@@ -73,7 +73,7 @@ public class CourseActions extends Controller{
             flash("courselevelformerrors","Correct the errors and submit again");
             return badRequest(courseLevelFormView.render(courseLevelBoundForm));
         }
-        flash("courselevelformsuccess","Field has been saved");
+        flash("courselevelformsuccess","Level has been saved");
         CourseLevel courseLevel = courseLevelBoundForm.get();
         courseLevel.saveCourseLevel();
         return redirect(routes.CourseActions.newCourseLevel());
@@ -92,6 +92,6 @@ public class CourseActions extends Controller{
     public static Result deleteCourseLevel(Long id){
         new CourseLevel().deleteCourseLevel(id);
         flash("deletecourselevelsuccess","Course level was deleted successifully");
-        return redirect(routes.CourseActions.fetchAllCourseFields());
+        return redirect(routes.CourseActions.fetchAllCourseLevels());
     }
 }
