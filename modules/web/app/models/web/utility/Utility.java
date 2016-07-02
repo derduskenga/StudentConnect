@@ -8,5 +8,6 @@ public class Utility {
     public static String UNIVERSITY_LOGO_FOLDER = "";
     public static String SITE_IMAGES_FOLDER = "";
     public static double KES_US_DOLLAR_EXCHANGE_RATE = 97.00;
+    public static int FILE_UPLOAD_SIZE_LIMIT = 25;
 
 }

@@ -41,7 +41,6 @@ create table course (
   course_id                 bigint not null,
   course_name               varchar(255),
   course_description        TEXT,
-  course_department_name    varchar(255),
   course_blog_url           varchar(255),
   course_level_course_level_id bigint,
   course_field_course_field_id bigint,
@@ -130,6 +129,7 @@ create table institution_category (
 
 create table institution_course (
   institution_course_id     bigint not null,
+  course_department_name    varchar(255),
   institution_institution_id bigint,
   course_course_id          bigint,
   school_or_faculty_school_id bigint,
@@ -166,6 +166,9 @@ create table question (
   question_subject          varchar(255),
   question_body             TEXT,
   question_date             timestamp,
+  seen                      boolean default false ,
+  resolved                  boolean default false ,
+  admin_notes               TEXT,
   constraint pk_question primary key (question_id))
 ;
 

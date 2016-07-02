@@ -5,20 +5,24 @@ package controllers.admincontrollers;
  */
 import models.web.CourseField;
 import models.web.CourseLevel;
+import models.web.Course;
 import play.data.Form;
 import static play.data.Form.form;
 import views.html.admin.courseFieldFormView;
 import views.html.admin.courseLevelFormView;
+import views.html.admin.courseFormView;
 import views.html.admin.all_course_fields;
 import views.html.admin.all_course_level;
 import play.mvc.*;
 import play.Logger;
+import java.util.*;
 //model imports
 import models.web.CourseField;
 
 public class CourseActions extends Controller{
     static Form<CourseField> courseFieldForm = form(CourseField.class);
     static Form<CourseLevel> courseLevelForm = form(CourseLevel.class);
+    static Form<Course> courseForm = form(Course.class);
 
     public static Result newCourseField(){
         //return ok(courseFieldFormView.render(courseFieldForm));
@@ -94,4 +98,39 @@ public class CourseActions extends Controller{
         flash("deletecourselevelsuccess","Course level was deleted successifully");
         return redirect(routes.CourseActions.fetchAllCourseLevels());
     }
+
+    public static Result newCourse(){
+        /*render form, course field map and course level map*/
+        return ok(courseFormView.render(courseForm, new CourseField().fetchCourseFieldMap(), new CourseLevel().fetchCourseLevelMap()));
+    }
+    public static Result saveCourse(){
+        Form<Course> courseBoundForm = courseForm.bindFromRequest();
+        Map<String,String> courseFormDataMap = courseBoundForm.data();
+
+        /*Get values for the dropdown selections course field and course level*/
+        String courseLevelSelected = courseFormDataMap.get("course_level_name");
+        String courseFieldSelected = courseFormDataMap.get("course_field_name");
+
+        //build maps incase of error or editing
+        Map<Map<Long,String>,Boolean> courseLevelMap = new CourseLevel().fetchCourseLevelMap(Long.valueOf(courseLevelSelected));
+        Map<Map<Long,String>,Boolean> courseFieldMap = new CourseField().fetchCourseFieldMap(Long.valueOf(courseFieldSelected));
+
+        if(courseBoundForm.hasErrors()){
+            return badRequest(courseFormView.render(courseBoundForm,courseFieldMap,courseLevelMap));
+        }
+
+        Course course = courseBoundForm.get();
+        course.courseLevel = new CourseLevel().getCourseLevelById(Long.valueOf(courseLevelSelected));
+        course.courseField = new CourseField().getCourseById(Long.valueOf(courseFieldSelected));
+        //save the course object
+        course.saveCourse();
+        flash("coursesavesuccess","Course has been saved successfully");
+        return redirect(routes.CourseActions.newCourse());
+    }
+    public static Result saveCourseExcelFile(){return TODO;}
+    public static Result editCourse(Long id){return  TODO;}
+    public static Result deleteCourse(Long id){return  TODO;}
+    public static Result fetchAllCourses(){return  TODO;}
+
+    public static Result UploadCourseSampleFile(){return TODO;}
 }

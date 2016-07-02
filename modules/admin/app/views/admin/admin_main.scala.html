@@ -18,6 +18,9 @@
 
     <!-- bootstrap js -->
 
+    <!---tinymce--->
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
 
     <!---Custom js files--->
     <script type="text/javascript" src='@routes.Assets.at("js/course_field.js")'></script>
@@ -82,12 +85,13 @@
         <div class="panel panel-info">
             <div class="panel-heading">Courses</div>
             <div class="panel-body">
-                <a href="#"> New Course</a><br>
-                <a href="#"> Upload Course excel file</a> | <a href="#" title="Download sample excel file"> <i class="fa fa-download"></i>Sample </a> <br>
+                <a href="@controllers.admincontrollers.routes.CourseActions.newCourse()"> New Course</a><br>
                 <a href="#"> View all courses</a><br>
                 <a href="#"> Add Job Placement</a> <br><!--we add job placement areas/titles or institutions where i can work---->
                 <a href="#"> Add course specialization</a><br>
                 <a href="#"> Add course certifications</a>
+                <hr>
+                <a href="@controllers.admincontrollers.routes.CourseActions.UploadCourseSampleFile()">Upload sample <i class="fa fa-cloud-upload" aria-hidden="true"></i></a>
              </div>
 
         </div>
@@ -116,8 +120,6 @@
             </div>
         </div>
 
-
-
         <div class="panel panel-info">
             <div class="panel-heading">Users</div>
             <div class="panel-body">
@@ -126,6 +128,15 @@
                 <hr>
                 <a href="#">New user</a><br>
                 <a href="#"> View all users</a>
+            </div>
+        </div>
+
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Questions and Suggestions</div>
+            <div class="panel-body">
+                <a href="#">View User questions</a><br>
+                <a href="#"> View users suggestions</a>
             </div>
         </div>
 

@@ -66,5 +66,30 @@ public class CourseField extends Model {
             getCourseById(id).delete();
         }
     }
+    public Map<Map<Long,String>,Boolean> fetchCourseFieldMap(){
+        List<CourseField> courseFieldList = find().orderBy("course_field_name").findList();
+        Map<Map<Long,String>,Boolean> courseFieldMap = new LinkedHashMap<Map<Long,String>,Boolean>();
+        for(int i = 0; i < courseFieldList.size(); i++){
+            Map<Long,String> innerCourseFieldMap  = new HashMap<Long,String>();
+            innerCourseFieldMap.put(courseFieldList.get(i).course_field_id,courseFieldList.get(i).course_field_name);
+            courseFieldMap.put(innerCourseFieldMap,false);
+        }
+        return courseFieldMap;
+    }
+
+    public Map<Map<Long,String>,Boolean> fetchCourseFieldMap(Long id){
+        List<CourseField> courseFieldList = find().orderBy("course_field_name").findList();
+        Map<Map<Long,String>,Boolean> courseFieldMap = new LinkedHashMap<Map<Long,String>,Boolean>();
+        for(int i = 0; i < courseFieldList.size(); i++){
+            Map<Long,String> innerCourseFieldMap  = new HashMap<Long,String>();
+            innerCourseFieldMap.put(courseFieldList.get(i).course_field_id,courseFieldList.get(i).course_field_name);
+            if(courseFieldList.get(i).course_field_id == id){
+                courseFieldMap.put(innerCourseFieldMap,true);
+            }else {
+                courseFieldMap.put(innerCourseFieldMap,false);
+            }
+        }
+        return courseFieldMap;
+    }
 
 }

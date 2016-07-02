@@ -1,0 +1,76 @@
+@(course: Form[models.web.Course])(courseFieldMap: Map[Map[Long, String], Boolean])(courseLevelMap: Map[Map[Long, String], Boolean])
+@import helper._
+@import formfieldtemplates._
+@import java.util._
+@import models.web.Course
+@import models.web.CourseField
+@import models.web.CourseLevel
+
+@admin_main("New Course | Admin Panel"){
+
+<div class="row">
+    <h3>Upload excel file</h3>
+
+    <form action="@controllers.admincontrollers.routes.CourseActions.saveCourseExcelFile" method="post" name="courseformexcelfile">
+        <input type="file" class="btn btn-primary" name="courseexcelfilecontrol" id="courseexcelfilecontrol"/> | <a href="#" title="Download sample excel file"> <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+        Download Sample <i class="fa fa-download"></i></a> |
+    </form>
+
+    <h1>---OR---</h1>
+</div>
+
+<div class="row">
+    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourse(),
+    'id->"courseform",'name->"courseform", 'method->"post"){
+        <fieldset>
+            <legend>Add Courses One By One </legend>
+
+            @if(flash.containsKey("coursesavesuccess")){
+            <div class="alert alert-success">
+                @flash.get("coursesavesuccess")
+            </div>
+            }
+
+            <!--Used to differentiate new form or form editing-->
+            <input type="hidden"  value='@course("course_id").valueOr("")' name="course_id"/>
+
+            @text(course("course_name"),
+            label = "Course name",
+            placeholder = "Course name (e.g. Computer Science, Commerce etc..)",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.fieldselect(course("course_field_name"),
+            label = "Select course field",
+            optionMap=courseFieldMap,
+            default="Select course field",
+            includeStaticDefault=false,
+            divClass="col-sm-9")
+
+            @formfieldtemplates.fieldselect(course("course_level_name"),
+            label = "Select course level",
+            optionMap=courseLevelMap,
+            default="Select course level",
+            includeStaticDefault=false,
+            divClass="col-sm-9")
+
+            @formfieldtemplates.textarea(course("course_description"),
+            label="Course  description",
+            placeholder = "Type your course description here...... ",
+            rows="4",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.text_url(course("course_name"),
+            label = "Course blog link",
+            placeholder = "course link to our blog",
+            divClass="col-sm-9")
+
+        </fieldset>
+        <div class="row">
+        <p align="right"> <input  type="submit" class="btn btn-primary" value="Save" id="course-submit-btn"/></p>
+
+        </div>
+}
+
+    </div>
+
+}

@@ -65,4 +65,31 @@ public class CourseLevel extends Model {
         }
     }
 
+    /*Over load the methods, one for new retrival and another for error or editing*/
+    public Map<Map<Long,String>,Boolean> fetchCourseLevelMap(){
+        List<CourseLevel> courseLevelList = find().orderBy("course_level_name").findList();
+        Map<Map<Long,String>,Boolean> courseLevelMap = new LinkedHashMap<Map<Long,String>,Boolean>();
+        for(int i = 0; i < courseLevelList.size(); i++){
+            Map<Long,String> innerCourseLevelMap  = new HashMap<Long,String>();
+            innerCourseLevelMap.put(courseLevelList.get(i).course_level_id,courseLevelList.get(i).course_level_name);
+            courseLevelMap.put(innerCourseLevelMap,false);
+        }
+        return courseLevelMap;
+    }
+    public Map<Map<Long,String>,Boolean> fetchCourseLevelMap(Long id){
+        //id is the course level id
+        List<CourseLevel> courseLevelList = find().orderBy("course_level_name").findList();
+        Map<Map<Long,String>,Boolean> courseLevelMap = new LinkedHashMap<Map<Long,String>,Boolean>();
+        for(int i = 0; i < courseLevelList.size(); i++){
+            Map<Long,String> innerCourseLevelMap  = new HashMap<Long,String>();
+            innerCourseLevelMap.put(courseLevelList.get(i).course_level_id,courseLevelList.get(i).course_level_name);
+            if(courseLevelList.get(i).course_level_id == id){
+                courseLevelMap.put(innerCourseLevelMap,true);
+            }else {
+                courseLevelMap.put(innerCourseLevelMap,false);
+            }
+        }
+        return courseLevelMap;
+    }
+
 }

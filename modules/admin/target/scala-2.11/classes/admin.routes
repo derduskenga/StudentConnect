@@ -11,6 +11,7 @@ POST    /course/field/save       controllers.admincontrollers.CourseActions.save
 GET     /course/field/all           controllers.admincontrollers.CourseActions.fetchAllCourseFields()
 GET     /course/field/edit/:course_field_id       controllers.admincontrollers.CourseActions.editCourseField(course_field_id: Long)
 GET    /course/field/delete/:course_field_id      controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id: Long)
+
 #Course levels
 GET    /course/level/new       controllers.admincontrollers.CourseActions.newCourseLevel()
 POST    /course/level/save     controllers.admincontrollers.CourseActions.saveCourseLevel()
@@ -18,13 +19,20 @@ GET     /course/level/all       controllers.admincontrollers.CourseActions.fetch
 GET     /course/level/edit/:course_level_id    controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id: Long)
 GET     /course/level/delete/:course_level_id   controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id: Long)
 
+#Courses
+GET     /course/new     controllers.admincontrollers.CourseActions.newCourse()
+POST    /course/save     controllers.admincontrollers.CourseActions.saveCourse()
+POST    /course/excelfile/save  controllers.admincontrollers.CourseActions.saveCourseExcelFile()
+GET     /course/edit/:course_id     controllers.admincontrollers.CourseActions.editCourse(course_id: Long)
+GET     /course/delete/:course_id   controllers.admincontrollers.CourseActions.deleteCourse(course_id: Long)
+GET     /course/all     controllers.admincontrollers.CourseActions.fetchAllCourses()
 
+
+#Files
+
+GET     /course/file/upload     controllers.admincontrollers.CourseActions.UploadCourseSampleFile()
 
 #Mobile api routes
-
-
-
-
 
 
 

@@ -1,21 +1,63 @@
-2016-06-30 21:40:15,186 - [INFO] - from play in pool-4-thread-5 
+2016-07-02 13:26:18,060 - [INFO] - from play in pool-4-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-06-30 21:41:02,235 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-02 13:26:35,663 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-30 21:41:08,056 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-02 13:26:39,325 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-06-30 21:41:58,055 - [WARN] - from play in play-akka.actor.default-dispatcher-15 
+2016-07-02 13:29:28,397 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 13:29:28,544 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 13:30:34,322 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 13:30:34,538 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 13:38:27,666 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 13:38:27,897 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 13:47:42,361 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 13:47:42,487 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 13:52:10,801 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 13:52:10,990 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 13:54:03,483 - [WARN] - from play in play-akka.actor.default-dispatcher-71 
 You are using status code '400' with flashing, which should only be used with a redirect status!
 
-2016-06-30 21:51:28,406 - [ERROR] - from application in New I/O worker #3 
+2016-07-02 14:13:15,634 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 14:13:15,885 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 14:14:05,588 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-07-02 14:14:05,704 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-07-02 14:17:26,844 - [ERROR] - from application in New I/O worker #3 
 
 
-! @70hmmcjn0 - Internal server error, for (GET) [/course/level/all] ->
+! @70i930b0l - Internal server error, for (GET) [/course/new] ->
 
-play.PlayExceptions$CompilationException: Compilation error[value deleteLevelField is not a member of controllers.admincontrollers.ReverseCourseActions]
+play.PlayExceptions$CompilationException: Compilation error[value UploadCourseSampleFile is not a member of controllers.admincontrollers.ReverseCourseActions]
 	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
 	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
@@ -37,36 +79,9 @@ play.PlayExceptions$CompilationException: Compilation error[value deleteLevelFie
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
 
-2016-06-30 21:52:52,785 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-02 14:20:08,637 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-06-30 21:52:52,968 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2016-06-30 21:54:04,223 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
-
-2016-06-30 21:54:04,363 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2016-06-30 21:56:08,650 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
-
-2016-06-30 21:56:08,794 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2016-06-30 21:56:16,401 - [WARN] - from play in play-akka.actor.default-dispatcher-48 
-You are using status code '400' with flashing, which should only be used with a redirect status!
-
-2016-06-30 22:01:50,075 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
-
-2016-06-30 22:01:50,736 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2016-06-30 22:25:30,712 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
-
-2016-06-30 22:25:31,392 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-02 14:20:08,758 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

@@ -18,6 +18,12 @@ public class Question extends Model {
     public String question_body;
     @Temporal(TemporalType.TIMESTAMP)
     public Date question_date;
+    @Column(columnDefinition = "boolean default false ")
+    public boolean seen;
+    @Column(columnDefinition = "boolean default false ")
+    public boolean resolved;
+    @Column(columnDefinition = "TEXT")
+    public String admin_notes;
 
 
     @PrePersist

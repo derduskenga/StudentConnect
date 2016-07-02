@@ -4,6 +4,7 @@ import play.db.ebean.Model;
 
 import javax.persistence.*;
 import java.util.List;
+import play.data.validation.Constraints;
 
 /**
  * Created by derdus on 6/19/16.
@@ -13,6 +14,8 @@ import java.util.List;
 public class InstitutionCourse extends Model {
     @Id
     public Long institution_course_id;
+    @Constraints.Required(message = "Department name required")
+    public String course_department_name;
 
     //Entity Relationship
 
