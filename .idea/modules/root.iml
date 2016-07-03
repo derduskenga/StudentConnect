@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.11/resource_managed/main" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.11/resource_managed/test" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/resolution-cache" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/streams" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/web" />
@@ -142,7 +143,6 @@
     <orderEntry type="library" scope="TEST" name="SBT: commons-io:commons-io:2.4:jar" level="project" />
     <orderEntry type="library" name="SBT: commons-io:commons-io:2.3:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-collections:commons-collections:3.2.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: commons-codec:commons-codec:1.9:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:twirl-api_2.11:1.0.2:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play_2.11:2.3.3:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-ws_2.11:2.3.3:jar" level="project" />
@@ -182,5 +182,7 @@
     <orderEntry type="library" name="SBT: be.objectify:deadbolt-core_2.11:2.3.2:jar" level="project" />
     <orderEntry type="module" module-name="web" exported="" />
     <orderEntry type="module" module-name="common" exported="" />
+    <orderEntry type="library" name="SBT: commons-codec:commons-codec:1.10:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.poi:poi:3.14:jar" level="project" />
   </component>
 </module>

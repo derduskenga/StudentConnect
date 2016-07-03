@@ -1,6 +1,6 @@
 Common.appSettings
 
-name := """multi-domain-play-java"""
+name := """Student Connect"""
 
 lazy val common = (project in file("modules/common")).enablePlugins(PlayJava)
 
@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
   cache,
-  javaWs
+  javaWs,
+  "org.apache.poi" % "poi" % "3.14"
 )
 

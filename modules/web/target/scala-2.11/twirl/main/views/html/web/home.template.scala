@@ -166,7 +166,7 @@ Seq[Any](_display_(/*1.2*/main("Student Connect | Search All Institutions and Co
 }
               /*
                   -- GENERATED --
-                  DATE: Tue Jun 28 20:58:43 EAT 2016
+                  DATE: Sat Jul 02 23:40:21 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/web/app/views/web/home.scala.html
                   HASH: a8398e487ec4c43c9caf12d5974b4e31455a7d3c
                   MATRIX: 801->1|887->79|925->80|956->85|5420->4530|5459->4531

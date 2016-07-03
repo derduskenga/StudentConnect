@@ -9,15 +9,29 @@
 @admin_main("New Course | Admin Panel"){
 
 <div class="row">
-    <h3>Upload excel file</h3>
-
-    <form action="@controllers.admincontrollers.routes.CourseActions.saveCourseExcelFile" method="post" name="courseformexcelfile">
-        <input type="file" class="btn btn-primary" name="courseexcelfilecontrol" id="courseexcelfilecontrol"/> | <a href="#" title="Download sample excel file"> <i class="fa fa-file-excel-o" aria-hidden="true"></i>
-        Download Sample <i class="fa fa-download"></i></a> |
-    </form>
-
+    <h3>Upload excel file with courses - First download excel sample to learn how your data should look like</h3>
+    @if(flash.containsKey("fileerror")){
+    <div class="alert alert-danger">
+        @flash.get("fileerror")
+    </div>
+    }
+    @if(flash.containsKey("filesuccess")){
+    <div class="alert alert-success">
+        @flash.get("filesuccess")
+    </div>
+    }
+    <form action="@controllers.admincontrollers.routes.CourseActions.saveCourseExcelFile" method="post" name="courseformexcelfile" enctype="multipart/form-data">
+        <div>
+            <div class="col-sm-4"> <input type="file" name="courseexcelfilecontrol" id="courseexcelfilecontrol"/></div>
+            <div class="col-sm-2 form-group"> <input type="submit" name="courses-submit-btn" class="btn btn-primary" value="Upload"></div>
+        </div> Or
+        | <i class="fa fa-download"></i> <i class="fa fa-file-excel-o" aria-hidden="true"></i> <a href="#" title="Download sample excel file" class="download-sample-excel-file">
+        Download Sample </a> |
+    </form></div>
+<hr>
     <h1>---OR---</h1>
-</div>
+
+
 
 <div class="row">
     @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourse(),

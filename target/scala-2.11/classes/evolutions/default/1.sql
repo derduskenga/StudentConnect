@@ -93,6 +93,16 @@ create table examination_body (
   constraint pk_examination_body primary key (examination_body_id))
 ;
 
+create table excel_sample_file (
+  excel_sample_file_id      bigint not null,
+  excel_sample_file_size    bigint,
+  excel_sample_file_name    varchar(255) not null,
+  excel_sample_file_storage_path varchar(255) not null,
+  excel_sample_file_type    integer,
+  constraint ck_excel_sample_file_excel_sample_file_type check (excel_sample_file_type in (0,1)),
+  constraint pk_excel_sample_file primary key (excel_sample_file_id))
+;
+
 create table institution (
   institution_id            bigint not null,
   institution_name          varchar(255),
@@ -230,6 +240,8 @@ create sequence course_specialization_seq;
 
 create sequence examination_body_seq;
 
+create sequence excel_sample_file_seq;
+
 create sequence institution_seq;
 
 create sequence institution_category_seq;
@@ -317,6 +329,8 @@ drop table if exists course_specialization cascade;
 
 drop table if exists examination_body cascade;
 
+drop table if exists excel_sample_file cascade;
+
 drop table if exists institution cascade;
 
 drop table if exists institution_category cascade;
@@ -360,6 +374,8 @@ drop sequence if exists course_level_seq;
 drop sequence if exists course_specialization_seq;
 
 drop sequence if exists examination_body_seq;
+
+drop sequence if exists excel_sample_file_seq;
 
 drop sequence if exists institution_seq;
 

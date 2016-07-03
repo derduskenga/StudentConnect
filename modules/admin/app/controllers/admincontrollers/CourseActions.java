@@ -3,9 +3,8 @@ package controllers.admincontrollers;
 /**
  * Created by derdus on 6/17/16.
  */
-import models.web.CourseField;
-import models.web.CourseLevel;
-import models.web.Course;
+import models.web.*;
+import play.Play;
 import play.data.Form;
 import static play.data.Form.form;
 import views.html.admin.courseFieldFormView;
@@ -13,16 +12,24 @@ import views.html.admin.courseLevelFormView;
 import views.html.admin.courseFormView;
 import views.html.admin.all_course_fields;
 import views.html.admin.all_course_level;
+import views.html.admin.courseSampleFileFormView;
 import play.mvc.*;
 import play.Logger;
+
+import java.io.File;
+import java.nio.file.Files;
 import java.util.*;
 //model imports
 import models.web.CourseField;
+import models.web.utility.Utility;
+
+import static play.mvc.Http.MultipartFormData;
 
 public class CourseActions extends Controller{
     static Form<CourseField> courseFieldForm = form(CourseField.class);
     static Form<CourseLevel> courseLevelForm = form(CourseLevel.class);
     static Form<Course> courseForm = form(Course.class);
+    static Form<ExcelSampleFile> sampleFileForm = form(ExcelSampleFile.class);
 
     public static Result newCourseField(){
         //return ok(courseFieldFormView.render(courseFieldForm));
@@ -111,7 +118,7 @@ public class CourseActions extends Controller{
         String courseLevelSelected = courseFormDataMap.get("course_level_name");
         String courseFieldSelected = courseFormDataMap.get("course_field_name");
 
-        //build maps incase of error or editing
+        //build maps in case of error or editing
         Map<Map<Long,String>,Boolean> courseLevelMap = new CourseLevel().fetchCourseLevelMap(Long.valueOf(courseLevelSelected));
         Map<Map<Long,String>,Boolean> courseFieldMap = new CourseField().fetchCourseFieldMap(Long.valueOf(courseFieldSelected));
 
@@ -127,10 +134,102 @@ public class CourseActions extends Controller{
         flash("coursesavesuccess","Course has been saved successfully");
         return redirect(routes.CourseActions.newCourse());
     }
-    public static Result saveCourseExcelFile(){return TODO;}
+    public static Result saveCourseExcelFile(){
+        MultipartFormData body = request().body().asMultipartFormData();
+        MultipartFormData.FilePart  part = body.getFile("courseexcelfilecontrol");
+        if(part == null){
+           flash("fileerror","No file selected!");
+            return redirect(routes.CourseActions.newCourse());
+        }
+
+        File course_file = part.getFile();
+        if(!(part.getContentType().equalsIgnoreCase("application/vnd.ms-excel") || part.getContentType().equalsIgnoreCase("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"))){
+            flash("fileerror","Only Excel file allowed");
+            return redirect(routes.CourseActions.newCourse());
+        }
+        if(course_file.length() > Utility.FILE_UPLOAD_SIZE_LIMIT){
+            flash("fileerror","Please attach a file not exceeding 25MB");
+            return redirect(routes.CourseActions.newCourse());
+        }
+        boolean file_response = new ExcelSampleFile().readFile(course_file);
+        if(file_response){flash("filesuccess","Courses were extracted successfully");}else{flash("fileerror","We could not serve your request");}
+        return redirect(routes.CourseActions.newCourse());
+    }
     public static Result editCourse(Long id){return  TODO;}
     public static Result deleteCourse(Long id){return  TODO;}
     public static Result fetchAllCourses(){return  TODO;}
+    public static Result downloadSampleCourseFile(){
+        String file_path = new ExcelSampleFile().newCourseExcelFile();
+        if(file_path == null){
+            flash("fileerror","Server error. We could not serve your request");
+            return redirect(routes.CourseActions.newCourse());
+        }
+        Logger.info("File Path: " + file_path);
+        response().setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        response().setHeader("Content-disposition","attachment; filename=Sample file");
+        response().setHeader("Content-Length", String.valueOf(new File(file_path).length()));
+        try {
+            return ok(new File(file_path));
+        }catch (Exception e){
+            flash("fileerror","Server error. We could not serve your request");
+            return ok();
+        }
+    }
 
-    public static Result UploadCourseSampleFile(){return TODO;}
+
+    /*public static Result newCourseSampleFile(){
+        return ok(courseSampleFileFormView.render(sampleFileForm));
+    }*/
+
+   /* public static Result SaveCourseSampleFile(String file_type){
+        Form<ExcelSampleFile> excelSampleFileBoundForm = sampleFileForm.bindFromRequest();
+        if(excelSampleFileBoundForm.hasErrors()){
+            return badRequest(courseSampleFileFormView.render(sampleFileForm));
+        }
+        ExcelSampleFile excelSampleFile = excelSampleFileBoundForm.get();
+        MultipartFormData body = request().body().asMultipartFormData();
+        MultipartFormData.FilePart part = body.getFile("excel_sample_file_bytes");
+        Logger.info("File format " + part.getContentType().toString());
+        if(part != null){
+            File sample_file = part.getFile();
+            if(sample_file.length() > Utility.FILE_UPLOAD_SIZE_LIMIT){
+                flash("fileerror","Please attach a file not exceeding " + Utility.FILE_UPLOAD_SIZE_LIMIT + " MB");
+                return badRequest(courseSampleFileFormView.render(sampleFileForm));
+            }
+
+            if(!part.getContentType().equals("application/vnd.ms-excel")){
+                flash("fileerror","Only Excel files allowed");
+                return badRequest(courseSampleFileFormView.render(sampleFileForm));
+            }
+
+            try {
+               String uploadpath = Play.application().configuration().getString("samplefiles","/tmp/");
+                File destination = new File(uploadpath,sample_file.getName());
+                excelSampleFile.excel_sample_file_name = part.getFilename();
+                excelSampleFile.excel_sample_file_size = sample_file.length();
+                excelSampleFile.excel_sample_file_storage_path = destination.toPath().toString();
+                Files.move(sample_file.toPath(), destination.toPath());
+                //assign doc type
+                if(file_type.equalsIgnoreCase("course")){
+                    excelSampleFile.excel_sample_file_type = Utility.SampleFileType.COURSE;
+                }else {
+                    excelSampleFile.excel_sample_file_type = Utility.SampleFileType.INSTITUTION;
+                }
+                //Logger.info("Show: " + excelSampleFile.excel_sample_file_type.ordinal());
+                //delete anyoccurence of current file
+                excelSampleFile.deleteAllFilesByType(excelSampleFile.excel_sample_file_type);
+                //insert new one
+                excelSampleFile.save();
+                flash("fileuploadsuccess","File uploaded succssfully");
+                return redirect(routes.CourseActions.newCourseSampleFile());
+            }catch (Exception ex){
+                Logger.error("Error: " + ex.getMessage().toString());
+                flash("fileerror","Server Error. Please try again");
+                return badRequest(courseSampleFileFormView.render(sampleFileForm));
+            }
+
+        }
+        flash("fileerror","No file was selected");
+        return badRequest(courseSampleFileFormView.render(sampleFileForm));
+    }*/
 }

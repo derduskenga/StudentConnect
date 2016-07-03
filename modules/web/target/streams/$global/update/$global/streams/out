@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.myweb#web_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66dd7848[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52105442[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -1202,6 +1202,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.poi#poi;3.14 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.poi#poi;3.14 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.poi#poi;3.14[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.poi#poi;3.14[0m
+[0m[[0mdebug[0m] [0m	found org.apache.poi#poi;3.14 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving commons-codec#commons-codec;1.10 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-codec#commons-codec;1.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: commons-codec#commons-codec;1.10[0m
+[0m[[0mdebug[0m] [0m	found commons-codec#commons-codec;1.10 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->compile][0m
@@ -1267,10 +1294,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.webjars#bootswatch-amelia;3.2.0-1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#bootswatch-amelia;3.2.0-1 {compile=[default(compile)]}[0m
@@ -1987,6 +2018,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->compile][0m
@@ -2052,10 +2091,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -2768,6 +2811,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->compile][0m
@@ -2833,10 +2884,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -3262,8 +3317,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [runtime->runtime(*)][0m
@@ -3271,8 +3327,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)][0m
@@ -3363,8 +3419,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpmime;4.3.1->org.apache.httpcomponents#httpclient;4.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving net.sourceforge.htmlunit#htmlunit-core-js;2.13 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.htmlunit#htmlunit-core-js;2.13 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -3587,8 +3644,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpmime;4.3.1->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpmime;4.3.1->org.apache.httpcomponents#httpclient;4.3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->xerces#xercesImpl;2.11.0 [runtime->runtime(*)][0m
@@ -4392,6 +4449,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->compile][0m
@@ -4457,10 +4522,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -5175,6 +5244,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->compile][0m
@@ -5240,10 +5317,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -5958,6 +6039,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.0.2 [compile->compile][0m
@@ -6023,10 +6112,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-io#commons-io;2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -6192,8 +6285,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)][0m
@@ -6234,8 +6328,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpmime;4.3.1->org.apache.httpcomponents#httpclient;4.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->xerces#xercesImpl;2.11.0 [compile->master(compile)][0m
@@ -6449,8 +6544,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->compile][0m
@@ -6488,8 +6583,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpmime;4.3.1->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpmime;4.3.1->org.apache.httpcomponents#httpclient;4.3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->xerces#xercesImpl;2.11.0 [runtime->runtime(*)][0m
@@ -7048,6 +7143,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ebean_2.11;2.3.3!play-java-ebean_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] be.objectify#deadbolt-java_2.11;2.3.2!deadbolt-java_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.3!commons-io.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.poi#poi;3.14!poi.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#bootswatch-amelia;3.2.0-1!bootswatch-amelia.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
@@ -7109,6 +7205,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2!avaje-ebeanorm-agent.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final!hibernate-jpa-2.0-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] be.objectify#deadbolt-core_2.11;2.3.2!deadbolt-core_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.11;2.3.3!play-test_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2-core_2.11;2.3.12!specs2-core_2.11.jar[0m
@@ -7178,7 +7275,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2508ms :: artifacts dl 60ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3744ms :: artifacts dl 129ms[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#web_2.11;1.0-SNAPSHOT compile produced in /home/derdus/studentconnect/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#web_2.11;1.0-SNAPSHOT runtime produced in /home/derdus/studentconnect/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#web_2.11;1.0-SNAPSHOT test produced in /home/derdus/studentconnect/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-test.xml[0m
@@ -7192,5 +7289,5 @@
 [0m[[0mdebug[0m] [0m	report for com.myweb#web_2.11;1.0-SNAPSHOT docs produced in /home/derdus/studentconnect/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#web_2.11;1.0-SNAPSHOT pom produced in /home/derdus/studentconnect/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#web_2.11;1.0-SNAPSHOT scala-tool produced in /home/derdus/studentconnect/modules/web/target/resolution-cache/reports/com.myweb-web_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2508ms resolve - 60ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3744ms resolve - 129ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

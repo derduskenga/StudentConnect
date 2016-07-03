@@ -4,7 +4,7 @@
 		module="admin_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160702132536"
+		publication="20160703112838"
 	>
 		<description>
 		admin
@@ -55,6 +55,7 @@
 		<dependency org="be.objectify" name="deadbolt-java_2.11" rev="2.3.2" conf="compile->default(compile)"/>
 		<dependency org="commons-io" name="commons-io" rev="2.3" conf="compile->default(compile)"/>
 		<dependency org="commons-codec" name="commons-codec" rev="1.6" conf="compile->default(compile)"/>
+		<dependency org="org.apache.poi" name="poi" rev="3.14" conf="compile->default(compile)"/>
 		<dependency org="org.webjars" name="bootswatch-cerulean" rev="3.2.0-1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:c3bfc63036da3286dddf1ac6487c3062253b7802
-// @DATE:Sat Jul 02 14:19:47 EAT 2016
+// @HASH:89274632ea09482d3f37853bf74d6cb2d994fa6d
+// @DATE:Sun Jul 03 12:48:51 EAT 2016
 package admin
 
 import play.core._
@@ -152,17 +152,17 @@ controllers.admincontrollers.CourseActions.fetchAllCourses(),
 HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "fetchAllCourses", Nil,"GET", """""", Routes.prefix + """course/all"""))
         
 
-// @LINE:33
-private[this] lazy val controllers_admincontrollers_CourseActions_UploadCourseSampleFile17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/file/upload"))))
-private[this] lazy val controllers_admincontrollers_CourseActions_UploadCourseSampleFile17_invoker = createInvoker(
-controllers.admincontrollers.CourseActions.UploadCourseSampleFile(),
-HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "UploadCourseSampleFile", Nil,"GET", """""", Routes.prefix + """course/file/upload"""))
+// @LINE:32
+private[this] lazy val controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/file/download"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.downloadSampleCourseFile(),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Nil,"GET", """Files""", Routes.prefix + """course/file/download"""))
         
 
-// @LINE:42
+// @LINE:45
 lazy val common_Routes18 = Include(common.Routes)
         
-def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/new""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/save""","""controllers.admincontrollers.CourseActions.saveCourseLevel()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseLevels()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/edit/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/delete/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/new""","""controllers.admincontrollers.CourseActions.newCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/save""","""controllers.admincontrollers.CourseActions.saveCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/excelfile/save""","""controllers.admincontrollers.CourseActions.saveCourseExcelFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/edit/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/delete/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/all""","""controllers.admincontrollers.CourseActions.fetchAllCourses()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/file/upload""","""controllers.admincontrollers.CourseActions.UploadCourseSampleFile()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/new""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/save""","""controllers.admincontrollers.CourseActions.saveCourseLevel()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseLevels()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/edit/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/delete/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/new""","""controllers.admincontrollers.CourseActions.newCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/save""","""controllers.admincontrollers.CourseActions.saveCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/excelfile/save""","""controllers.admincontrollers.CourseActions.saveCourseExcelFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/edit/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/delete/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/all""","""controllers.admincontrollers.CourseActions.fetchAllCourses()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/file/download""","""controllers.admincontrollers.CourseActions.downloadSampleCourseFile()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -306,15 +306,15 @@ case controllers_admincontrollers_CourseActions_fetchAllCourses16_route(params) 
 }
         
 
-// @LINE:33
-case controllers_admincontrollers_CourseActions_UploadCourseSampleFile17_route(params) => {
+// @LINE:32
+case controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_route(params) => {
    call { 
-        controllers_admincontrollers_CourseActions_UploadCourseSampleFile17_invoker.call(controllers.admincontrollers.CourseActions.UploadCourseSampleFile())
+        controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_invoker.call(controllers.admincontrollers.CourseActions.downloadSampleCourseFile())
    }
 }
         
 
-// @LINE:42
+// @LINE:45
 case common_Routes18(handler) => handler
         
 }

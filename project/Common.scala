@@ -46,7 +46,8 @@ object Common {
 		javaEbean,
 		"be.objectify" %% "deadbolt-java" % "2.3.2",
 		"commons-io" % "commons-io" % "2.3",
-		"commons-codec" % "commons-codec" % "1.6"
+		"commons-codec" % "commons-codec" % "1.6",
+		"org.apache.poi" % "poi" % "3.14"
 		// Add here more common dependencies:
 		// jdbc,
 		// anorm,

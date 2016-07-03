@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/common/conf/common.routes
 // @HASH:8e2702944896a93aa335fcd091a7ae12ecf3df6b
-// @DATE:Tue Jun 28 20:58:34 EAT 2016
+// @DATE:Sat Jul 02 23:40:16 EAT 2016
 
 import common.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:c3bfc63036da3286dddf1ac6487c3062253b7802
-// @DATE:Sat Jul 02 14:19:47 EAT 2016
+// @HASH:89274632ea09482d3f37853bf74d6cb2d994fa6d
+// @DATE:Sun Jul 03 12:48:51 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:33
+// @LINE:32
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -35,7 +35,7 @@ import Router.queryString
 // @LINE:6
 package controllers.admincontrollers {
 
-// @LINE:33
+// @LINE:32
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -73,13 +73,6 @@ def saveCourseExcelFile(): Call = {
 def editCourseLevel(course_level_id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/level/edit/" + implicitly[PathBindable[Long]].unbind("course_level_id", course_level_id))
-}
-                        
-
-// @LINE:33
-def UploadCourseSampleFile(): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "course/file/upload")
 }
                         
 
@@ -174,6 +167,13 @@ def fetchAllCourses(): Call = {
 }
                         
 
+// @LINE:32
+def downloadSampleCourseFile(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/file/download")
+}
+                        
+
 }
                           
 
@@ -194,7 +194,7 @@ def index(): Call = {
                   
 
 
-// @LINE:33
+// @LINE:32
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -215,7 +215,7 @@ def index(): Call = {
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:33
+// @LINE:32
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -263,17 +263,6 @@ def editCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function(course_level_id) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/edit/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_level_id", course_level_id)})
-      }
-   """
-)
-                        
-
-// @LINE:33
-def UploadCourseSampleFile : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.admincontrollers.CourseActions.UploadCourseSampleFile",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/file/upload"})
       }
    """
 )
@@ -422,6 +411,17 @@ def fetchAllCourses : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:32
+def downloadSampleCourseFile : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.downloadSampleCourseFile",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/file/download"})
+      }
+   """
+)
+                        
+
 }
               
 
@@ -446,7 +446,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:33
+// @LINE:32
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -467,7 +467,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.admincontrollers.ref {
 
 
-// @LINE:33
+// @LINE:32
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -502,12 +502,6 @@ def saveCourseExcelFile(): play.api.mvc.HandlerRef[_] = new play.api.mvc.Handler
 // @LINE:19
 def editCourseLevel(course_level_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "editCourseLevel", Seq(classOf[Long]), "GET", """""", _prefix + """course/level/edit/$course_level_id<[^/]+>""")
-)
-                      
-
-// @LINE:33
-def UploadCourseSampleFile(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.admincontrollers.CourseActions.UploadCourseSampleFile(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "UploadCourseSampleFile", Seq(), "GET", """""", _prefix + """course/file/upload""")
 )
                       
 
@@ -587,6 +581,12 @@ def saveCourseField(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:28
 def fetchAllCourses(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.fetchAllCourses(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "fetchAllCourses", Seq(), "GET", """""", _prefix + """course/all""")
+)
+                      
+
+// @LINE:32
+def downloadSampleCourseFile(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.downloadSampleCourseFile(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Seq(), "GET", """Files""", _prefix + """course/file/download""")
 )
                       
 

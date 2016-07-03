@@ -1,5 +1,6 @@
 package models.web;
 
+import models.web.utility.Utility;
 import play.db.ebean.Model;
 
 import javax.persistence.*;
@@ -18,7 +19,7 @@ public class Course extends Model {
     @Constraints.Required(message = "Course description required")
     @Column(columnDefinition = "TEXT")
     public String course_description;
-    public String course_blog_url;
+    public String course_blog_url = Utility.COURSE_BLOG_URL;
 
     //Other details
 

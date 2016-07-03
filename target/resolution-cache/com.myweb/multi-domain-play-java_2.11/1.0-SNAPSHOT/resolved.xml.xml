@@ -4,7 +4,7 @@
 		module="multi-domain-play-java_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160702132541"
+		publication="20160702233908"
 	>
 		<description>
 		multi-domain-play-java
@@ -52,6 +52,7 @@
 		<dependency org="com.typesafe.play" name="play-java-ebean_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.3" conf="compile->default(compile)"/>
+		<dependency org="org.apache.poi" name="poi" rev="3.14" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.trace" name="trace-play-2.3.3_2.11" rev="0.1.6" conf="echo-trace-compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

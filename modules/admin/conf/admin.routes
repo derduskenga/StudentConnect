@@ -29,8 +29,11 @@ GET     /course/all     controllers.admincontrollers.CourseActions.fetchAllCours
 
 
 #Files
+GET    /course/file/download       controllers.admincontrollers.CourseActions.downloadSampleCourseFile()
+#POST     /course/file/upload     controllers.admincontrollers.CourseActions.SaveCourseSampleFile(file_type: String)
+#GET    /course/file/new        controllers.admincontrollers.CourseActions.newCourseSampleFile()
 
-GET     /course/file/upload     controllers.admincontrollers.CourseActions.UploadCourseSampleFile()
+
 
 #Mobile api routes
 
