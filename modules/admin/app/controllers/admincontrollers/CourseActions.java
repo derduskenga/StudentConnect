@@ -13,6 +13,7 @@ import views.html.admin.courseFormView;
 import views.html.admin.all_course_fields;
 import views.html.admin.all_course_level;
 import views.html.admin.courseSampleFileFormView;
+import views.html.admin.all_courses;
 import play.mvc.*;
 import play.Logger;
 
@@ -157,7 +158,9 @@ public class CourseActions extends Controller{
     }
     public static Result editCourse(Long id){return  TODO;}
     public static Result deleteCourse(Long id){return  TODO;}
-    public static Result fetchAllCourses(){return  TODO;}
+    public static Result fetchAllCourses(){
+        return ok(all_courses.render(new Course().fetchAllCourses()));
+    }
     public static Result downloadSampleCourseFile(){
         String file_path = new ExcelSampleFile().newCourseExcelFile();
         if(file_path == null){

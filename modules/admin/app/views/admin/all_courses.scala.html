@@ -1,0 +1,45 @@
+@import models.web.Course
+@(courseList: List[Course])
+@admin_main("New Course | Admin Panel"){
+    @if(courseList.isEmpty){
+        <div class="alert alert-info">
+            No courses were found
+        </div>
+    }else{
+            <table id="example" class="display" cellspacing="0" width="100%">
+                <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Level</th>
+                    <th>Field/Cateory</th>
+                    <th>Edit </th>
+                    <th>Delete</th>
+                    <th>View Details</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Level</th>
+                    <th>Field/Cateory</th>
+                    <th>Edit </th>
+                    <th>Delete</th>
+                    <th>View Details</th>
+                </tr>
+                </tfoot>
+                <tbody>
+                @for(course <- courseList){
+                        <tr>
+                            <td>@course.course_name</td>
+                            <td>@course.courseLevel.course_level_name</td>
+                            <td>@course.courseField.course_field_name</td>
+                            <td><a href="#" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit"></i></a></td>
+                            <td><a href="#" title="Delete" class=""><i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></a></td>
+                            <td><a href="#" title="Edit"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                        </tr>
+                }
+
+                </tbody>
+            </table>
+    }
+}
