@@ -1,5 +1,6 @@
 package models.web;
 
+import play.Logger;
 import play.db.ebean.Model;
 
 import javax.persistence.*;
@@ -61,10 +62,21 @@ public class CourseField extends Model {
         return find().all();
     }
 
-    public void deleteCourseField(Long id){
+    public boolean deleteCourseField(Long id){
         if(getCourseById(id) != null){
-            getCourseById(id).delete();
+            try {
+                getCourseById(id).delete();
+                return true;
+            }catch (PersistenceException pe){
+                Logger.error("Error:" + pe.getMessage().toString());
+                return false;
+            }catch (Exception ex){
+                Logger.error("Error:" + ex.getMessage().toString());
+                return false;
+            }
+
         }
+        return false;
     }
     public Map<Map<Long,String>,Boolean> fetchCourseFieldMap(){
         List<CourseField> courseFieldList = find().orderBy("course_field_name").findList();

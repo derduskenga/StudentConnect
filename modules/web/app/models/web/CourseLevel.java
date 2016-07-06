@@ -1,5 +1,6 @@
 package models.web;
 
+import play.Logger;
 import play.db.ebean.Model;
 
 import javax.persistence.*;
@@ -59,12 +60,22 @@ public class CourseLevel extends Model {
     public List<CourseLevel> fetchAllCourseLevel(){
         return find().all();
     }
-    public void deleteCourseLevel(Long id){
-        if(getCourseLevelById(id) != null){
-            getCourseLevelById(id).delete();
-        }
-    }
 
+    public boolean deleteCourseLevel(Long id){
+        if(getCourseLevelById(id) != null){
+            try{
+                getCourseLevelById(id).delete();
+                return false;
+            }catch (PersistenceException pe){
+                Logger.error("Error:" + pe.getMessage().toString());
+                return  false;
+            }catch (Exception ex){
+                Logger.error("Error:" + ex.getMessage().toString());
+                return false;
+            }
+        }
+        return false;
+    }
     /*Over load the methods, one for new retrival and another for error or editing*/
     public Map<Map<Long,String>,Boolean> fetchCourseLevelMap(){
         List<CourseLevel> courseLevelList = find().orderBy("course_level_name").findList();

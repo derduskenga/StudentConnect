@@ -1,87 +1,122 @@
-2016-07-04 01:29:43,212 - [INFO] - from play in pool-4-thread-1 
+2016-07-06 09:49:35,263 - [INFO] - from play in pool-4-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-07-04 01:31:39,636 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-06 09:54:23,487 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-07-04 01:31:42,567 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-06 09:54:26,261 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-07-04 01:52:43,314 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-06 09:58:35,617 - [ERROR] - from play in play-akka.actor.default-dispatcher-43 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: ERROR executing DML bindLog[] error[ERROR: update or delete on table "course_level" violates foreign key constraint "fk_course_courselevel_3" on table "course"\n   Detail: Key (course_level_id)=(1) is still referenced from table "course".]
+
+2016-07-06 09:58:35,693 - [ERROR] - from application in play-akka.actor.default-dispatcher-43 
+
+
+! @70jan7oh1 - Internal server error, for (GET) [/course/level/delete/1] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: ERROR executing DML bindLog[] error[ERROR: update or delete on table "course_level" violates foreign key constraint "fk_course_courselevel_3" on table "course"\n   Detail: Key (course_level_id)=(1) is still referenced from table "course".]]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.3.jar:2.3.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: javax.persistence.PersistenceException: ERROR executing DML bindLog[] error[ERROR: update or delete on table "course_level" violates foreign key constraint "fk_course_courselevel_3" on table "course"\n   Detail: Key (course_level_id)=(1) is still referenced from table "course".]
+	at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:97) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.delete(DmlBeanPersister.java:48) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.persist.DefaultPersistExecute.executeDeleteBean(DefaultPersistExecute.java:99) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.PersistRequestBean.executeNow(PersistRequestBean.java:456) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.PersistRequestBean.executeOrQueue(PersistRequestBean.java:478) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.persist.DefaultPersister.delete(DefaultPersister.java:592) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.persist.DefaultPersister.delete(DefaultPersister.java:396) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.delete(DefaultServer.java:1867) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.delete(DefaultServer.java:1857) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebean.Ebean.delete(Ebean.java:596) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at play.db.ebean.Model.delete(Model.java:171) ~[play-java-ebean_2.11-2.3.3.jar:2.3.3]
+	at models.web.CourseLevel.deleteCourseLevel(CourseLevel.java:64) ~[classes/:na]
+	at controllers.admincontrollers.CourseActions.deleteCourseLevel(CourseActions.java:105) ~[classes/:na]
+	at admin.Routes$$anonfun$routes$1$$anonfun$applyOrElse$11$$anonfun$apply$11.apply(routes_routing.scala:256) ~[classes/:na]
+	at admin.Routes$$anonfun$routes$1$$anonfun$applyOrElse$11$$anonfun$apply$11.apply(routes_routing.scala:256) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.3.jar:2.3.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.3.jar:2.3.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: update or delete on table "course_level" violates foreign key constraint "fk_course_courselevel_3" on table "course"
+  Detail: Key (course_level_id)=(1) is still referenced from table "course".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2161) ~[postgresql-9.3-1101.jdbc41.jar:na]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1890) ~[postgresql-9.3-1101.jdbc41.jar:na]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255) ~[postgresql-9.3-1101.jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559) ~[postgresql-9.3-1101.jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417) ~[postgresql-9.3-1101.jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:363) ~[postgresql-9.3-1101.jdbc41.jar:na]
+	at com.jolbox.bonecp.PreparedStatementHandle.executeUpdate(PreparedStatementHandle.java:205) ~[bonecp.jar:na]
+	at com.avaje.ebeaninternal.server.type.DataBind.executeUpdate(DataBind.java:55) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.persist.dml.DeleteHandler.execute(DeleteHandler.java:53) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:86) ~[avaje-ebeanorm-3.3.4.jar:na]
+	... 50 common frames omitted
+
+2016-07-06 10:19:02,028 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-07-04 01:52:43,577 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-06 10:19:02,418 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-07-04 01:54:05,896 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-06 10:19:48,958 - [ERROR] - from application in play-akka.actor.default-dispatcher-25 
+Error:ERROR executing DML bindLog[] error[ERROR: update or delete on table "course_level" violates foreign key constraint "fk_course_courselevel_3" on table "course"\n   Detail: Key (course_level_id)=(1) is still referenced from table "course".]
+
+2016-07-06 10:20:45,509 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-07-04 01:54:06,136 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-06 10:20:45,673 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-07-04 02:08:35,360 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+2016-07-06 10:20:45,694 - [ERROR] - from application in play-akka.actor.default-dispatcher-56 
+Error:ERROR executing DML bindLog[] error[ERROR: update or delete on table "course_level" violates foreign key constraint "fk_course_courselevel_3" on table "course"\n   Detail: Key (course_level_id)=(1) is still referenced from table "course".]
 
-2016-07-04 02:08:36,142 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2016-07-04 02:34:04,072 - [ERROR] - from application in New I/O worker #3 
-
-
-! @70ik2km5g - Internal server error, for (GET) [/course/all] ->
-
-play.PlayExceptions$CompilationException: Compilation error[Expected '}' but found 'EOF']
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2016-07-04 02:34:50,131 - [ERROR] - from application in New I/O worker #3 
-
-
-! @70ik2ncbb - Internal server error, for (GET) [/course/all] ->
-
-play.PlayExceptions$CompilationException: Compilation error[illegal start of simple expression]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.3.jar:2.3.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.3.jar:2.3.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2016-07-04 02:35:10,041 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
-
-2016-07-04 02:35:10,237 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
+2016-07-06 10:21:33,600 - [ERROR] - from application in play-akka.actor.default-dispatcher-61 
+Error:ERROR executing DML bindLog[] error[ERROR: update or delete on table "course_field" violates foreign key constraint "fk_course_coursefield_4" on table "course"\n   Detail: Key (course_field_id)=(2) is still referenced from table "course".]
 

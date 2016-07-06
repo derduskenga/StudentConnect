@@ -65,8 +65,12 @@ public class CourseActions extends Controller{
     }
 
     public static Result deleteCourseField(Long id){
-        new CourseField().deleteCourseField(id);
-        flash("coursefielddeleted","Course Field has been deleted");
+        boolean res = new CourseField().deleteCourseField(id);
+        if(res){
+            flash("coursefielddeleted","Course Field has been deleted");
+        }else {
+            flash("coursefielddeleteerror","You cannot delete a course field that is already attached to a course!");
+        }
         return redirect(routes.CourseActions.fetchAllCourseFields());
     }
 
@@ -102,8 +106,13 @@ public class CourseActions extends Controller{
     }
 
     public static Result deleteCourseLevel(Long id){
-        new CourseLevel().deleteCourseLevel(id);
-        flash("deletecourselevelsuccess","Course level was deleted successifully");
+        boolean res = new CourseLevel().deleteCourseLevel(id);
+        if(res){
+            flash("deletecourselevelsuccess","Course level was deleted successifully");
+        }else {
+            flash("deletecourselevelerror","You cannot delete a course level that is already in use by a course");
+        }
+
         return redirect(routes.CourseActions.fetchAllCourseLevels());
     }
 
