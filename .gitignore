@@ -17,4 +17,5 @@ modules/admin/target
 # Play
 logs
 RUNNING_PID
+.idea
 
