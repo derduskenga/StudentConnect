@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:89274632ea09482d3f37853bf74d6cb2d994fa6d
-// @DATE:Sun Jul 03 12:48:51 EAT 2016
+// @HASH:93db101e4c332c35ed19727a80f0830a176fdad6
+// @DATE:Thu Jul 07 17:15:59 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +15,11 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:33
 // @LINE:32
+// @LINE:31
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -35,7 +39,11 @@ import Router.queryString
 // @LINE:6
 package controllers.admincontrollers {
 
+// @LINE:33
 // @LINE:32
+// @LINE:31
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -59,6 +67,13 @@ class ReverseCourseActions {
 def deleteCourseLevel(course_level_id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/level/delete/" + implicitly[PathBindable[Long]].unbind("course_level_id", course_level_id))
+}
+                        
+
+// @LINE:29
+def viewCourseDetails(course_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/view/" + implicitly[PathBindable[Long]].unbind("course_id", course_id))
 }
                         
 
@@ -104,6 +119,20 @@ def fetchAllCourseLevels(): Call = {
 }
                         
 
+// @LINE:31
+def courseNewJobPlacement(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/job/new")
+}
+                        
+
+// @LINE:33
+def saveCourseJobPlacemen(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/job/saved/")
+}
+                        
+
 // @LINE:26
 def editCourse(course_id:Long): Call = {
    import ReverseRouteContext.empty
@@ -115,6 +144,13 @@ def editCourse(course_id:Long): Call = {
 def editCourseField(course_field_id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/field/edit/" + implicitly[PathBindable[Long]].unbind("course_field_id", course_field_id))
+}
+                        
+
+// @LINE:32
+def saveCourseJobPlacement(course_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "course/job/save/" + implicitly[PathBindable[Long]].unbind("course_id", course_id))
 }
                         
 
@@ -167,7 +203,7 @@ def fetchAllCourses(): Call = {
 }
                         
 
-// @LINE:32
+// @LINE:30
 def downloadSampleCourseFile(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/file/download")
@@ -194,7 +230,11 @@ def index(): Call = {
                   
 
 
+// @LINE:33
 // @LINE:32
+// @LINE:31
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -215,7 +255,11 @@ def index(): Call = {
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:33
 // @LINE:32
+// @LINE:31
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -241,6 +285,17 @@ def deleteCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function(course_level_id) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/level/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_level_id", course_level_id)})
+      }
+   """
+)
+                        
+
+// @LINE:29
+def viewCourseDetails : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.viewCourseDetails",
+   """
+      function(course_id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/view/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_id", course_id)})
       }
    """
 )
@@ -312,6 +367,28 @@ def fetchAllCourseLevels : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:31
+def courseNewJobPlacement : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.courseNewJobPlacement",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/job/new"})
+      }
+   """
+)
+                        
+
+// @LINE:33
+def saveCourseJobPlacemen : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.saveCourseJobPlacemen",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/job/saved/"})
+      }
+   """
+)
+                        
+
 // @LINE:26
 def editCourse : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.editCourse",
@@ -329,6 +406,17 @@ def editCourseField : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function(course_field_id) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/field/edit/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_field_id", course_field_id)})
+      }
+   """
+)
+                        
+
+// @LINE:32
+def saveCourseJobPlacement : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.saveCourseJobPlacement",
+   """
+      function(course_id) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "course/job/save/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_id", course_id)})
       }
    """
 )
@@ -411,7 +499,7 @@ def fetchAllCourses : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:32
+// @LINE:30
 def downloadSampleCourseFile : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.downloadSampleCourseFile",
    """
@@ -446,7 +534,11 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:33
 // @LINE:32
+// @LINE:31
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -467,7 +559,11 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.admincontrollers.ref {
 
 
+// @LINE:33
 // @LINE:32
+// @LINE:31
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -490,6 +586,12 @@ class ReverseCourseActions {
 // @LINE:20
 def deleteCourseLevel(course_level_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "deleteCourseLevel", Seq(classOf[Long]), "GET", """""", _prefix + """course/level/delete/$course_level_id<[^/]+>""")
+)
+                      
+
+// @LINE:29
+def viewCourseDetails(course_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.viewCourseDetails(course_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "viewCourseDetails", Seq(classOf[Long]), "GET", """""", _prefix + """course/view/$course_id<[^/]+>""")
 )
                       
 
@@ -529,6 +631,18 @@ def fetchAllCourseLevels(): play.api.mvc.HandlerRef[_] = new play.api.mvc.Handle
 )
                       
 
+// @LINE:31
+def courseNewJobPlacement(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.courseNewJobPlacement(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "courseNewJobPlacement", Seq(), "GET", """""", _prefix + """course/job/new""")
+)
+                      
+
+// @LINE:33
+def saveCourseJobPlacemen(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.saveCourseJobPlacemen(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "saveCourseJobPlacemen", Seq(), "GET", """""", _prefix + """course/job/saved/""")
+)
+                      
+
 // @LINE:26
 def editCourse(course_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.editCourse(course_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "editCourse", Seq(classOf[Long]), "GET", """""", _prefix + """course/edit/$course_id<[^/]+>""")
@@ -538,6 +652,12 @@ def editCourse(course_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.Ha
 // @LINE:12
 def editCourseField(course_field_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.editCourseField(course_field_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "editCourseField", Seq(classOf[Long]), "GET", """""", _prefix + """course/field/edit/$course_field_id<[^/]+>""")
+)
+                      
+
+// @LINE:32
+def saveCourseJobPlacement(course_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "saveCourseJobPlacement", Seq(classOf[Long]), "POST", """""", _prefix + """course/job/save/$course_id<[^/]+>""")
 )
                       
 
@@ -584,9 +704,9 @@ def fetchAllCourses(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:32
+// @LINE:30
 def downloadSampleCourseFile(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.admincontrollers.CourseActions.downloadSampleCourseFile(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Seq(), "GET", """Files""", _prefix + """course/file/download""")
+   controllers.admincontrollers.CourseActions.downloadSampleCourseFile(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Seq(), "GET", """""", _prefix + """course/file/download""")
 )
                       
 

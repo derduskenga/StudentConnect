@@ -1,0 +1,61 @@
+@(jobPlacementForm: Form[models.web.JobPlacement])(courseMap : Map[Map[Long,String],Boolean])
+@import models.web.JobPlacement
+@import models.web.Course
+@import models.web.utility.Utility
+@import helper._
+@import formfieldtemplates._
+@admin_main("Add job placements | Admin Panel"){
+
+        <!--append added course here-->
+        <h4>Job titles will be added here</h4>
+        <div id="job-title-error"></div>
+        <div id="select-course-id" class="hidden"></div>
+        <div id="job-tags" class="well"></div>
+        <div id="job-title-btn-append-div"></div>
+        @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseJobPlacemen(),
+        'id->"jobplacementform",'name->"jobplacementform", 'method->"post"){
+            <fieldset>
+                <legend>Add job placements to courses: </legend>
+                <!--Used to differentiate new form or form editing-->
+                <input type="hidden"  value="@jobPlacementForm("job_placement_id").valueOr("")" name="job_placement_id"/>
+
+
+                @formfieldtemplates.fieldselect(jobPlacementForm("course_name"),
+                label = "Select course",
+                optionMap=courseMap,
+                default="Select course",
+                includeStaticDefault=false,
+                fieldcontrolattr = "required",
+                divClass="col-sm-9")
+
+                @text(jobPlacementForm("job_placement_name"),
+                label = "Job title",
+                placeholder = "Job placement name (e.g. Accountant, Software engineer, nurse etc..)",
+                fieldcontrolattr = "required",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.text_url(jobPlacementForm("job_placement_blog_url"),
+                label = "Job blog link",
+                placeholder = "Job link to our blog use http://blog.ourdomain.com if you're not sure",
+                fieldcontrolattr = "required",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.textarea(jobPlacementForm("job_placement_description"),
+                label="Job description",
+                fieldcontrolattr = "required",
+                placeholder = "Type your job description here...... ",
+                rows="4",
+                divClass="col-sm-9")
+
+            </fieldset>
+            <p align="right"> Use <u>Add</u> button to quickly attach job title then save them at once using the <u>Save all job titles </u> </p>
+            <hr>
+            <p align="right">
+                 <button type="submit" name="submit-job-titles" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> Add job title</button>
+            </p>
+            <!--<p align="right">
+               <a href="#" id="add-job-placement" align="right" class="btn btn-primary" title="Add job title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a>
+           </p> -->
+
+        }
+}

@@ -3,16 +3,24 @@ package controllers.admincontrollers;
 /**
  * Created by derdus on 6/17/16.
  */
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.web.*;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import play.Play;
 import play.data.Form;
 import static play.data.Form.form;
+
+import play.libs.Json;
 import views.html.admin.courseFieldFormView;
 import views.html.admin.courseLevelFormView;
 import views.html.admin.courseFormView;
 import views.html.admin.all_course_fields;
 import views.html.admin.all_course_level;
+import views.html.admin.manageCourse;
 import views.html.admin.courseSampleFileFormView;
+import views.html.admin.addJobPlacementFormView;
 import views.html.admin.all_courses;
 import play.mvc.*;
 import play.Logger;
@@ -25,13 +33,13 @@ import models.web.CourseField;
 import models.web.utility.Utility;
 
 import static play.mvc.Http.MultipartFormData;
-
+import org.json.simple.*;
 public class CourseActions extends Controller{
     static Form<CourseField> courseFieldForm = form(CourseField.class);
     static Form<CourseLevel> courseLevelForm = form(CourseLevel.class);
     static Form<Course> courseForm = form(Course.class);
     static Form<ExcelSampleFile> sampleFileForm = form(ExcelSampleFile.class);
-
+    static Form<JobPlacement> jobPlacementForm = form(JobPlacement.class);
     public static Result newCourseField(){
         //return ok(courseFieldFormView.render(courseFieldForm));
         return ok(courseFieldFormView.render(courseFieldForm));
@@ -69,7 +77,7 @@ public class CourseActions extends Controller{
         if(res){
             flash("coursefielddeleted","Course Field has been deleted");
         }else {
-            flash("coursefielddeleteerror","You cannot delete a course field that is already attached to a course!");
+            flash("coursefielddeleteerror","You cannot delete a course field that is already attached to a course. Please consult system admin.");
         }
         return redirect(routes.CourseActions.fetchAllCourseFields());
     }
@@ -110,7 +118,7 @@ public class CourseActions extends Controller{
         if(res){
             flash("deletecourselevelsuccess","Course level was deleted successifully");
         }else {
-            flash("deletecourselevelerror","You cannot delete a course level that is already in use by a course");
+            flash("deletecourselevelerror","You cannot delete a course level that is already in use by a course. Please consult system admin.");
         }
 
         return redirect(routes.CourseActions.fetchAllCourseLevels());
@@ -165,10 +173,34 @@ public class CourseActions extends Controller{
         if(file_response){flash("filesuccess","Courses were extracted successfully");}else{flash("fileerror","We could not serve your request");}
         return redirect(routes.CourseActions.newCourse());
     }
-    public static Result editCourse(Long id){return  TODO;}
-    public static Result deleteCourse(Long id){return  TODO;}
+    public static Result editCourse(Long id){
+        Course course = new Course().getCourseById(id);
+        if(course == null){
+            return redirect(routes.CourseActions.fetchAllCourses());
+        }
+        //Create a form filled with course object
+        Form<Course> prefilledCourseForm = courseForm.fill(course);
+        return ok(courseFormView.render(prefilledCourseForm,new CourseField().fetchCourseFieldMap(course.courseField.course_field_id),new CourseLevel().fetchCourseLevelMap(course.courseLevel.course_level_id)));
+    }
+    public static Result deleteCourse(Long id){
+        boolean res = new Course().deleteCourse(id);
+        if (res){
+            flash("coursedeletesuccess","Course has been deleted successfully");
+        }else {
+            flash("coursedeleteerror","You cannot delete a course which is already attached to an institution. Please consult system admin.");
+        }
+        return redirect(routes.CourseActions.fetchAllCourses());
+    }
     public static Result fetchAllCourses(){
         return ok(all_courses.render(new Course().fetchAllCourses()));
+    }
+    public static Result viewCourseDetails(Long id){
+       Course course = new Course().getCourseById(id);
+        if(course == null){
+            flash("viewerror","Sorry! We could not serve your request");
+            return redirect(routes.CourseActions.fetchAllCourses());
+        }
+        return ok(manageCourse.render(course));
     }
     public static Result downloadSampleCourseFile(){
         String file_path = new ExcelSampleFile().newCourseExcelFile();
@@ -188,60 +220,48 @@ public class CourseActions extends Controller{
         }
     }
 
-
-    /*public static Result newCourseSampleFile(){
-        return ok(courseSampleFileFormView.render(sampleFileForm));
-    }*/
-
-   /* public static Result SaveCourseSampleFile(String file_type){
-        Form<ExcelSampleFile> excelSampleFileBoundForm = sampleFileForm.bindFromRequest();
-        if(excelSampleFileBoundForm.hasErrors()){
-            return badRequest(courseSampleFileFormView.render(sampleFileForm));
+    public static Result courseNewJobPlacement(){
+        return ok(addJobPlacementFormView.render(jobPlacementForm,new Course().coursesMap()));
+    }
+    public static Result saveCourseJobPlacement(Long course_id){
+        ObjectNode result = Json.newObject();
+        Course course = new Course().getCourseById(course_id);
+        if(course == null){
+            result.put("message", "There was an error. We could not serve your request");
+            //result.put("divclass","alert alert-danger");
+            result.put("success",0);
+            return ok(result);
         }
-        ExcelSampleFile excelSampleFile = excelSampleFileBoundForm.get();
-        MultipartFormData body = request().body().asMultipartFormData();
-        MultipartFormData.FilePart part = body.getFile("excel_sample_file_bytes");
-        Logger.info("File format " + part.getContentType().toString());
-        if(part != null){
-            File sample_file = part.getFile();
-            if(sample_file.length() > Utility.FILE_UPLOAD_SIZE_LIMIT){
-                flash("fileerror","Please attach a file not exceeding " + Utility.FILE_UPLOAD_SIZE_LIMIT + " MB");
-                return badRequest(courseSampleFileFormView.render(sampleFileForm));
+        final Map<String, String[]> values = request().body().asFormUrlEncoded();
+        String job_titles = values.get("courses")[0];
+        Logger.info(job_titles);
+        JsonNode node = Json.parse(job_titles);
+        if(node.isArray()){
+            Iterator<JsonNode> elements = node.elements();
+            while (elements.hasNext()){
+                JobPlacement jobPlacement = new JobPlacement();
+                JsonNode obj = elements.next();
+                //receive all data here like this.
+                Logger.info("Data:" + obj.get("title_url").asText());
+                jobPlacement.job_placement_name = obj.get("job_title").asText();
+                jobPlacement.job_placement_blog_url = obj.get("title_url").asText();
+                jobPlacement.job_placement_description = obj.get("description").asText();
+                jobPlacement.course = course;
+                jobPlacement.saveJobPlacement();
             }
 
-            if(!part.getContentType().equals("application/vnd.ms-excel")){
-                flash("fileerror","Only Excel files allowed");
-                return badRequest(courseSampleFileFormView.render(sampleFileForm));
-            }
-
-            try {
-               String uploadpath = Play.application().configuration().getString("samplefiles","/tmp/");
-                File destination = new File(uploadpath,sample_file.getName());
-                excelSampleFile.excel_sample_file_name = part.getFilename();
-                excelSampleFile.excel_sample_file_size = sample_file.length();
-                excelSampleFile.excel_sample_file_storage_path = destination.toPath().toString();
-                Files.move(sample_file.toPath(), destination.toPath());
-                //assign doc type
-                if(file_type.equalsIgnoreCase("course")){
-                    excelSampleFile.excel_sample_file_type = Utility.SampleFileType.COURSE;
-                }else {
-                    excelSampleFile.excel_sample_file_type = Utility.SampleFileType.INSTITUTION;
-                }
-                //Logger.info("Show: " + excelSampleFile.excel_sample_file_type.ordinal());
-                //delete anyoccurence of current file
-                excelSampleFile.deleteAllFilesByType(excelSampleFile.excel_sample_file_type);
-                //insert new one
-                excelSampleFile.save();
-                flash("fileuploadsuccess","File uploaded succssfully");
-                return redirect(routes.CourseActions.newCourseSampleFile());
-            }catch (Exception ex){
-                Logger.error("Error: " + ex.getMessage().toString());
-                flash("fileerror","Server Error. Please try again");
-                return badRequest(courseSampleFileFormView.render(sampleFileForm));
-            }
-
+            result.put("message", "You job titles were saved successfully.");
+            //result.put("divclass","alert alert-success");
+            result.put("success",1);
+            return ok(result);
         }
-        flash("fileerror","No file was selected");
-        return badRequest(courseSampleFileFormView.render(sampleFileForm));
-    }*/
+        result.put("message", "There was an error. We could not serve your request");
+        //result.put("divclass","alert alert-danger");
+        result.put("success",0);
+        return ok(result);
+    }
+    public static Result saveCourseJobPlacemen(){
+        return  TODO;
+    }
+
 }

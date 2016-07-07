@@ -6,6 +6,8 @@
             No courses were found
         </div>
     }else{
+            <a href="@controllers.admincontrollers.routes.CourseActions.newCourse()" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i>
+            Add Course Field</a>
             <table id="example" class="display" cellspacing="0" width="100%">
                 <thead>
                 <tr>
@@ -33,9 +35,9 @@
                             <td>@course.course_name</td>
                             <td>@course.courseLevel.course_level_name</td>
                             <td>@course.courseField.course_field_name</td>
-                            <td><a href="#" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit"></i></a></td>
-                            <td><a href="#" title="Delete" class=""><i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></a></td>
-                            <td><a href="#" title="Edit"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                            <td><a href="@controllers.admincontrollers.routes.CourseActions.editCourse(course.course_id)" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit"></i></a></td>
+                            <td><a href="@controllers.admincontrollers.routes.CourseActions.deleteCourse(course.course_id)" title="Delete" class="delete-course"><i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></a></td>
+                            <td><a href="@controllers.admincontrollers.routes.CourseActions.viewCourseDetails(course.course_id)" title="View course details"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                         </tr>
                 }
 

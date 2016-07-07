@@ -1,10 +1,15 @@
 package models.web;
 
 import models.web.utility.Utility;
+import play.Logger;
 import play.db.ebean.Model;
 
 import javax.persistence.*;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+
 import play.data.validation.Constraints;
 
 /**
@@ -61,11 +66,30 @@ public class Course extends Model {
         return find().all();
     }
 
-    public void deleteCourse(Long id){
+    public boolean deleteCourse(Long id){
         if(getCourseById(id) != null){
-            getCourseById(id).delete();
+            try {
+                getCourseById(id).delete();
+                return true;
+            }catch (PersistenceException pe){
+                Logger.error("Error: " + pe.getMessage().toString());
+                return false;
+            }catch (Exception ex){
+                Logger.error("Error:" + ex.getMessage().toString());
+                return false;
+            }
         }
+        return false;
     }
 
-
+    public Map<Map<Long,String>,Boolean> coursesMap(){
+        List<Course> courseList = find().orderBy("course_name").findList();
+        Map<Map<Long,String>,Boolean> courseMap = new LinkedHashMap<Map<Long,String>,Boolean>();
+        for(int i = 0; i < courseList.size(); i++){
+            Map<Long,String> innerCourseMap  = new HashMap<Long,String>();
+            innerCourseMap.put(courseList.get(i).course_id,courseList.get(i).course_name + "-" + courseList.get(i).courseLevel.course_level_name);
+            courseMap.put(innerCourseMap,false);
+        }
+        return courseMap;
+    }
 }

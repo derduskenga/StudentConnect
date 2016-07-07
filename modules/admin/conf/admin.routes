@@ -20,18 +20,17 @@ GET     /course/level/edit/:course_level_id    controllers.admincontrollers.Cour
 GET     /course/level/delete/:course_level_id   controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id: Long)
 
 #Courses
-GET     /course/new     controllers.admincontrollers.CourseActions.newCourse()
-POST    /course/save     controllers.admincontrollers.CourseActions.saveCourse()
-POST    /course/excelfile/save  controllers.admincontrollers.CourseActions.saveCourseExcelFile()
+GET     /course/new         controllers.admincontrollers.CourseActions.newCourse()
+POST    /course/save        controllers.admincontrollers.CourseActions.saveCourse()
+POST    /course/excelfile/save    controllers.admincontrollers.CourseActions.saveCourseExcelFile()
 GET     /course/edit/:course_id     controllers.admincontrollers.CourseActions.editCourse(course_id: Long)
 GET     /course/delete/:course_id   controllers.admincontrollers.CourseActions.deleteCourse(course_id: Long)
-GET     /course/all     controllers.admincontrollers.CourseActions.fetchAllCourses()
-
-
-#Files
+GET     /course/all          controllers.admincontrollers.CourseActions.fetchAllCourses()
+GET     /course/view/:course_id     controllers.admincontrollers.CourseActions.viewCourseDetails(course_id: Long)
 GET    /course/file/download       controllers.admincontrollers.CourseActions.downloadSampleCourseFile()
-#POST     /course/file/upload     controllers.admincontrollers.CourseActions.SaveCourseSampleFile(file_type: String)
-#GET    /course/file/new        controllers.admincontrollers.CourseActions.newCourseSampleFile()
+GET    /course/job/new             controllers.admincontrollers.CourseActions.courseNewJobPlacement()
+POST   /course/job/save/:course_id             controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id: Long)
+GET   /course/job/saved/            controllers.admincontrollers.CourseActions.saveCourseJobPlacemen()
 
 
 

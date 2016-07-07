@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:89274632ea09482d3f37853bf74d6cb2d994fa6d
-// @DATE:Sun Jul 03 12:48:51 EAT 2016
+// @HASH:93db101e4c332c35ed19727a80f0830a176fdad6
+// @DATE:Thu Jul 07 17:15:59 EAT 2016
 
 package controllers.admincontrollers;
 

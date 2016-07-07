@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:89274632ea09482d3f37853bf74d6cb2d994fa6d
-// @DATE:Sun Jul 03 12:48:51 EAT 2016
+// @HASH:93db101e4c332c35ed19727a80f0830a176fdad6
+// @DATE:Thu Jul 07 17:15:59 EAT 2016
 package admin
 
 import play.core._
@@ -152,17 +152,45 @@ controllers.admincontrollers.CourseActions.fetchAllCourses(),
 HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "fetchAllCourses", Nil,"GET", """""", Routes.prefix + """course/all"""))
         
 
-// @LINE:32
-private[this] lazy val controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/file/download"))))
-private[this] lazy val controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_invoker = createInvoker(
-controllers.admincontrollers.CourseActions.downloadSampleCourseFile(),
-HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Nil,"GET", """Files""", Routes.prefix + """course/file/download"""))
+// @LINE:29
+private[this] lazy val controllers_admincontrollers_CourseActions_viewCourseDetails17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/view/"),DynamicPart("course_id", """[^/]+""",true))))
+private[this] lazy val controllers_admincontrollers_CourseActions_viewCourseDetails17_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.viewCourseDetails(fakeValue[Long]),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "viewCourseDetails", Seq(classOf[Long]),"GET", """""", Routes.prefix + """course/view/$course_id<[^/]+>"""))
         
 
-// @LINE:45
-lazy val common_Routes18 = Include(common.Routes)
+// @LINE:30
+private[this] lazy val controllers_admincontrollers_CourseActions_downloadSampleCourseFile18_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/file/download"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_downloadSampleCourseFile18_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.downloadSampleCourseFile(),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Nil,"GET", """""", Routes.prefix + """course/file/download"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/new""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/save""","""controllers.admincontrollers.CourseActions.saveCourseLevel()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseLevels()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/edit/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/delete/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/new""","""controllers.admincontrollers.CourseActions.newCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/save""","""controllers.admincontrollers.CourseActions.saveCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/excelfile/save""","""controllers.admincontrollers.CourseActions.saveCourseExcelFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/edit/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/delete/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/all""","""controllers.admincontrollers.CourseActions.fetchAllCourses()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/file/download""","""controllers.admincontrollers.CourseActions.downloadSampleCourseFile()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:31
+private[this] lazy val controllers_admincontrollers_CourseActions_courseNewJobPlacement19_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/job/new"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_courseNewJobPlacement19_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.courseNewJobPlacement(),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "courseNewJobPlacement", Nil,"GET", """""", Routes.prefix + """course/job/new"""))
+        
+
+// @LINE:32
+private[this] lazy val controllers_admincontrollers_CourseActions_saveCourseJobPlacement20_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/job/save/"),DynamicPart("course_id", """[^/]+""",true))))
+private[this] lazy val controllers_admincontrollers_CourseActions_saveCourseJobPlacement20_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.saveCourseJobPlacement(fakeValue[Long]),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "saveCourseJobPlacement", Seq(classOf[Long]),"POST", """""", Routes.prefix + """course/job/save/$course_id<[^/]+>"""))
+        
+
+// @LINE:33
+private[this] lazy val controllers_admincontrollers_CourseActions_saveCourseJobPlacemen21_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/job/saved/"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_saveCourseJobPlacemen21_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.saveCourseJobPlacemen(),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "saveCourseJobPlacemen", Nil,"GET", """""", Routes.prefix + """course/job/saved/"""))
+        
+
+// @LINE:44
+lazy val common_Routes22 = Include(common.Routes)
+        
+def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/new""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/save""","""controllers.admincontrollers.CourseActions.saveCourseLevel()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseLevels()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/edit/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/delete/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/new""","""controllers.admincontrollers.CourseActions.newCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/save""","""controllers.admincontrollers.CourseActions.saveCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/excelfile/save""","""controllers.admincontrollers.CourseActions.saveCourseExcelFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/edit/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/delete/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/all""","""controllers.admincontrollers.CourseActions.fetchAllCourses()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/view/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.viewCourseDetails(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/file/download""","""controllers.admincontrollers.CourseActions.downloadSampleCourseFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/new""","""controllers.admincontrollers.CourseActions.courseNewJobPlacement()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/save/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/saved/""","""controllers.admincontrollers.CourseActions.saveCourseJobPlacemen()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -306,16 +334,48 @@ case controllers_admincontrollers_CourseActions_fetchAllCourses16_route(params) 
 }
         
 
-// @LINE:32
-case controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_route(params) => {
-   call { 
-        controllers_admincontrollers_CourseActions_downloadSampleCourseFile17_invoker.call(controllers.admincontrollers.CourseActions.downloadSampleCourseFile())
+// @LINE:29
+case controllers_admincontrollers_CourseActions_viewCourseDetails17_route(params) => {
+   call(params.fromPath[Long]("course_id", None)) { (course_id) =>
+        controllers_admincontrollers_CourseActions_viewCourseDetails17_invoker.call(controllers.admincontrollers.CourseActions.viewCourseDetails(course_id))
    }
 }
         
 
-// @LINE:45
-case common_Routes18(handler) => handler
+// @LINE:30
+case controllers_admincontrollers_CourseActions_downloadSampleCourseFile18_route(params) => {
+   call { 
+        controllers_admincontrollers_CourseActions_downloadSampleCourseFile18_invoker.call(controllers.admincontrollers.CourseActions.downloadSampleCourseFile())
+   }
+}
+        
+
+// @LINE:31
+case controllers_admincontrollers_CourseActions_courseNewJobPlacement19_route(params) => {
+   call { 
+        controllers_admincontrollers_CourseActions_courseNewJobPlacement19_invoker.call(controllers.admincontrollers.CourseActions.courseNewJobPlacement())
+   }
+}
+        
+
+// @LINE:32
+case controllers_admincontrollers_CourseActions_saveCourseJobPlacement20_route(params) => {
+   call(params.fromPath[Long]("course_id", None)) { (course_id) =>
+        controllers_admincontrollers_CourseActions_saveCourseJobPlacement20_invoker.call(controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id))
+   }
+}
+        
+
+// @LINE:33
+case controllers_admincontrollers_CourseActions_saveCourseJobPlacemen21_route(params) => {
+   call { 
+        controllers_admincontrollers_CourseActions_saveCourseJobPlacemen21_invoker.call(controllers.admincontrollers.CourseActions.saveCourseJobPlacemen())
+   }
+}
+        
+
+// @LINE:44
+case common_Routes22(handler) => handler
         
 }
 
