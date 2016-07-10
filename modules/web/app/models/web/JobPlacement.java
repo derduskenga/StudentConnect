@@ -1,12 +1,17 @@
 package models.web;
 
 import models.web.utility.Utility;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import play.Logger;
 import play.db.ebean.Model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import java.util.*;
+import com.google.gson.Gson;
 
 /**
  * Created by derdus on 6/17/16.
@@ -47,6 +52,19 @@ public class JobPlacement extends Model {
     }
     public JobPlacement getJobPlacementById(Long id){
         return find().byId(id);
+    }
+
+    public static String searchJobTitles(String query){
+        //List<JobPlacement> jobPlacementLis =
+       List<JobPlacement> jobPlacementList = find().where().like("lower(job_placement_name)","%" + query.toLowerCase() + "%").findList();
+       // List<JobPlacement> jobPlacementList = find().where().
+        String stringArray [] =  new String[jobPlacementList.size()];
+        //Logger.info("Size:" + jobPlacementList.size());
+        for(int i = 0; i<jobPlacementList.size(); i++) {
+            stringArray[i] = jobPlacementList.get(i).job_placement_name;
+        }
+        String jsonStr = new Gson().toJson(stringArray);
+        return jsonStr;
     }
 }
 

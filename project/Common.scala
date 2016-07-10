@@ -47,7 +47,8 @@ object Common {
 		"be.objectify" %% "deadbolt-java" % "2.3.2",
 		"commons-io" % "commons-io" % "2.3",
 		"commons-codec" % "commons-codec" % "1.6",
-		"org.apache.poi" % "poi" % "3.14"
+		"org.apache.poi" % "poi" % "3.14",
+		"com.google.code.gson" % "gson" % "2.2.2"
 		// Add here more common dependencies:
 		// jdbc,
 		// anorm,

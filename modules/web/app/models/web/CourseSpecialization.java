@@ -17,4 +17,18 @@ public class CourseSpecialization extends Model {
     public Specialization specialization;
     @ManyToOne
     public Course course;
+
+
+    public static Finder<Long, CourseSpecialization> find(){
+        return new Finder<Long, CourseSpecialization>(Long.class,CourseSpecialization.class);
+    }
+
+    public Long saveCourseSpecialization(){
+        if (this.course_specialization_id == null){
+            save();;
+            return course_specialization_id;
+        }
+        update();
+        return course_specialization_id;
+    }
 }

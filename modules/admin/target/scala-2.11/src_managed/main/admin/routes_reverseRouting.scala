@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:93db101e4c332c35ed19727a80f0830a176fdad6
-// @DATE:Thu Jul 07 17:15:59 EAT 2016
+// @HASH:75ee8a06eb11865227fde85e8fc22354617c5b1a
+// @DATE:Sun Jul 10 14:29:38 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,10 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:37
+// @LINE:36
+// @LINE:35
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -39,6 +43,10 @@ import Router.queryString
 // @LINE:6
 package controllers.admincontrollers {
 
+// @LINE:37
+// @LINE:36
+// @LINE:35
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -91,6 +99,20 @@ def editCourseLevel(course_level_id:Long): Call = {
 }
                         
 
+// @LINE:37
+def SearchCourseSpecialization(key:String): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/specialization/search/" + implicitly[PathBindable[String]].unbind("key", dynamicString(key)))
+}
+                        
+
+// @LINE:35
+def courseNewSpecialization(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/specialization/new")
+}
+                        
+
 // @LINE:23
 def newCourse(): Call = {
    import ReverseRouteContext.empty
@@ -123,6 +145,13 @@ def fetchAllCourseLevels(): Call = {
 def courseNewJobPlacement(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/job/new")
+}
+                        
+
+// @LINE:36
+def saveCourseSpecialization(course_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "course/specialization/save/" + implicitly[PathBindable[Long]].unbind("course_id", course_id))
 }
                         
 
@@ -210,6 +239,13 @@ def downloadSampleCourseFile(): Call = {
 }
                         
 
+// @LINE:34
+def searchJobTitlesByInput(key:String): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/job/search/" + implicitly[PathBindable[String]].unbind("key", dynamicString(key)))
+}
+                        
+
 }
                           
 
@@ -230,6 +266,10 @@ def index(): Call = {
                   
 
 
+// @LINE:37
+// @LINE:36
+// @LINE:35
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -255,6 +295,10 @@ def index(): Call = {
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:37
+// @LINE:36
+// @LINE:35
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -323,6 +367,28 @@ def editCourseLevel : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:37
+def SearchCourseSpecialization : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.SearchCourseSpecialization",
+   """
+      function(key) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/specialization/search/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("key", encodeURIComponent(key))})
+      }
+   """
+)
+                        
+
+// @LINE:35
+def courseNewSpecialization : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.courseNewSpecialization",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/specialization/new"})
+      }
+   """
+)
+                        
+
 // @LINE:23
 def newCourse : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.newCourse",
@@ -373,6 +439,17 @@ def courseNewJobPlacement : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/job/new"})
+      }
+   """
+)
+                        
+
+// @LINE:36
+def saveCourseSpecialization : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.saveCourseSpecialization",
+   """
+      function(course_id) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "course/specialization/save/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("course_id", course_id)})
       }
    """
 )
@@ -510,6 +587,17 @@ def downloadSampleCourseFile : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:34
+def searchJobTitlesByInput : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.searchJobTitlesByInput",
+   """
+      function(key) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/job/search/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("key", encodeURIComponent(key))})
+      }
+   """
+)
+                        
+
 }
               
 
@@ -534,6 +622,10 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:37
+// @LINE:36
+// @LINE:35
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -559,6 +651,10 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.admincontrollers.ref {
 
 
+// @LINE:37
+// @LINE:36
+// @LINE:35
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -607,6 +703,18 @@ def editCourseLevel(course_level_id:Long): play.api.mvc.HandlerRef[_] = new play
 )
                       
 
+// @LINE:37
+def SearchCourseSpecialization(key:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.SearchCourseSpecialization(key), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "SearchCourseSpecialization", Seq(classOf[String]), "GET", """""", _prefix + """course/specialization/search/$key<[^/]+>""")
+)
+                      
+
+// @LINE:35
+def courseNewSpecialization(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.courseNewSpecialization(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "courseNewSpecialization", Seq(), "GET", """""", _prefix + """course/specialization/new""")
+)
+                      
+
 // @LINE:23
 def newCourse(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.newCourse(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourse", Seq(), "GET", """Courses""", _prefix + """course/new""")
@@ -634,6 +742,12 @@ def fetchAllCourseLevels(): play.api.mvc.HandlerRef[_] = new play.api.mvc.Handle
 // @LINE:31
 def courseNewJobPlacement(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.courseNewJobPlacement(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "courseNewJobPlacement", Seq(), "GET", """""", _prefix + """course/job/new""")
+)
+                      
+
+// @LINE:36
+def saveCourseSpecialization(course_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.saveCourseSpecialization(course_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "saveCourseSpecialization", Seq(classOf[Long]), "POST", """""", _prefix + """course/specialization/save/$course_id<[^/]+>""")
 )
                       
 
@@ -707,6 +821,12 @@ def fetchAllCourses(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:30
 def downloadSampleCourseFile(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.downloadSampleCourseFile(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "downloadSampleCourseFile", Seq(), "GET", """""", _prefix + """course/file/download""")
+)
+                      
+
+// @LINE:34
+def searchJobTitlesByInput(key:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.searchJobTitlesByInput(key), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "searchJobTitlesByInput", Seq(classOf[String]), "GET", """""", _prefix + """course/job/search/$key<[^/]+>""")
 )
                       
 

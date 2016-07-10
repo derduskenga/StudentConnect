@@ -14,6 +14,7 @@ public class Utility {
     public static String INSTITUTION_EXCEL_SHEET_NAME = "Sample institution file";
     public static String COURSE_BLOG_URL = "http://blog.ourdomain.com";
     public static String JOB_PLACEMENT_BLOG_URL = "http://blog.ourdomain.com";
+    public static String COURSE_SPECIALIZATION_BLOG_URL = "http://blog.ourdomain.com";
 
     public enum SampleFileType {
         //ordinal- 0,1

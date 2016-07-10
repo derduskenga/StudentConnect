@@ -1,51 +1,21 @@
-2016-07-07 17:16:45,815 - [INFO] - from play in pool-4-thread-5 
+2016-07-10 16:02:30,524 - [INFO] - from play in pool-4-thread-6 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-07-07 17:17:05,643 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-10 16:02:40,259 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-07-07 17:17:07,570 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-10 16:02:41,954 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-07-07 17:17:49,653 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
-[{"job_title":"accountant ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":" Use Add button to quickly attach job title then save them at once using the Save all job titles "},{"job_title":"accountant ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":" Use Add button to quickly attach job title then save them at once using the Save all job titles "}]
-
-2016-07-07 17:17:49,699 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
-Data:http://admin.studentconnect.com:9000/course/job/new 
-
-2016-07-07 17:17:49,910 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
-Data:http://admin.studentconnect.com:9000/course/job/new 
-
-2016-07-07 17:31:28,314 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-10 16:23:40,651 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-07-07 17:31:28,515 - [INFO] - from play in play-internal-execution-context-1 
+2016-07-10 16:23:41,334 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-07-07 17:32:53,191 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
-[{"job_title":"accountant ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":" Use Add button to quickly attach job title then save them at once using the Save all job titles "},{"job_title":"accountant ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":" Use Add button to quickly attach job title then save them at once using the Save all job titles "}]
+2016-07-10 16:24:38,450 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
 
-2016-07-07 17:32:53,195 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
-Data:http://admin.studentconnect.com:9000/course/job/new 
-
-2016-07-07 17:32:53,322 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
-Data:http://admin.studentconnect.com:9000/course/job/new 
-
-2016-07-07 17:35:35,558 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
-[{"job_title":"Software engineer ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":" Use Add button to quickly attach job title then save them at once using the Save all job titles "}]
-
-2016-07-07 17:35:35,559 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
-Data:http://admin.studentconnect.com:9000/course/job/new 
-
-2016-07-07 17:38:45,664 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
-[{"job_title":"accountant ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":"$(\""}]
-
-2016-07-07 17:38:45,665 - [INFO] - from application in play-akka.actor.default-dispatcher-31 
-Data:http://admin.studentconnect.com:9000/course/job/new 
-
-2016-07-07 17:39:14,027 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-[{"job_title":"accountant ","title_url":"http://admin.studentconnect.com:9000/course/job/new ","description":"$(\""}]
-
-2016-07-07 17:39:14,027 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Data:http://admin.studentconnect.com:9000/course/job/new 
+2016-07-10 16:24:38,692 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
 

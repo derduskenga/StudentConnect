@@ -31,7 +31,10 @@ GET    /course/file/download       controllers.admincontrollers.CourseActions.do
 GET    /course/job/new             controllers.admincontrollers.CourseActions.courseNewJobPlacement()
 POST   /course/job/save/:course_id             controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id: Long)
 GET   /course/job/saved/            controllers.admincontrollers.CourseActions.saveCourseJobPlacemen()
-
+GET   /course/job/search/:key    controllers.admincontrollers.CourseActions.searchJobTitlesByInput(key: String)
+GET     /course/specialization/new  controllers.admincontrollers.CourseActions.courseNewSpecialization()
+POST    /course/specialization/save/:course_id     controllers.admincontrollers.CourseActions.saveCourseSpecialization(course_id: Long)
+GET     /course/specialization/search/:key          controllers.admincontrollers.CourseActions.SearchCourseSpecialization(key: String)
 
 
 #Mobile api routes

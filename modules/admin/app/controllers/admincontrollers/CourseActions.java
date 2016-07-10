@@ -21,6 +21,7 @@ import views.html.admin.all_course_level;
 import views.html.admin.manageCourse;
 import views.html.admin.courseSampleFileFormView;
 import views.html.admin.addJobPlacementFormView;
+import views.html.admin.addCourseSpecializationFormView;
 import views.html.admin.all_courses;
 import play.mvc.*;
 import play.Logger;
@@ -40,6 +41,7 @@ public class CourseActions extends Controller{
     static Form<Course> courseForm = form(Course.class);
     static Form<ExcelSampleFile> sampleFileForm = form(ExcelSampleFile.class);
     static Form<JobPlacement> jobPlacementForm = form(JobPlacement.class);
+    static Form<Specialization> courseSpecializationForm = form(Specialization.class);
     public static Result newCourseField(){
         //return ok(courseFieldFormView.render(courseFieldForm));
         return ok(courseFieldFormView.render(courseFieldForm));
@@ -233,8 +235,8 @@ public class CourseActions extends Controller{
             return ok(result);
         }
         final Map<String, String[]> values = request().body().asFormUrlEncoded();
-        String job_titles = values.get("courses")[0];
-        Logger.info(job_titles);
+        String job_titles = values.get("course_jobs")[0];
+        //Logger.info(job_titles);
         JsonNode node = Json.parse(job_titles);
         if(node.isArray()){
             Iterator<JsonNode> elements = node.elements();
@@ -242,7 +244,7 @@ public class CourseActions extends Controller{
                 JobPlacement jobPlacement = new JobPlacement();
                 JsonNode obj = elements.next();
                 //receive all data here like this.
-                Logger.info("Data:" + obj.get("title_url").asText());
+                //Logger.info("Data:" + obj.get("title_url").asText());
                 jobPlacement.job_placement_name = obj.get("job_title").asText();
                 jobPlacement.job_placement_blog_url = obj.get("title_url").asText();
                 jobPlacement.job_placement_description = obj.get("description").asText();
@@ -262,6 +264,53 @@ public class CourseActions extends Controller{
     }
     public static Result saveCourseJobPlacemen(){
         return  TODO;
+    }
+    public static Result searchJobTitlesByInput(String key){
+        return ok(Json.parse(JobPlacement.searchJobTitles(key)));
+    }
+    public static Result courseNewSpecialization(){
+        return ok(addCourseSpecializationFormView.render(courseSpecializationForm,new Course().coursesMap()));
+    }
+    public static Result saveCourseSpecialization(Long course_id){
+        Course course = new Course().getCourseById(course_id);
+        ObjectNode result = Json.newObject();
+        if (course == null){
+            result.put("message", "There was an error. We could not serve your request");
+            //result.put("divclass","alert alert-danger");
+            result.put("success",0);
+            return ok(result);
+        }
+        final Map<String, String[]> values = request().body().asFormUrlEncoded();
+        String course_specialization = values.get("specializations")[0];
+        JsonNode node = Json.parse(course_specialization);
+        if(node.isArray()){
+            Iterator<JsonNode> elements = node.elements();
+            while (elements.hasNext()){
+                JsonNode obj = elements.next();
+                Specialization specialization = new Specialization();
+                CourseSpecialization courseSpecialization = new CourseSpecialization();
+                /**/
+                specialization.specialization_name = obj.get("course_specialization").asText();
+                specialization.course_specialization_blog_url = obj.get("specialization_url").asText();
+                specialization.specialization_description = obj.get("specialization_description").asText();
+                /**/
+                Long specializationReturnId = specialization.saveSpecialization();
+                /**/
+                courseSpecialization.specialization = specialization.getSpecializationById(specializationReturnId);
+                courseSpecialization.course = course;
+                /**/
+                courseSpecialization.saveCourseSpecialization();
+            }
+            result.put("message", "Your specializations were saved successfully.");
+            result.put("success",1);
+            return ok(result);
+        }
+        result.put("message", "There was an error. We could not serve your request");
+        result.put("success",0);
+        return ok(result);
+    }
+    public static Result SearchCourseSpecialization(String key){
+        return ok(Json.parse(Specialization.searchCourseSpecializations(key)));
     }
 
 }

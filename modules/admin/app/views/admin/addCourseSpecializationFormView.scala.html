@@ -1,0 +1,58 @@
+@(specializationForm: Form[models.web.Specialization])(courseMap : Map[Map[Long,String],Boolean])
+@import models.web.Specialization
+@import models.web.Course
+@import models.web.utility.Utility
+@import helper._
+@import formfieldtemplates._
+@admin_main("Add course specialization | Admin Panel"){
+
+<!--append added course here-->
+<h4>Course specialization will be added here
+</h4>
+<div id="course-specialization-error"></div>
+<div id="select-course-id" class="hidden"></div>
+<div id="specialization-tags" class="well"></div>
+<div id="course-specialization-btn-append-div"></div>
+@helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseJobPlacemen(),
+'id->"coursespecializationform",'name->"coursespecializationform", 'method->"post"){
+<fieldset>
+    <legend>Add specialization to courses: </legend>
+    <!--Used to differentiate new form or form editing-->
+
+    @formfieldtemplates.fieldselect(specializationForm("course_name"),
+    label = "Select course",
+    optionMap=courseMap,
+    default="Select course",
+    includeStaticDefault=false,
+    fieldcontrolattr = "required",
+    divClass="col-sm-9")
+
+    @text(specializationForm("specialization_name"),
+    label = "Course specialization",
+    placeholder = "Course specialization name (e.g. Accounting, Networking, House keeping etc..)",
+    fieldcontrolattr = "required",
+    input_class = "tt-query",
+    divClass="col-sm-9")
+
+    @formfieldtemplates.text_url(specializationForm("course_specialization_blog_url"),
+    label = "Job blog link",
+    placeholder = "Specialization link to our blog use http://blog.ourdomain.com if you're not sure",
+    fieldcontrolattr = "required",
+    divClass="col-sm-9")
+
+    @formfieldtemplates.textarea(specializationForm("specialization_description"),
+    label="Specialization description",
+    fieldcontrolattr = "required",
+    placeholder = "Type your specialization description here...... ",
+    rows="4",
+    divClass="col-sm-9")
+
+    </fieldset>
+    <p align="right"> Use <u>Add</u> button to quickly attach course specialization then save them at once using the <u>Save all specialization tags </u> </p>
+    <hr>
+    <p align="right">
+        <button type="submit" name="submit-course-specialization" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> Add course specialization</button>
+    </p>
+
+    }
+}

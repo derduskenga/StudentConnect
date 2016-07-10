@@ -206,6 +206,7 @@ create table school_or_faculty (
 create table specialization (
   specialization_id         bigint not null,
   specialization_name       varchar(255),
+  course_specialization_blog_url varchar(255),
   specialization_description TEXT,
   constraint pk_specialization primary key (specialization_id))
 ;

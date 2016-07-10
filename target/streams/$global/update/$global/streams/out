@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.myweb#student-connect_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@260fce8d[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3eaab42d[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -1229,6 +1229,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.myweb#admin_2.11;1.0-SNAPSHOT ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.myweb#admin_2.11;1.0-SNAPSHOT {compile=[default(compile)]}[0m
@@ -1322,6 +1327,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.webjars#bootswatch-amelia;3.2.0-1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#bootswatch-amelia;3.2.0-1 {compile=[default(compile)]}[0m
@@ -1404,6 +1414,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.webjars#bootswatch-cerulean;3.2.0-1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#bootswatch-cerulean;3.2.0-1 {compile=[default(compile)]}[0m
@@ -2161,6 +2176,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -2246,6 +2266,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -2323,6 +2348,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -3076,6 +3106,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -3161,6 +3196,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -3238,6 +3278,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -4836,6 +4881,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -4921,6 +4971,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -4998,6 +5053,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -5753,6 +5813,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -5838,6 +5903,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -5915,6 +5985,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -6670,6 +6745,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -6755,6 +6835,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -6832,6 +6917,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -8582,6 +8672,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -8667,6 +8762,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -8744,6 +8844,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -9708,6 +9813,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.14->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#common_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.myweb#admin_2.11;1.0-SNAPSHOT [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
@@ -9793,6 +9903,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#web_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-amelia;3.2.0-1 [compile->compile][0m
@@ -9870,6 +9985,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->com.google.code.gson#gson;2.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#admin_2.11;1.0-SNAPSHOT->org.webjars#bootswatch-cerulean;3.2.0-1 [compile->compile][0m
@@ -10604,8 +10724,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.6 [echo-sigar->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.6 [echo-sigar->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.myweb#student-connect_2.11;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.6 [echo-sigar->master][0m
-[0m[[0mdebug[0m] [0mcircular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.modules#scala-xml_2.11;1.0.2->...[0m
-[0m[[0mdebug[0m] [0mcircular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-compiler;2.11.0->...[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
@@ -10776,7 +10894,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.15!log4j.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.6!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3800ms :: artifacts dl 101ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4263ms :: artifacts dl 200ms[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#student-connect_2.11;1.0-SNAPSHOT compile produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-student-connect_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#student-connect_2.11;1.0-SNAPSHOT runtime produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-student-connect_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#student-connect_2.11;1.0-SNAPSHOT test produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-student-connect_2.11-test.xml[0m
@@ -10794,5 +10912,5 @@
 [0m[[0mdebug[0m] [0m	report for com.myweb#student-connect_2.11;1.0-SNAPSHOT echo-trace-test produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-student-connect_2.11-echo-trace-test.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#student-connect_2.11;1.0-SNAPSHOT echo-weave produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-student-connect_2.11-echo-weave.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.myweb#student-connect_2.11;1.0-SNAPSHOT echo-sigar produced in /home/derdus/studentconnect/target/resolution-cache/reports/com.myweb-student-connect_2.11-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3800ms resolve - 101ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4263ms resolve - 200ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

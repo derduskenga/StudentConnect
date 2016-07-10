@@ -7,7 +7,8 @@
 @admin_main("Add job placements | Admin Panel"){
 
         <!--append added course here-->
-        <h4>Job titles will be added here</h4>
+        <h4>Job titles will be added here
+        </h4>
         <div id="job-title-error"></div>
         <div id="select-course-id" class="hidden"></div>
         <div id="job-tags" class="well"></div>
@@ -32,6 +33,7 @@
                 label = "Job title",
                 placeholder = "Job placement name (e.g. Accountant, Software engineer, nurse etc..)",
                 fieldcontrolattr = "required",
+                input_class = "typeahead tt-query",
                 divClass="col-sm-9")
 
                 @formfieldtemplates.text_url(jobPlacementForm("job_placement_blog_url"),

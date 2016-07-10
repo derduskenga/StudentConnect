@@ -4,7 +4,7 @@
 		module="admin_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160707171547"
+		publication="20160710140726"
 	>
 		<description>
 		admin
@@ -56,6 +56,7 @@
 		<dependency org="commons-io" name="commons-io" rev="2.3" conf="compile->default(compile)"/>
 		<dependency org="commons-codec" name="commons-codec" rev="1.6" conf="compile->default(compile)"/>
 		<dependency org="org.apache.poi" name="poi" rev="3.14" conf="compile->default(compile)"/>
+		<dependency org="com.google.code.gson" name="gson" rev="2.2.2" conf="compile->default(compile)"/>
 		<dependency org="org.webjars" name="bootswatch-cerulean" rev="3.2.0-1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

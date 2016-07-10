@@ -4,7 +4,7 @@
 		module="common_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160707171538"
+		publication="20160710140718"
 	>
 		<description>
 		common
@@ -54,5 +54,6 @@
 		<dependency org="commons-io" name="commons-io" rev="2.3" conf="compile->default(compile)"/>
 		<dependency org="commons-codec" name="commons-codec" rev="1.6" conf="compile->default(compile)"/>
 		<dependency org="org.apache.poi" name="poi" rev="3.14" conf="compile->default(compile)"/>
+		<dependency org="com.google.code.gson" name="gson" rev="2.2.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

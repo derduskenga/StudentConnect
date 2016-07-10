@@ -40,7 +40,7 @@ $(document).ready(function() {
         });            ///post to url and wait for feedback in json form
         var course_id = $('#select-course-id').text().trim();
         var titles = JSON.stringify(jsonArr);
-        $.post("/course/job/save/"+ course_id,{courses:titles}, function(data){
+        $.post("/course/job/save/"+ course_id,{course_jobs:titles}, function(data){
 
             if(data['success'] == 1){
                 $('#job-title-btn-append-div').html("");
