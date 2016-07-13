@@ -35,6 +35,8 @@ GET   /course/job/search/:key    controllers.admincontrollers.CourseActions.sear
 GET     /course/specialization/new  controllers.admincontrollers.CourseActions.courseNewSpecialization()
 POST    /course/specialization/save/:course_id     controllers.admincontrollers.CourseActions.saveCourseSpecialization(course_id: Long)
 GET     /course/specialization/search/:key          controllers.admincontrollers.CourseActions.SearchCourseSpecialization(key: String)
+GET     /course/certification/new                   controllers.admincontrollers.CourseActions.newCourseCertification()
+POST    /course/certification/save                  controllers.admincontrollers.CourseActions.saveCourseCertification()
 
 
 #Mobile api routes

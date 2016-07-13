@@ -1,10 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@(courseList: List[models.web.Course])(courseMap : Map[Map[Long,String],Boolean])
 
-</body>
-</html>
+@import formfieldtemplates._
+@import models.web.Course
+
+
+@admin_main("Add course Certification | Admin Panel"){
+    @if(courseList.isEmpty){
+        <div class="alert alert-info">
+            No courses were found.
+        </div>
+    }else{
+
+            @if(flash.containsKey("certificationsubmiterror")){
+            <div class="alert alert-danger">
+                @flash.get("certificationsubmiterror")
+            </div>
+            }
+
+                @if(flash.containsKey("certificationsubmitsuccess")){
+                <div class="alert alert-success">
+                    @flash.get("certificationsubmitsuccess")
+                </div>
+                }
+
+                <form onsubmit="return validateCertificationForm()" action="@controllers.admincontrollers.routes.CourseActions.saveCourseCertification()" method="post" name="addcertificationform" id="addcertificationform">
+                   <fieldset>
+                       <legend>Add course certifications</legend>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="course_name">Select Course</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="course_name" name="course_name" required>
+                                <option class="blank" value="">Select course</option>
+                                    @for((optionName, isSelected) <- courseMap) {
+                                        @if(!optionName.isEmpty){
+                                            @for((keys,values) <- optionName){
+                                                @if(!values.endsWith("Certification")){
+                                                    <option id="@keys" value="@keys" @if(isSelected){selected}>@values</option>
+                                                }
+                                            }
+                                        }
+                                    }
+                                </select>
+                                <span class="help-block"></span>
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+
+                        <!----another field----the dataTable form>--->
+
+                       <div class="form-group">
+                           <label class="col-sm-3 control-label" for="course_name">Add certification to the selecting course by check marking</label>
+                           <div class="col-sm-9">
+
+                               <table id="certification-courses-table">
+                                   <thead>
+                                       <tr>
+                                           <th>Course Name</th>
+                                           <th>Course Level</th>
+                                           <th>Course field</th>
+                                           <th>Select</th>
+                                       </tr>
+                                   </thead>
+                                   <tfoot>
+                                       <tr>
+                                           <th>Course Name</th>
+                                           <th>Course Level</th>
+                                           <th>Course field</th>
+                                           <th>Select</th>
+                                       </tr>
+                                   </tfoot>
+
+                                   <tbody>
+                                           @for(course <- courseList){
+                                               @if(course.courseLevel.course_level_name == "Certification"){
+                                                    <tr>
+                                                       <td>@course.course_name</td>
+                                                       <td>@course.courseLevel.course_level_name</td>
+                                                       <td>@course.courseField.course_field_name</td>
+                                                        <td><input type="checkbox" name="certification_courses" value="@course.course_id"></td>
+                                                    </tr>
+                                                }
+                                           }
+                                   </tbody>
+                               </table>
+
+                           </div>
+                       </div>
+                   </fieldset>
+                    <hr>
+                    <!--<p align="right"><input type="submit" class="btn btn-primary" value="" id="course-certification-submit-btn"></p>-->
+                    <p align="right"><button class="btn btn-primary" type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Your Selections</button></p>
+                </form>
+    }
+}

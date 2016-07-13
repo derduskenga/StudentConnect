@@ -22,6 +22,7 @@ import views.html.admin.manageCourse;
 import views.html.admin.courseSampleFileFormView;
 import views.html.admin.addJobPlacementFormView;
 import views.html.admin.addCourseSpecializationFormView;
+import views.html.admin.addCourseCertificationFormView;
 import views.html.admin.all_courses;
 import play.mvc.*;
 import play.Logger;
@@ -311,6 +312,37 @@ public class CourseActions extends Controller{
     }
     public static Result SearchCourseSpecialization(String key){
         return ok(Json.parse(Specialization.searchCourseSpecializations(key)));
+    }
+
+    public static Result newCourseCertification(){
+        return ok(addCourseCertificationFormView.render(new Course().fetchAllCourses(),new Course().coursesMap()));
+    }
+    public static Result saveCourseCertification(){
+        final Map<String, String[]> values = request().body().asFormUrlEncoded();
+        Long course_id = Long.parseLong(values.get("course_name")[0]);
+        Course mainCourse = new Course();
+        mainCourse = mainCourse.getCourseById(course_id);
+        if(mainCourse == null){
+            flash("certificationsubmiterror","Course name selected was not found!");
+            return redirect(routes.CourseActions.saveCourseCertification());
+        }
+        String [] certificationCourses = values.get("certification_courses");
+        if(certificationCourses.length == 0){
+            flash("certificationsubmiterror","You did not select any certification course!");
+            return redirect(routes.CourseActions.saveCourseCertification());
+        }
+        //Logger.info("String size is: " + certifocationCourses.length);
+        for (int i = 0; i< certificationCourses.length; i++){
+            CourseCertification courseCertification = new CourseCertification();
+            Logger.info("item:" + certificationCourses[i]);
+            Course minorCourse = new Course().getCourseById(Long.parseLong(certificationCourses[i]));
+
+            courseCertification.mainCourse = mainCourse;
+            courseCertification.certificationCourse = minorCourse;
+            courseCertification.saveCourseCertification();
+        }
+        flash("certificationsubmitsuccess","Course certifications have been added");
+        return redirect(routes.CourseActions.newCourseCertification());
     }
 
 }

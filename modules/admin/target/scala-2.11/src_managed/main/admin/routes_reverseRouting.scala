@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:75ee8a06eb11865227fde85e8fc22354617c5b1a
-// @DATE:Sun Jul 10 14:29:38 EAT 2016
+// @HASH:1f97892432e81562f9f1bda3af072a83ff6ed220
+// @DATE:Sun Jul 10 22:44:56 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,8 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:37
 // @LINE:36
 // @LINE:35
@@ -43,6 +45,8 @@ import Router.queryString
 // @LINE:6
 package controllers.admincontrollers {
 
+// @LINE:39
+// @LINE:38
 // @LINE:37
 // @LINE:36
 // @LINE:35
@@ -106,6 +110,13 @@ def SearchCourseSpecialization(key:String): Call = {
 }
                         
 
+// @LINE:38
+def newCourseCertification(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "course/certification/new")
+}
+                        
+
 // @LINE:35
 def courseNewSpecialization(): Call = {
    import ReverseRouteContext.empty
@@ -117,6 +128,13 @@ def courseNewSpecialization(): Call = {
 def newCourse(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "course/new")
+}
+                        
+
+// @LINE:39
+def saveCourseCertification(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "course/certification/save")
 }
                         
 
@@ -266,6 +284,8 @@ def index(): Call = {
                   
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:37
 // @LINE:36
 // @LINE:35
@@ -295,6 +315,8 @@ def index(): Call = {
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:39
+// @LINE:38
 // @LINE:37
 // @LINE:36
 // @LINE:35
@@ -378,6 +400,17 @@ def SearchCourseSpecialization : JavascriptReverseRoute = JavascriptReverseRoute
 )
                         
 
+// @LINE:38
+def newCourseCertification : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.newCourseCertification",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/certification/new"})
+      }
+   """
+)
+                        
+
 // @LINE:35
 def courseNewSpecialization : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.CourseActions.courseNewSpecialization",
@@ -395,6 +428,17 @@ def newCourse : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "course/new"})
+      }
+   """
+)
+                        
+
+// @LINE:39
+def saveCourseCertification : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.CourseActions.saveCourseCertification",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "course/certification/save"})
       }
    """
 )
@@ -622,6 +666,8 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:37
 // @LINE:36
 // @LINE:35
@@ -651,6 +697,8 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.admincontrollers.ref {
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:37
 // @LINE:36
 // @LINE:35
@@ -709,6 +757,12 @@ def SearchCourseSpecialization(key:String): play.api.mvc.HandlerRef[_] = new pla
 )
                       
 
+// @LINE:38
+def newCourseCertification(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.newCourseCertification(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourseCertification", Seq(), "GET", """""", _prefix + """course/certification/new""")
+)
+                      
+
 // @LINE:35
 def courseNewSpecialization(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.courseNewSpecialization(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "courseNewSpecialization", Seq(), "GET", """""", _prefix + """course/specialization/new""")
@@ -718,6 +772,12 @@ def courseNewSpecialization(): play.api.mvc.HandlerRef[_] = new play.api.mvc.Han
 // @LINE:23
 def newCourse(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.CourseActions.newCourse(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "newCourse", Seq(), "GET", """Courses""", _prefix + """course/new""")
+)
+                      
+
+// @LINE:39
+def saveCourseCertification(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.CourseActions.saveCourseCertification(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.CourseActions", "saveCourseCertification", Seq(), "POST", """""", _prefix + """course/certification/save""")
 )
                       
 

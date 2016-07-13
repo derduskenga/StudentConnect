@@ -49,6 +49,7 @@ create table course (
 
 create table course_certification (
   course_certification_id   bigint not null,
+  main_course_course_id     bigint,
   certification_course_course_id bigint,
   constraint pk_course_certification primary key (course_certification_id))
 ;
@@ -273,36 +274,38 @@ alter table course add constraint fk_course_courseLevel_3 foreign key (course_le
 create index ix_course_courseLevel_3 on course (course_level_course_level_id);
 alter table course add constraint fk_course_courseField_4 foreign key (course_field_course_field_id) references course_field (course_field_id);
 create index ix_course_courseField_4 on course (course_field_course_field_id);
-alter table course_certification add constraint fk_course_certification_certif_5 foreign key (certification_course_course_id) references course (course_id);
-create index ix_course_certification_certif_5 on course_certification (certification_course_course_id);
-alter table course_institution_mode_of_study add constraint fk_course_institution_mode_of__6 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
-create index ix_course_institution_mode_of__6 on course_institution_mode_of_study (institution_course_institution_course_id);
-alter table course_specialization add constraint fk_course_specialization_speci_7 foreign key (specialization_specialization_id) references specialization (specialization_id);
-create index ix_course_specialization_speci_7 on course_specialization (specialization_specialization_id);
-alter table course_specialization add constraint fk_course_specialization_cours_8 foreign key (course_course_id) references course (course_id);
-create index ix_course_specialization_cours_8 on course_specialization (course_course_id);
-alter table examination_body add constraint fk_examination_body_institutio_9 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
-create index ix_examination_body_institutio_9 on examination_body (institution_course_institution_course_id);
-alter table institution add constraint fk_institution_institutionCat_10 foreign key (institution_category_institution_category_id) references institution_category (institution_category_id);
-create index ix_institution_institutionCat_10 on institution (institution_category_institution_category_id);
-alter table institution add constraint fk_institution_county_11 foreign key (county_county_id) references county (county_id);
-create index ix_institution_county_11 on institution (county_county_id);
-alter table institution_course add constraint fk_institution_course_institu_12 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_institution_course_institu_12 on institution_course (institution_institution_id);
-alter table institution_course add constraint fk_institution_course_course_13 foreign key (course_course_id) references course (course_id);
-create index ix_institution_course_course_13 on institution_course (course_course_id);
-alter table institution_course add constraint fk_institution_course_schoolO_14 foreign key (school_or_faculty_school_id) references school_or_faculty (school_id);
-create index ix_institution_course_schoolO_14 on institution_course (school_or_faculty_school_id);
-alter table institution_partnership add constraint fk_institution_partnership_in_15 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_institution_partnership_in_15 on institution_partnership (institution_institution_id);
-alter table institution_partnership add constraint fk_institution_partnership_pa_16 foreign key (partner_partner_id) references partner (partner_id);
-create index ix_institution_partnership_pa_16 on institution_partnership (partner_partner_id);
-alter table job_placement add constraint fk_job_placement_course_17 foreign key (course_course_id) references course (course_id);
-create index ix_job_placement_course_17 on job_placement (course_course_id);
-alter table research_center add constraint fk_research_center_institutio_18 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_research_center_institutio_18 on research_center (institution_institution_id);
-alter table school_or_faculty add constraint fk_school_or_faculty_institut_19 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_school_or_faculty_institut_19 on school_or_faculty (institution_institution_id);
+alter table course_certification add constraint fk_course_certification_mainCo_5 foreign key (main_course_course_id) references course (course_id);
+create index ix_course_certification_mainCo_5 on course_certification (main_course_course_id);
+alter table course_certification add constraint fk_course_certification_certif_6 foreign key (certification_course_course_id) references course (course_id);
+create index ix_course_certification_certif_6 on course_certification (certification_course_course_id);
+alter table course_institution_mode_of_study add constraint fk_course_institution_mode_of__7 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
+create index ix_course_institution_mode_of__7 on course_institution_mode_of_study (institution_course_institution_course_id);
+alter table course_specialization add constraint fk_course_specialization_speci_8 foreign key (specialization_specialization_id) references specialization (specialization_id);
+create index ix_course_specialization_speci_8 on course_specialization (specialization_specialization_id);
+alter table course_specialization add constraint fk_course_specialization_cours_9 foreign key (course_course_id) references course (course_id);
+create index ix_course_specialization_cours_9 on course_specialization (course_course_id);
+alter table examination_body add constraint fk_examination_body_instituti_10 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
+create index ix_examination_body_instituti_10 on examination_body (institution_course_institution_course_id);
+alter table institution add constraint fk_institution_institutionCat_11 foreign key (institution_category_institution_category_id) references institution_category (institution_category_id);
+create index ix_institution_institutionCat_11 on institution (institution_category_institution_category_id);
+alter table institution add constraint fk_institution_county_12 foreign key (county_county_id) references county (county_id);
+create index ix_institution_county_12 on institution (county_county_id);
+alter table institution_course add constraint fk_institution_course_institu_13 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_institution_course_institu_13 on institution_course (institution_institution_id);
+alter table institution_course add constraint fk_institution_course_course_14 foreign key (course_course_id) references course (course_id);
+create index ix_institution_course_course_14 on institution_course (course_course_id);
+alter table institution_course add constraint fk_institution_course_schoolO_15 foreign key (school_or_faculty_school_id) references school_or_faculty (school_id);
+create index ix_institution_course_schoolO_15 on institution_course (school_or_faculty_school_id);
+alter table institution_partnership add constraint fk_institution_partnership_in_16 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_institution_partnership_in_16 on institution_partnership (institution_institution_id);
+alter table institution_partnership add constraint fk_institution_partnership_pa_17 foreign key (partner_partner_id) references partner (partner_id);
+create index ix_institution_partnership_pa_17 on institution_partnership (partner_partner_id);
+alter table job_placement add constraint fk_job_placement_course_18 foreign key (course_course_id) references course (course_id);
+create index ix_job_placement_course_18 on job_placement (course_course_id);
+alter table research_center add constraint fk_research_center_institutio_19 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_research_center_institutio_19 on research_center (institution_institution_id);
+alter table school_or_faculty add constraint fk_school_or_faculty_institut_20 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_school_or_faculty_institut_20 on school_or_faculty (institution_institution_id);
 
 
 

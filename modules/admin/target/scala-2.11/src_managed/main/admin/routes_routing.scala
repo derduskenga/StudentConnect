@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:75ee8a06eb11865227fde85e8fc22354617c5b1a
-// @DATE:Sun Jul 10 14:29:38 EAT 2016
+// @HASH:1f97892432e81562f9f1bda3af072a83ff6ed220
+// @DATE:Sun Jul 10 22:44:56 EAT 2016
 package admin
 
 import play.core._
@@ -215,10 +215,24 @@ controllers.admincontrollers.CourseActions.SearchCourseSpecialization(fakeValue[
 HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "SearchCourseSpecialization", Seq(classOf[String]),"GET", """""", Routes.prefix + """course/specialization/search/$key<[^/]+>"""))
         
 
-// @LINE:47
-lazy val common_Routes26 = Include(common.Routes)
+// @LINE:38
+private[this] lazy val controllers_admincontrollers_CourseActions_newCourseCertification26_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/certification/new"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_newCourseCertification26_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.newCourseCertification(),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "newCourseCertification", Nil,"GET", """""", Routes.prefix + """course/certification/new"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/new""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/save""","""controllers.admincontrollers.CourseActions.saveCourseLevel()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseLevels()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/edit/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/delete/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/new""","""controllers.admincontrollers.CourseActions.newCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/save""","""controllers.admincontrollers.CourseActions.saveCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/excelfile/save""","""controllers.admincontrollers.CourseActions.saveCourseExcelFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/edit/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/delete/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/all""","""controllers.admincontrollers.CourseActions.fetchAllCourses()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/view/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.viewCourseDetails(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/file/download""","""controllers.admincontrollers.CourseActions.downloadSampleCourseFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/new""","""controllers.admincontrollers.CourseActions.courseNewJobPlacement()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/save/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/saved/""","""controllers.admincontrollers.CourseActions.saveCourseJobPlacemen()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/search/$key<[^/]+>""","""controllers.admincontrollers.CourseActions.searchJobTitlesByInput(key:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/specialization/new""","""controllers.admincontrollers.CourseActions.courseNewSpecialization()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/specialization/save/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.saveCourseSpecialization(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/specialization/search/$key<[^/]+>""","""controllers.admincontrollers.CourseActions.SearchCourseSpecialization(key:String)"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:39
+private[this] lazy val controllers_admincontrollers_CourseActions_saveCourseCertification27_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("course/certification/save"))))
+private[this] lazy val controllers_admincontrollers_CourseActions_saveCourseCertification27_invoker = createInvoker(
+controllers.admincontrollers.CourseActions.saveCourseCertification(),
+HandlerDef(this.getClass.getClassLoader, "admin", "controllers.admincontrollers.CourseActions", "saveCourseCertification", Nil,"POST", """""", Routes.prefix + """course/certification/save"""))
+        
+
+// @LINE:49
+lazy val common_Routes28 = Include(common.Routes)
+        
+def documentation = List(("""GET""", prefix,"""controllers.admincontrollers.AdminActions.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/new""","""controllers.admincontrollers.CourseActions.newCourseField()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/save""","""controllers.admincontrollers.CourseActions.saveCourseField()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseFields()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/edit/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/field/delete/$course_field_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseField(course_field_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/new""","""controllers.admincontrollers.CourseActions.newCourseLevel()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/save""","""controllers.admincontrollers.CourseActions.saveCourseLevel()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/all""","""controllers.admincontrollers.CourseActions.fetchAllCourseLevels()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/edit/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/level/delete/$course_level_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourseLevel(course_level_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/new""","""controllers.admincontrollers.CourseActions.newCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/save""","""controllers.admincontrollers.CourseActions.saveCourse()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/excelfile/save""","""controllers.admincontrollers.CourseActions.saveCourseExcelFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/edit/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.editCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/delete/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.deleteCourse(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/all""","""controllers.admincontrollers.CourseActions.fetchAllCourses()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/view/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.viewCourseDetails(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/file/download""","""controllers.admincontrollers.CourseActions.downloadSampleCourseFile()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/new""","""controllers.admincontrollers.CourseActions.courseNewJobPlacement()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/save/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.saveCourseJobPlacement(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/saved/""","""controllers.admincontrollers.CourseActions.saveCourseJobPlacemen()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/job/search/$key<[^/]+>""","""controllers.admincontrollers.CourseActions.searchJobTitlesByInput(key:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/specialization/new""","""controllers.admincontrollers.CourseActions.courseNewSpecialization()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/specialization/save/$course_id<[^/]+>""","""controllers.admincontrollers.CourseActions.saveCourseSpecialization(course_id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/specialization/search/$key<[^/]+>""","""controllers.admincontrollers.CourseActions.SearchCourseSpecialization(key:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/certification/new""","""controllers.admincontrollers.CourseActions.newCourseCertification()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """course/certification/save""","""controllers.admincontrollers.CourseActions.saveCourseCertification()"""),common.Routes.documentation).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -434,8 +448,24 @@ case controllers_admincontrollers_CourseActions_SearchCourseSpecialization25_rou
 }
         
 
-// @LINE:47
-case common_Routes26(handler) => handler
+// @LINE:38
+case controllers_admincontrollers_CourseActions_newCourseCertification26_route(params) => {
+   call { 
+        controllers_admincontrollers_CourseActions_newCourseCertification26_invoker.call(controllers.admincontrollers.CourseActions.newCourseCertification())
+   }
+}
+        
+
+// @LINE:39
+case controllers_admincontrollers_CourseActions_saveCourseCertification27_route(params) => {
+   call { 
+        controllers_admincontrollers_CourseActions_saveCourseCertification27_invoker.call(controllers.admincontrollers.CourseActions.saveCourseCertification())
+   }
+}
+        
+
+// @LINE:49
+case common_Routes28(handler) => handler
         
 }
 
