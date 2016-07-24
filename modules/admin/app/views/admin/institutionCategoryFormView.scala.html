@@ -1,0 +1,36 @@
+@(institutionCategoryForm: Form[models.web.InstitutionCategory])
+@import helper._
+@import formfieldtemplates._
+
+@admin_main("Institution category | Admin Panel"){
+        <script>tinymce.init({ selector:'textarea' });</script>
+        @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveInstitutionCategory(), 'id->"institutioncategoryform",'name->"institutioncategoryform", 'method->"post"){
+                @if(flash.containsKey("institutioncategoryformsuccess")){
+                <div class="alert alert-success">
+                    @flash.get("institutioncategoryformsuccess")
+                </div>
+                }
+
+                <fieldset>
+                    <legend>Add new institution category</legend>
+                    <!--Used to differentiate new form or form editing-->
+                    <input type="hidden"  value="@institutionCategoryForm("institution_category_id").valueOr("")" name="institution_category_id"/>
+
+
+                    @text(institutionCategoryForm("institution_category_name"),
+                    label = "institution cat. name",
+                    placeholder = "institution category name (e.g. Private university, public university etc..)",
+                    divClass="col-sm-9")
+
+                    @formfieldtemplates.textarea(institutionCategoryForm("institution_category_description"),
+                    label="Institution category description",
+                    placeholder = "Type your description here...... ",
+                    rows="4",
+                    divClass="col-sm-9")
+
+                </fieldset>
+
+                <p align="right"><input  type="submit" class="btn btn-primary" value="Save" id="institution-category-submit-btn"></p>
+
+        }
+}

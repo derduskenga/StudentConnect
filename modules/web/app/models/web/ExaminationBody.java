@@ -1,5 +1,6 @@
 package models.web;
 
+import play.data.validation.Constraints;
 import play.db.ebean.Model;
 
 import javax.persistence.Column;
@@ -14,6 +15,7 @@ import javax.persistence.OneToOne;
 public class ExaminationBody extends Model {
     @Id
     public Long examination_body_id;
+    @Constraints.Required(message = "This field is required")
     public String examination_body_name;
     @Column(columnDefinition = "TEXT")
     public String examination_body_description;
@@ -23,4 +25,17 @@ public class ExaminationBody extends Model {
     @OneToOne
     public InstitutionCourse institutionCourse;
 
+    //methods
+    public static Finder<Long, ExaminationBody> find(){
+        return new Finder<Long, ExaminationBody>(Long.class,ExaminationBody.class);
+    }
+
+    public Long saveExaminationBody(){
+        if (this.examination_body_id == null){
+            save();
+            return examination_body_id;
+        }
+        update();
+        return examination_body_id;
+    }
 }

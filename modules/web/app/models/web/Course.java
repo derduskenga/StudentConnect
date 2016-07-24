@@ -42,6 +42,8 @@ public class Course extends Model {
     public List<JobPlacement> jobPlacementList;
     @OneToMany(mappedBy = "certificationCourse")
     public List<CourseCertification> courseCertificationList; /*For any course picked, we fetch all associated cetification courses*/
+    @OneToMany(mappedBy = "course")
+    public List<CampusCourse> campusCourseList;
 
 
     //Methods

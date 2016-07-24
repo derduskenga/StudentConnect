@@ -38,6 +38,30 @@ GET     /course/specialization/search/:key          controllers.admincontrollers
 GET     /course/certification/new                   controllers.admincontrollers.CourseActions.newCourseCertification()
 POST    /course/certification/save                  controllers.admincontrollers.CourseActions.saveCourseCertification()
 
+#Institutions
+GET     /institution/category/new               controllers.admincontrollers.InstitutionActions.newInstitutionCategory()
+POST       /institution/category/save           controllers.admincontrollers.InstitutionActions.saveInstitutionCategory()
+GET         /institution/category/all           controllers.admincontrollers.InstitutionActions.allInstitutionCategory()
+GET         /institution/category/delete/:institution_category_id   controllers.admincontrollers.InstitutionActions.deleteInstitutionCategory(institution_category_id: Long)
+GET         /institution/category/edit/:institution_category_id controllers.admincontrollers.InstitutionActions.editInstitutionCategory(institution_category_id: Long)
+GET         /institution/new                        controllers.admincontrollers.InstitutionActions.newInstitution()
+POST        /institution/save                       controllers.admincontrollers.InstitutionActions.saveInstitution()
+GET         /institution/edit/:id                   controllers.admincontrollers.InstitutionActions.editInstitution(id: Long)
+GET         /institution/all                        controllers.admincontrollers.InstitutionActions.allInstitutions()
+GET         /institution/delete/:id                 controllers.admincontrollers.InstitutionActions.deleteInstitution(id: Long)
+GET         /institution/view/:id                   controllers.admincontrollers.InstitutionActions.viewInstitution(id: Long)
+POST        /institution/fetchcampus/:institution_id                controllers.admincontrollers.InstitutionActions.fetchInstitutionCampuses(institution_id: Long)
+
+#Campuses
+GET         /campus/new                              controllers.admincontrollers.InstitutionActions.newCampus()
+POST        /campus/save                             controllers.admincontrollers.InstitutionActions.saveCampus()
+GET         /campus/delete/:id                       controllers.admincontrollers.InstitutionActions.deleteCampus(id: Long)
+GET         /campus/view/:id                         controllers.admincontrollers.InstitutionActions.viewCampus(id: Long)
+GET         /campus/edit/:id                         controllers.admincontrollers.InstitutionActions.editCampus(id: Long)
+GET         /school/new                              controllers.admincontrollers.InstitutionActions.newSchool()
+POST        /school/save                             controllers.admincontrollers.InstitutionActions.saveSchool()
+
+
 
 #Mobile api routes
 

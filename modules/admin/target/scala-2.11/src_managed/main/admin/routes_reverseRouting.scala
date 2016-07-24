@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:1f97892432e81562f9f1bda3af072a83ff6ed220
-// @DATE:Sun Jul 10 22:44:56 EAT 2016
+// @HASH:f95ffd13176ba4ae3b1b81b6a605506c3f45da6a
+// @DATE:Sun Jul 24 14:18:05 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,25 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
+// @LINE:56
+// @LINE:53
+// @LINE:52
+// @LINE:51
+// @LINE:50
+// @LINE:49
+// @LINE:48
+// @LINE:47
+// @LINE:46
+// @LINE:45
+// @LINE:44
+// @LINE:43
+// @LINE:42
 // @LINE:39
 // @LINE:38
 // @LINE:37
@@ -44,6 +63,164 @@ import Router.queryString
 // @LINE:9
 // @LINE:6
 package controllers.admincontrollers {
+
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
+// @LINE:56
+// @LINE:53
+// @LINE:52
+// @LINE:51
+// @LINE:50
+// @LINE:49
+// @LINE:48
+// @LINE:47
+// @LINE:46
+// @LINE:45
+// @LINE:44
+// @LINE:43
+// @LINE:42
+class ReverseInstitutionActions {
+
+
+// @LINE:44
+def allInstitutionCategory(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/category/all")
+}
+                        
+
+// @LINE:57
+def saveCampus(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "campus/save")
+}
+                        
+
+// @LINE:52
+def viewInstitution(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/view/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:46
+def editInstitutionCategory(institution_category_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/category/edit/" + implicitly[PathBindable[Long]].unbind("institution_category_id", institution_category_id))
+}
+                        
+
+// @LINE:51
+def deleteInstitution(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:47
+def newInstitution(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/new")
+}
+                        
+
+// @LINE:62
+def saveSchool(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "school/save")
+}
+                        
+
+// @LINE:50
+def allInstitutions(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/all")
+}
+                        
+
+// @LINE:49
+def editInstitution(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/edit/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:59
+def viewCampus(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "campus/view/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:45
+def deleteInstitutionCategory(institution_category_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/category/delete/" + implicitly[PathBindable[Long]].unbind("institution_category_id", institution_category_id))
+}
+                        
+
+// @LINE:53
+def fetchInstitutionCampuses(institution_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/fetchcampus/" + implicitly[PathBindable[Long]].unbind("institution_id", institution_id))
+}
+                        
+
+// @LINE:60
+def editCampus(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "campus/edit/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:61
+def newSchool(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "school/new")
+}
+                        
+
+// @LINE:58
+def deleteCampus(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "campus/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:56
+def newCampus(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "campus/new")
+}
+                        
+
+// @LINE:48
+def saveInstitution(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/save")
+}
+                        
+
+// @LINE:43
+def saveInstitutionCategory(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/category/save")
+}
+                        
+
+// @LINE:42
+def newInstitutionCategory(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/category/new")
+}
+                        
+
+}
+                          
 
 // @LINE:39
 // @LINE:38
@@ -284,6 +461,25 @@ def index(): Call = {
                   
 
 
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
+// @LINE:56
+// @LINE:53
+// @LINE:52
+// @LINE:51
+// @LINE:50
+// @LINE:49
+// @LINE:48
+// @LINE:47
+// @LINE:46
+// @LINE:45
+// @LINE:44
+// @LINE:43
+// @LINE:42
 // @LINE:39
 // @LINE:38
 // @LINE:37
@@ -314,6 +510,240 @@ def index(): Call = {
 // @LINE:6
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
+
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
+// @LINE:56
+// @LINE:53
+// @LINE:52
+// @LINE:51
+// @LINE:50
+// @LINE:49
+// @LINE:48
+// @LINE:47
+// @LINE:46
+// @LINE:45
+// @LINE:44
+// @LINE:43
+// @LINE:42
+class ReverseInstitutionActions {
+
+
+// @LINE:44
+def allInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.allInstitutionCategory",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/category/all"})
+      }
+   """
+)
+                        
+
+// @LINE:57
+def saveCampus : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveCampus",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "campus/save"})
+      }
+   """
+)
+                        
+
+// @LINE:52
+def viewInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.viewInstitution",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/view/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:46
+def editInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.editInstitutionCategory",
+   """
+      function(institution_category_id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/category/edit/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("institution_category_id", institution_category_id)})
+      }
+   """
+)
+                        
+
+// @LINE:51
+def deleteInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.deleteInstitution",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:47
+def newInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.newInstitution",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/new"})
+      }
+   """
+)
+                        
+
+// @LINE:62
+def saveSchool : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveSchool",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "school/save"})
+      }
+   """
+)
+                        
+
+// @LINE:50
+def allInstitutions : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.allInstitutions",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/all"})
+      }
+   """
+)
+                        
+
+// @LINE:49
+def editInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.editInstitution",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/edit/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:59
+def viewCampus : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.viewCampus",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "campus/view/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:45
+def deleteInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.deleteInstitutionCategory",
+   """
+      function(institution_category_id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/category/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("institution_category_id", institution_category_id)})
+      }
+   """
+)
+                        
+
+// @LINE:53
+def fetchInstitutionCampuses : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.fetchInstitutionCampuses",
+   """
+      function(institution_id) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/fetchcampus/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("institution_id", institution_id)})
+      }
+   """
+)
+                        
+
+// @LINE:60
+def editCampus : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.editCampus",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "campus/edit/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:61
+def newSchool : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.newSchool",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "school/new"})
+      }
+   """
+)
+                        
+
+// @LINE:58
+def deleteCampus : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.deleteCampus",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "campus/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:56
+def newCampus : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.newCampus",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "campus/new"})
+      }
+   """
+)
+                        
+
+// @LINE:48
+def saveInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveInstitution",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/save"})
+      }
+   """
+)
+                        
+
+// @LINE:43
+def saveInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveInstitutionCategory",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/category/save"})
+      }
+   """
+)
+                        
+
+// @LINE:42
+def newInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.newInstitutionCategory",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/category/new"})
+      }
+   """
+)
+                        
+
+}
+              
 
 // @LINE:39
 // @LINE:38
@@ -666,6 +1096,25 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
+// @LINE:56
+// @LINE:53
+// @LINE:52
+// @LINE:51
+// @LINE:50
+// @LINE:49
+// @LINE:48
+// @LINE:47
+// @LINE:46
+// @LINE:45
+// @LINE:44
+// @LINE:43
+// @LINE:42
 // @LINE:39
 // @LINE:38
 // @LINE:37
@@ -696,6 +1145,145 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:6
 package controllers.admincontrollers.ref {
 
+
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
+// @LINE:56
+// @LINE:53
+// @LINE:52
+// @LINE:51
+// @LINE:50
+// @LINE:49
+// @LINE:48
+// @LINE:47
+// @LINE:46
+// @LINE:45
+// @LINE:44
+// @LINE:43
+// @LINE:42
+class ReverseInstitutionActions {
+
+
+// @LINE:44
+def allInstitutionCategory(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.allInstitutionCategory(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "allInstitutionCategory", Seq(), "GET", """""", _prefix + """institution/category/all""")
+)
+                      
+
+// @LINE:57
+def saveCampus(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveCampus(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveCampus", Seq(), "POST", """""", _prefix + """campus/save""")
+)
+                      
+
+// @LINE:52
+def viewInstitution(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.viewInstitution(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "viewInstitution", Seq(classOf[Long]), "GET", """""", _prefix + """institution/view/$id<[^/]+>""")
+)
+                      
+
+// @LINE:46
+def editInstitutionCategory(institution_category_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.editInstitutionCategory(institution_category_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "editInstitutionCategory", Seq(classOf[Long]), "GET", """""", _prefix + """institution/category/edit/$institution_category_id<[^/]+>""")
+)
+                      
+
+// @LINE:51
+def deleteInstitution(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.deleteInstitution(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "deleteInstitution", Seq(classOf[Long]), "GET", """""", _prefix + """institution/delete/$id<[^/]+>""")
+)
+                      
+
+// @LINE:47
+def newInstitution(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.newInstitution(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "newInstitution", Seq(), "GET", """""", _prefix + """institution/new""")
+)
+                      
+
+// @LINE:62
+def saveSchool(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveSchool(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveSchool", Seq(), "POST", """""", _prefix + """school/save""")
+)
+                      
+
+// @LINE:50
+def allInstitutions(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.allInstitutions(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "allInstitutions", Seq(), "GET", """""", _prefix + """institution/all""")
+)
+                      
+
+// @LINE:49
+def editInstitution(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.editInstitution(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "editInstitution", Seq(classOf[Long]), "GET", """""", _prefix + """institution/edit/$id<[^/]+>""")
+)
+                      
+
+// @LINE:59
+def viewCampus(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.viewCampus(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "viewCampus", Seq(classOf[Long]), "GET", """""", _prefix + """campus/view/$id<[^/]+>""")
+)
+                      
+
+// @LINE:45
+def deleteInstitutionCategory(institution_category_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.deleteInstitutionCategory(institution_category_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "deleteInstitutionCategory", Seq(classOf[Long]), "GET", """""", _prefix + """institution/category/delete/$institution_category_id<[^/]+>""")
+)
+                      
+
+// @LINE:53
+def fetchInstitutionCampuses(institution_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.fetchInstitutionCampuses(institution_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "fetchInstitutionCampuses", Seq(classOf[Long]), "POST", """""", _prefix + """institution/fetchcampus/$institution_id<[^/]+>""")
+)
+                      
+
+// @LINE:60
+def editCampus(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.editCampus(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "editCampus", Seq(classOf[Long]), "GET", """""", _prefix + """campus/edit/$id<[^/]+>""")
+)
+                      
+
+// @LINE:61
+def newSchool(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.newSchool(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "newSchool", Seq(), "GET", """""", _prefix + """school/new""")
+)
+                      
+
+// @LINE:58
+def deleteCampus(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.deleteCampus(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "deleteCampus", Seq(classOf[Long]), "GET", """""", _prefix + """campus/delete/$id<[^/]+>""")
+)
+                      
+
+// @LINE:56
+def newCampus(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.newCampus(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "newCampus", Seq(), "GET", """Campuses""", _prefix + """campus/new""")
+)
+                      
+
+// @LINE:48
+def saveInstitution(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveInstitution(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveInstitution", Seq(), "POST", """""", _prefix + """institution/save""")
+)
+                      
+
+// @LINE:43
+def saveInstitutionCategory(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveInstitutionCategory(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveInstitutionCategory", Seq(), "POST", """""", _prefix + """institution/category/save""")
+)
+                      
+
+// @LINE:42
+def newInstitutionCategory(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.newInstitutionCategory(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "newInstitutionCategory", Seq(), "GET", """Institutions""", _prefix + """institution/category/new""")
+)
+                      
+
+}
+                          
 
 // @LINE:39
 // @LINE:38

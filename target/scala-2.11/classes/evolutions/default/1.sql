@@ -18,9 +18,18 @@ create table admin_user (
 create table campus (
   campus_id                 bigint not null,
   campus_name               varchar(255),
+  campus_nearest_town       varchar(255),
   campus_description        varchar(255),
+  is_main_campus            boolean,
   institution_institution_id bigint,
   constraint pk_campus primary key (campus_id))
+;
+
+create table campus_course (
+  campus_course_id          bigint not null,
+  campus_campus_id          bigint,
+  course_course_id          bigint,
+  constraint pk_campus_course primary key (campus_course_id))
 ;
 
 create table club_society (
@@ -67,7 +76,7 @@ create table course_institution_mode_of_study (
   institution_course_fees   float,
   institution_course_fees_url varchar(255),
   institution_course_institution_course_id bigint,
-  constraint ck_course_institution_mode_of_study_mode_of_study check (mode_of_study in (0,1,2,3,4,5)),
+  constraint ck_course_institution_mode_of_study_mode_of_study check (mode_of_study in (0,1,2,3,4,5,6,7)),
   constraint pk_course_institution_mode_of_st primary key (course_institution_mode_of_study_id))
 ;
 
@@ -112,7 +121,7 @@ create table institution (
   institution_logo_path     varchar(255),
   institution_description   TEXT,
   institution_known_for     varchar(255),
-  nearest_town              varchar(255),
+  institution_nearest_town  varchar(255),
   institution_chancellor    varchar(255),
   institution_vc            varchar(255),
   institution_email         varchar(255),
@@ -125,6 +134,7 @@ create table institution (
   institution_motto         varchar(255),
   institution_map_embed_url TEXT,
   region                    integer,
+  year_established          integer,
   institution_category_institution_category_id bigint,
   county_county_id          bigint,
   constraint ck_institution_region check (region in (0,1,2,3,4,5,6,7)),
@@ -204,6 +214,13 @@ create table school_or_faculty (
   constraint pk_school_or_faculty primary key (school_id))
 ;
 
+create table school_or_faculty_campus (
+  school_or_faculty_campus  bigint not null,
+  campus_campus_id          bigint,
+  school_or_faculty_school_id bigint,
+  constraint pk_school_or_faculty_campus primary key (school_or_faculty_campus))
+;
+
 create table specialization (
   specialization_id         bigint not null,
   specialization_name       varchar(255),
@@ -223,6 +240,8 @@ create table subscription_email (
 create sequence admin_user_seq;
 
 create sequence campus_seq;
+
+create sequence campus_course_seq;
 
 create sequence club_society_seq;
 
@@ -262,50 +281,60 @@ create sequence research_center_seq;
 
 create sequence school_or_faculty_seq;
 
+create sequence school_or_faculty_campus_seq;
+
 create sequence specialization_seq;
 
 create sequence subscription_email_seq;
 
 alter table campus add constraint fk_campus_institution_1 foreign key (institution_institution_id) references institution (institution_id);
 create index ix_campus_institution_1 on campus (institution_institution_id);
-alter table club_society add constraint fk_club_society_institution_2 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_club_society_institution_2 on club_society (institution_institution_id);
-alter table course add constraint fk_course_courseLevel_3 foreign key (course_level_course_level_id) references course_level (course_level_id);
-create index ix_course_courseLevel_3 on course (course_level_course_level_id);
-alter table course add constraint fk_course_courseField_4 foreign key (course_field_course_field_id) references course_field (course_field_id);
-create index ix_course_courseField_4 on course (course_field_course_field_id);
-alter table course_certification add constraint fk_course_certification_mainCo_5 foreign key (main_course_course_id) references course (course_id);
-create index ix_course_certification_mainCo_5 on course_certification (main_course_course_id);
-alter table course_certification add constraint fk_course_certification_certif_6 foreign key (certification_course_course_id) references course (course_id);
-create index ix_course_certification_certif_6 on course_certification (certification_course_course_id);
-alter table course_institution_mode_of_study add constraint fk_course_institution_mode_of__7 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
-create index ix_course_institution_mode_of__7 on course_institution_mode_of_study (institution_course_institution_course_id);
-alter table course_specialization add constraint fk_course_specialization_speci_8 foreign key (specialization_specialization_id) references specialization (specialization_id);
-create index ix_course_specialization_speci_8 on course_specialization (specialization_specialization_id);
-alter table course_specialization add constraint fk_course_specialization_cours_9 foreign key (course_course_id) references course (course_id);
-create index ix_course_specialization_cours_9 on course_specialization (course_course_id);
-alter table examination_body add constraint fk_examination_body_instituti_10 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
-create index ix_examination_body_instituti_10 on examination_body (institution_course_institution_course_id);
-alter table institution add constraint fk_institution_institutionCat_11 foreign key (institution_category_institution_category_id) references institution_category (institution_category_id);
-create index ix_institution_institutionCat_11 on institution (institution_category_institution_category_id);
-alter table institution add constraint fk_institution_county_12 foreign key (county_county_id) references county (county_id);
-create index ix_institution_county_12 on institution (county_county_id);
-alter table institution_course add constraint fk_institution_course_institu_13 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_institution_course_institu_13 on institution_course (institution_institution_id);
-alter table institution_course add constraint fk_institution_course_course_14 foreign key (course_course_id) references course (course_id);
-create index ix_institution_course_course_14 on institution_course (course_course_id);
-alter table institution_course add constraint fk_institution_course_schoolO_15 foreign key (school_or_faculty_school_id) references school_or_faculty (school_id);
-create index ix_institution_course_schoolO_15 on institution_course (school_or_faculty_school_id);
-alter table institution_partnership add constraint fk_institution_partnership_in_16 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_institution_partnership_in_16 on institution_partnership (institution_institution_id);
-alter table institution_partnership add constraint fk_institution_partnership_pa_17 foreign key (partner_partner_id) references partner (partner_id);
-create index ix_institution_partnership_pa_17 on institution_partnership (partner_partner_id);
-alter table job_placement add constraint fk_job_placement_course_18 foreign key (course_course_id) references course (course_id);
-create index ix_job_placement_course_18 on job_placement (course_course_id);
-alter table research_center add constraint fk_research_center_institutio_19 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_research_center_institutio_19 on research_center (institution_institution_id);
-alter table school_or_faculty add constraint fk_school_or_faculty_institut_20 foreign key (institution_institution_id) references institution (institution_id);
-create index ix_school_or_faculty_institut_20 on school_or_faculty (institution_institution_id);
+alter table campus_course add constraint fk_campus_course_campus_2 foreign key (campus_campus_id) references campus (campus_id);
+create index ix_campus_course_campus_2 on campus_course (campus_campus_id);
+alter table campus_course add constraint fk_campus_course_course_3 foreign key (course_course_id) references course (course_id);
+create index ix_campus_course_course_3 on campus_course (course_course_id);
+alter table club_society add constraint fk_club_society_institution_4 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_club_society_institution_4 on club_society (institution_institution_id);
+alter table course add constraint fk_course_courseLevel_5 foreign key (course_level_course_level_id) references course_level (course_level_id);
+create index ix_course_courseLevel_5 on course (course_level_course_level_id);
+alter table course add constraint fk_course_courseField_6 foreign key (course_field_course_field_id) references course_field (course_field_id);
+create index ix_course_courseField_6 on course (course_field_course_field_id);
+alter table course_certification add constraint fk_course_certification_mainCo_7 foreign key (main_course_course_id) references course (course_id);
+create index ix_course_certification_mainCo_7 on course_certification (main_course_course_id);
+alter table course_certification add constraint fk_course_certification_certif_8 foreign key (certification_course_course_id) references course (course_id);
+create index ix_course_certification_certif_8 on course_certification (certification_course_course_id);
+alter table course_institution_mode_of_study add constraint fk_course_institution_mode_of__9 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
+create index ix_course_institution_mode_of__9 on course_institution_mode_of_study (institution_course_institution_course_id);
+alter table course_specialization add constraint fk_course_specialization_spec_10 foreign key (specialization_specialization_id) references specialization (specialization_id);
+create index ix_course_specialization_spec_10 on course_specialization (specialization_specialization_id);
+alter table course_specialization add constraint fk_course_specialization_cour_11 foreign key (course_course_id) references course (course_id);
+create index ix_course_specialization_cour_11 on course_specialization (course_course_id);
+alter table examination_body add constraint fk_examination_body_instituti_12 foreign key (institution_course_institution_course_id) references institution_course (institution_course_id);
+create index ix_examination_body_instituti_12 on examination_body (institution_course_institution_course_id);
+alter table institution add constraint fk_institution_institutionCat_13 foreign key (institution_category_institution_category_id) references institution_category (institution_category_id);
+create index ix_institution_institutionCat_13 on institution (institution_category_institution_category_id);
+alter table institution add constraint fk_institution_county_14 foreign key (county_county_id) references county (county_id);
+create index ix_institution_county_14 on institution (county_county_id);
+alter table institution_course add constraint fk_institution_course_institu_15 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_institution_course_institu_15 on institution_course (institution_institution_id);
+alter table institution_course add constraint fk_institution_course_course_16 foreign key (course_course_id) references course (course_id);
+create index ix_institution_course_course_16 on institution_course (course_course_id);
+alter table institution_course add constraint fk_institution_course_schoolO_17 foreign key (school_or_faculty_school_id) references school_or_faculty (school_id);
+create index ix_institution_course_schoolO_17 on institution_course (school_or_faculty_school_id);
+alter table institution_partnership add constraint fk_institution_partnership_in_18 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_institution_partnership_in_18 on institution_partnership (institution_institution_id);
+alter table institution_partnership add constraint fk_institution_partnership_pa_19 foreign key (partner_partner_id) references partner (partner_id);
+create index ix_institution_partnership_pa_19 on institution_partnership (partner_partner_id);
+alter table job_placement add constraint fk_job_placement_course_20 foreign key (course_course_id) references course (course_id);
+create index ix_job_placement_course_20 on job_placement (course_course_id);
+alter table research_center add constraint fk_research_center_institutio_21 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_research_center_institutio_21 on research_center (institution_institution_id);
+alter table school_or_faculty add constraint fk_school_or_faculty_institut_22 foreign key (institution_institution_id) references institution (institution_id);
+create index ix_school_or_faculty_institut_22 on school_or_faculty (institution_institution_id);
+alter table school_or_faculty_campus add constraint fk_school_or_faculty_campus_c_23 foreign key (campus_campus_id) references campus (campus_id);
+create index ix_school_or_faculty_campus_c_23 on school_or_faculty_campus (campus_campus_id);
+alter table school_or_faculty_campus add constraint fk_school_or_faculty_campus_s_24 foreign key (school_or_faculty_school_id) references school_or_faculty (school_id);
+create index ix_school_or_faculty_campus_s_24 on school_or_faculty_campus (school_or_faculty_school_id);
 
 
 
@@ -314,6 +343,8 @@ create index ix_school_or_faculty_institut_20 on school_or_faculty (institution_
 drop table if exists admin_user cascade;
 
 drop table if exists campus cascade;
+
+drop table if exists campus_course cascade;
 
 drop table if exists club_society cascade;
 
@@ -353,6 +384,8 @@ drop table if exists research_center cascade;
 
 drop table if exists school_or_faculty cascade;
 
+drop table if exists school_or_faculty_campus cascade;
+
 drop table if exists specialization cascade;
 
 drop table if exists subscription_email cascade;
@@ -360,6 +393,8 @@ drop table if exists subscription_email cascade;
 drop sequence if exists admin_user_seq;
 
 drop sequence if exists campus_seq;
+
+drop sequence if exists campus_course_seq;
 
 drop sequence if exists club_society_seq;
 
@@ -398,6 +433,8 @@ drop sequence if exists question_seq;
 drop sequence if exists research_center_seq;
 
 drop sequence if exists school_or_faculty_seq;
+
+drop sequence if exists school_or_faculty_campus_seq;
 
 drop sequence if exists specialization_seq;
 

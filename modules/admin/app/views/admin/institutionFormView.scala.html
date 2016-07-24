@@ -1,0 +1,162 @@
+@(institutionForm: Form[models.web.Institution])(institutionCategoyMap: Map[Map[Long,String],Boolean])(countyMap: Map[Map[Long,String],Boolean])(regionMap: Map[Map[String,String],Boolean])
+@import helper._
+@import formfieldtemplates._
+@import java.util._
+@import models.web._
+
+@admin_main("New Institution | Admin Panel"){
+
+            @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveInstitution(),
+            'id->"institutionform",'name->"institutionform", 'method->"post", 'enctype->"multipart/form-data"){
+            <fieldset>
+                <legend>Add new institution</legend>
+
+                @if(flash.containsKey("institutionsavesuccess")){
+                    <div class="alert alert-success">
+                        @flash.get("institutionsavesuccess")
+                    </div>
+                }
+
+
+                @if(flash.containsKey("institutionsaveerror")){
+                <div class="alert alert-danger">
+                    @flash.get("institutionsaveerror")
+                </div>
+                }
+
+                <!--Used to differentiate new form or form editing-->
+                <input type="hidden"  value='@institutionForm("institution_id").valueOr("")' name="institution_id"/>
+
+                @text(institutionForm("institution_name"),
+                label = "Institution name",
+                placeholder = "Institution name (e.g. Moi University, Kisumu Polytechnic etc...)",
+                divClass="col-sm-9")
+
+                @text(institutionForm("institution_abbreviation"),
+                label = "Institution name",
+                placeholder = "Institution abbreviation (e.g. UoN for University of Nairobi etc....)",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.fieldselect(institutionForm("institution_category_name"),
+                label = "Institution category",
+                optionMap=institutionCategoyMap,
+                default="Select county name",
+                includeStaticDefault=false,
+                fieldcontrolattr = "required",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.text_url(institutionForm("institution_website_url"),
+                label = "Institution website URL",
+                placeholder = "Institution website URL",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.fieldselect(institutionForm("county_name"),
+                label = "County name",
+                optionMap=countyMap,
+                default="Select county name",
+                includeStaticDefault=false,
+                fieldcontrolattr = "required",
+                divClass="col-sm-9")
+
+                @text(institutionForm("institution_nearest_town"),
+                label = "Nearest town",
+                placeholder = "Town/city here",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.textarea(institutionForm("institution_known_for"),
+                label="Known for",
+                placeholder = "Type your description here",
+                rows="4",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.text(institutionForm("institution_chancellor"),
+                label = "Chancellor names",
+                placeholder = "Chancellor name here",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.text(institutionForm("institution_vc"),
+                label = "VC name",
+                placeholder = "VC name here....",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("institution_email"),
+                label = "Institution email",
+                placeholder = "email here...",
+                input_type="email",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("institution_phone"),
+                label = "Institution mobile.",
+                placeholder = "type phone here here...",
+                input_type="number",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.textarea(institutionForm("institution_address"),
+                label="Institution address",
+                placeholder = "Type your institution description here...... ",
+                rows="4",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("institution_ranking_local"),
+                label = "Ranking in kenya",
+                placeholder = "Ranking here...",
+                input_type="number",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("institution_ranking_africa"),
+                label = "Ranking in africa",
+                placeholder = "Ranking here...",
+                input_type="number",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("institution_ranking_global"),
+                label = "Global ranking",
+                placeholder = "Ranking here...",
+                input_type="number",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.textarea(institutionForm("institution_motto"),
+                label="Institution motto",
+                placeholder = "Type your institution motto here...... ",
+                rows="4",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.textarea(institutionForm("institution_map_embed_url"),
+                label="Map embed link",
+                placeholder = "Type your institution motto here...... ",
+                rows="4",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.textarea(institutionForm("institution_description"),
+                label="Institution description",
+                placeholder = "Type your institution description here...... ",
+                rows="4",
+                divClass="col-sm-9")
+
+                @formfieldtemplates.regions(institutionForm("region"),
+                label = "Region",
+                optionMap=regionMap,
+                default="Select region name",
+                includeStaticDefault=false,
+                fieldcontrolattr = "required",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("year_established"),
+                label = "Begun",
+                placeholder = "Yeah established...",
+                input_type="number",
+                divClass="col-sm-9")
+
+                @textemail(institutionForm("institution_logo_path"),
+                label = "Institution logo",
+                placeholder = "Yeah established...",
+                input_type="file",
+                divClass="col-sm-9")
+
+            </fieldset>
+            <div class="row">
+                <p align="right"> <input  type="submit" class="btn btn-primary" value="Save" id="institution-submit-btn"/></p>
+
+            </div>
+            }
+}

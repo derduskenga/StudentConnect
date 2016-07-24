@@ -1,0 +1,67 @@
+@(campusForm: Form[models.web.Campus])(institutionMap: Map[Map[Long, String],Boolean])
+@import helper._
+@import formfieldtemplates._
+@import java.util._
+
+@admin_main("New Course Fields | Admin"){
+    @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveCampus(),
+    'id->"campusform",'name->"campusform", 'method->"post"){
+        @if(flash.containsKey("campusformsuccess")){
+            <div class="alert alert-success">
+                @flash.get("campusformsuccess")
+            </div>
+        }
+
+        <fieldset>
+            <legend>Add campuses</legend>
+            <input type="hidden"  value="@campusForm("campus_id").valueOr("")" name="campus_id"/>
+
+            @formfieldtemplates.fieldselect(campusForm("institution_id"),
+            label = "Select Institution",
+            optionMap=institutionMap,
+            default="Select institution",
+            includeStaticDefault=false,
+            fieldcontrolattr = "required",
+            divClass="col-sm-9")
+
+            @textemail(campusForm("campus_name"),
+            label = "Campus name",
+            placeholder = "campus name here...",
+            input_type="text",
+            divClass="col-sm-9")
+
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Main campus</label>
+                <div class="col-sm-8">
+                    <input
+                            type="checkbox"
+                            name="@campusForm("is_main_campus").name"
+                    value="@campusForm("is_main_campus").valueOr("false")"
+                    id="is_main_campus"
+                    @if(campusForm("is_main_campus").value() == "true"){checked="checked"}>
+                    Checkmark if this is the  main campus?
+
+                </div>
+            </div>
+
+
+            @text(campusForm("campus_nearest_town"),
+            label = "Nearest town",
+            placeholder = "Town/city here",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.textarea(campusForm("campus_description"),
+            label="Description",
+            placeholder = "Type your description here",
+            rows="4",
+            divClass="col-sm-9")
+
+        </fieldset>
+
+        <div class="row">
+            <p align="right"> <input  type="submit" class="btn btn-primary" value="Add Campus" id="campus-submit-btn"/></p>
+
+        </div>
+    }
+}

@@ -25,10 +25,22 @@ public class InstitutionCourse extends Model {
     public Course course;
     @OneToOne(mappedBy = "institutionCourse")
     public ExaminationBody examinationBody;
-
     @ManyToOne
     public SchoolOrFaculty schoolOrFaculty;
 
     @OneToMany(mappedBy = "institutionCourse")
     public List<CourseInstitutionModeOfStudy> courseInstitutionModeOfStudyList;
+
+    //methods
+    public static Finder<Long, InstitutionCourse> find(){
+        return new Finder<Long, InstitutionCourse>(Long.class,InstitutionCourse.class);
+    }
+    public Long saveInstitutionCourse(){
+        if (this.institution_course_id == null){
+            save();
+            return institution_course_id;
+        }
+        update();
+        return institution_course_id;
+    }
 }

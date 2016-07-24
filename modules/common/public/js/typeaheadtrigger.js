@@ -14,4 +14,6 @@ $(document).ready(function() {
                 remote:'/course/specialization/search/%QUERY',
                 limit : 10
     });
+
+
 });
