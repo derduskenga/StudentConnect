@@ -51,6 +51,9 @@ GET         /institution/all                        controllers.admincontrollers
 GET         /institution/delete/:id                 controllers.admincontrollers.InstitutionActions.deleteInstitution(id: Long)
 GET         /institution/view/:id                   controllers.admincontrollers.InstitutionActions.viewInstitution(id: Long)
 POST        /institution/fetchcampus/:institution_id                controllers.admincontrollers.InstitutionActions.fetchInstitutionCampuses(institution_id: Long)
+GET         /institution/addcourse                                  controllers.admincontrollers.InstitutionActions.addCourse()
+POST        /institution/savecourseinstitution                      controllers.admincontrollers.InstitutionActions.saveCourseInstitution()
+POST        /institution/fetchschool/:campus_id                     controllers.admincontrollers.InstitutionActions.fetchCampusSchools(campus_id: Long)
 
 #Campuses
 GET         /campus/new                              controllers.admincontrollers.InstitutionActions.newCampus()
@@ -60,6 +63,17 @@ GET         /campus/view/:id                         controllers.admincontroller
 GET         /campus/edit/:id                         controllers.admincontrollers.InstitutionActions.editCampus(id: Long)
 GET         /school/new                              controllers.admincontrollers.InstitutionActions.newSchool()
 POST        /school/save                             controllers.admincontrollers.InstitutionActions.saveSchool()
+
+#Mode of study
+GET         /institution/course/modeofstudy/new         controllers.admincontrollers.InstitutionActions.addModeOfStudy()
+POST        /institution/course/modeofstudy/save        controllers.admincontrollers.InstitutionActions.saveModeOfStudy()
+
+#Course fees
+GET         /institution/course/fees/new                controllers.admincontrollers.InstitutionActions.addCourseFees()
+POST        /institution/course/fees/save               controllers.admincontrollers.InstitutionActions.saveCourseFees()
+
+
+
 
 
 

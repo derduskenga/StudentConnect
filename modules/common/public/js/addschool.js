@@ -1,6 +1,7 @@
 $(document).ready(function(){
     //$('#campus_id').prop('disabled', 'disabled');
-    $("#institution_id").change(function() {
+    //$("#institution_id").on('change','.detect-change',(function() {
+    $("#institution_id.detect-change").change(function() {
              //$('#campus_id').prop('disabled', false);
             //change value attribute to true
             var institution_id = $(this).val();
@@ -20,9 +21,11 @@ $(document).ready(function(){
                   },
                    statusCode: {
                        400: function() {
+                            $('#campus_id').html('<option class="blank" value="">Select campus</option>');
                            alert('This university does not exist or has no campuses. Consider adding campuses to this institution');
                        },
                         500: function() {
+                           $('#campus_id').html('<option class="blank" value="">Select campus</option>');
                           alert('Internal server error! Contact admin');
                         }
                   }

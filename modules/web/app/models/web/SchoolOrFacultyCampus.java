@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class SchoolOrFacultyCampus extends Model {
     @Id
-    public Long school_or_faculty_campus;
+    public Long school_or_faculty_campus_id;
 
 
     //relationship variables
@@ -22,11 +22,11 @@ public class SchoolOrFacultyCampus extends Model {
     public SchoolOrFaculty schoolOrFaculty;
 
     public Long saveSchoolCampus(){
-        if (this.school_or_faculty_campus == null){
+        if (this.school_or_faculty_campus_id == null){
             save();
-            return school_or_faculty_campus;
+            return school_or_faculty_campus_id;
         }
         update();
-        return school_or_faculty_campus;
+        return school_or_faculty_campus_id;
     }
 }

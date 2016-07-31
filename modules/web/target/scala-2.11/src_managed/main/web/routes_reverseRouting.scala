@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/web/conf/web.routes
 // @HASH:77431746f8138e55085fd542ef637faa0a670b1d
-// @DATE:Thu Jul 21 23:46:19 EAT 2016
+// @DATE:Wed Jul 27 17:46:58 EAT 2016
 
 import web.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

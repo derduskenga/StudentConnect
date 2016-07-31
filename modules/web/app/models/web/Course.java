@@ -1,14 +1,13 @@
 package models.web;
 
 import models.web.utility.Utility;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import play.Logger;
 import play.db.ebean.Model;
 
 import javax.persistence.*;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import play.data.validation.Constraints;
 
@@ -84,6 +83,16 @@ public class Course extends Model {
         return false;
     }
 
+    public List<Course> filterCoursesByInstitutionByCampus(Institution institution, Campus campus){
+        List<Course> courseList = new ArrayList<Course>();
+        for (int i = 0;i<institution.institutionCourseList.size(); i++){
+            if(institution.institutionCourseList.get(i).campus.equals(campus)){
+                courseList.add(institution.institutionCourseList.get(i).course);
+            }
+        }
+        return courseList;
+    }
+
     public Map<Map<Long,String>,Boolean> coursesMap(){
         List<Course> courseList = find().orderBy("course_name").findList();
         Map<Map<Long,String>,Boolean> courseMap = new LinkedHashMap<Map<Long,String>,Boolean>();
@@ -93,5 +102,16 @@ public class Course extends Model {
             courseMap.put(innerCourseMap,false);
         }
         return courseMap;
+    }
+
+    public JSONArray getCampusCourses(List<Course> courseList){
+        JSONArray jsonArray = new JSONArray();
+        for (Course course: courseList){
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("id",course.course_id);
+            jsonObject.put("name",course.course_name);
+            jsonArray.add(jsonObject);
+        }
+        return jsonArray;
     }
 }

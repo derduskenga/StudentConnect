@@ -33,6 +33,8 @@ public class Campus extends Model {
     public Institution institution;
 
     @OneToMany(mappedBy = "campus")
+    public List<InstitutionCourse> institutionCourseList;
+    @OneToMany(mappedBy = "campus")
     public List<CampusCourse> campusCourseList;
     @OneToMany(mappedBy = "campus")
     public List<SchoolOrFacultyCampus> schoolOrFacultyCampusList;

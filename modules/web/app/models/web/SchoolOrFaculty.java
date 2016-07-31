@@ -106,4 +106,15 @@ public class SchoolOrFaculty extends Model {
         return jsonArray;
     }
 
+    public JSONArray getSchoolBycampus(Campus campus){
+        JSONArray jsonArray = new JSONArray();
+        for(int i=0; i<campus.schoolOrFacultyCampusList.size();i++){
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("id",campus.schoolOrFacultyCampusList.get(i).schoolOrFaculty.school_id);
+            jsonObject.put("name",campus.schoolOrFacultyCampusList.get(i).schoolOrFaculty.school_name);
+            jsonArray.add(jsonObject);
+        }
+        return jsonArray;
+    }
+
 }

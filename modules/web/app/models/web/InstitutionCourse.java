@@ -23,10 +23,13 @@ public class InstitutionCourse extends Model {
     public Institution institution;
     @ManyToOne
     public Course course;
-    @OneToOne(mappedBy = "institutionCourse")
-    public ExaminationBody examinationBody;
     @ManyToOne
     public SchoolOrFaculty schoolOrFaculty;
+    @ManyToOne
+    public Campus campus;
+
+    @OneToOne(mappedBy = "institutionCourse")
+    public ExaminationBody examinationBody;
 
     @OneToMany(mappedBy = "institutionCourse")
     public List<CourseInstitutionModeOfStudy> courseInstitutionModeOfStudyList;
@@ -42,5 +45,20 @@ public class InstitutionCourse extends Model {
         }
         update();
         return institution_course_id;
+    }
+
+    public List<InstitutionCourse> getAllInstitutionCourses(){return find().all();}
+
+    public InstitutionCourse getInstitutionCourseById(Long id){return find().byId(id);}
+
+    public boolean courseHasBeenAdded(Campus campus, Course course){
+        List<InstitutionCourse> institutionCourseList = getAllInstitutionCourses();
+        boolean found = false;
+        for (int i =0; i<institutionCourseList.size(); i++){
+            if (institutionCourseList.get(i).campus.equals(campus) && institutionCourseList.get(i).course.equals(course)){
+                found = true;
+            }
+        }
+        return found;
     }
 }

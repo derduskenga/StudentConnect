@@ -553,7 +553,7 @@ Seq[Any](_display_(/*1.2*/other_main("Student Connect | Strathmore University")/
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 21 23:46:26 EAT 2016
+                  DATE: Wed Jul 27 17:47:04 EAT 2016
                   SOURCE: /home/derdus/studentconnect/modules/web/app/views/web/institution_detail.scala.html
                   HASH: 126195225857e683f67ea3a858e96f8e9c9a679a
                   MATRIX: 815->1|876->54|914->55|942->57|17739->16835|17778->16836|17807->16837

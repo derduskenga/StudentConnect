@@ -1,15 +1,19 @@
-@(field: Field, label: String = "CHANGEME", help:String = "", divClass: String = "", label2: String="",value: String="", checked: String="")
+@(field: Field, label: String = "CHANGEME", checkboxMap: Map[String, Boolean], help:String = "")
 
 <div class="form-group @if(field.hasErrors) {has-error}">
     <label class="col-sm-3 control-label" for="@field.id">@label</label>
-    <div class="@divClass">
+    <div class="col-sm-9" id="@field.id">
+        @for((checkboxName, isChecked) <- checkboxMap) {
+        <label class="checkbox-inline">
             <input
                     type="checkbox"
-                    name="@field.name"
-                    value="@value"
-                    id="@field.id"
-                    @checked>
-        @label2
+                    name="@(field.name)"
+            id="@(field.name)"
+            value="@checkboxName"
+            @if(isChecked) {checked} >
+            @checkboxName
+        </label>
+        }
         <span class="help-block">@help</span>
         <span class="help-block">@{field.error.map { error => error.message }}</span>
     </div>

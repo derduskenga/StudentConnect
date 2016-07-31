@@ -1,5 +1,6 @@
 package controllers.admincontrollers;
 
+import com.sun.org.apache.xml.internal.serialize.LineSeparator;
 import org.json.simple.JSONArray;
 import play.Logger;
 import play.Play;
@@ -17,11 +18,15 @@ import views.html.admin.institutionFormView;
 import views.html.admin.all_institutions;
 import views.html.admin.campusFormView;
 import views.html.admin.schoolFormView;
-
+import views.html.admin.InstitutionCourseFormView;
+import views.html.admin.addModeOfStudy;
 import java.io.File;
 import com.google.common.io.Files;
 import org.apache.commons.io.FileUtils;
+
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -32,6 +37,10 @@ public class InstitutionActions extends Controller {
     public static Form<Institution> institutionForm = form(Institution.class);
     public static Form<Campus> campusForm = form(Campus.class);
     public static Form<SchoolOrFaculty> schoolOrFacultyForm = form(SchoolOrFaculty.class);
+    public static Form<ExaminationBody> examinationBodyForm = form(ExaminationBody.class);
+    public static Form<InstitutionCourse> institutionCourseForm = form(InstitutionCourse.class);
+    public static Form<CourseInstitutionModeOfStudy> courseInstitutionModeOfStudyForm = form(CourseInstitutionModeOfStudy.class);
+
     public static Result newInstitutionCategory(){
         return ok(institutionCategoryFormView.render(institutionCategoryForm));
     }
@@ -222,4 +231,122 @@ public class InstitutionActions extends Controller {
         return ok(Json.parse(jsonArray.toJSONString()));
     }
 
+    public static Result addCourse(){
+        return ok(InstitutionCourseFormView.render(examinationBodyForm,institutionCourseForm,new Institution().getInstitutionMap(),new Campus().getCampusMap(),new Course().fetchAllCourses(),new SchoolOrFaculty().getSchoolMap()));
+    }
+
+    public static Result saveCourseInstitution(){
+        Form<InstitutionCourse> institutionCourseBoundForm = institutionCourseForm.bindFromRequest();
+        Form<ExaminationBody> examinationBodyBoundForm = examinationBodyForm.bindFromRequest();
+        Map<String,String> institutionCourseMap = institutionCourseBoundForm.data();
+        String institution_id = institutionCourseMap.get("institution_id");
+        String campus_id  = institutionCourseMap.get("campus_id");
+        String school_id = institutionCourseMap.get("school_id");
+        String course_id = institutionCourseMap.get("institution_course");
+
+        Logger.info("course_id:" + course_id);
+        Logger.info("course_id:" + campus_id);
+        Logger.info("INFO:" + new InstitutionCourse().courseHasBeenAdded(
+                new Campus().getCampusById(Long.parseLong(campus_id)),
+                new Course().getCourseById(Long.parseLong(course_id))));
+
+        if(institutionCourseBoundForm.hasErrors() || examinationBodyBoundForm.hasErrors()){
+            return badRequest(InstitutionCourseFormView.render(examinationBodyBoundForm,institutionCourseBoundForm,
+                    new Institution().getInstitutionMap(Long.parseLong(institution_id)),
+                    new Campus().getCampusMap(Long.parseLong(campus_id)),
+                    new Course().fetchAllCourses(),
+                    new SchoolOrFaculty().getSchoolMap(Long.parseLong(school_id))));
+        }
+
+
+
+        if (new InstitutionCourse().courseHasBeenAdded(
+                new Campus().getCampusById(Long.parseLong(campus_id)),
+                new Course().getCourseById(Long.parseLong(course_id)))){
+            flash("institutioncourseerror","This course has been added!");
+            return redirect(routes.InstitutionActions.addCourse());
+        }
+
+        InstitutionCourse institutionCourse = institutionCourseBoundForm.get();
+        ExaminationBody examinationBody = examinationBodyBoundForm.get();
+        //institution Course
+        institutionCourse.institution = new Institution().getInstitutionById(Long.parseLong(institution_id));
+        institutionCourse.course = new Course().getCourseById(Long.parseLong(course_id));
+        institutionCourse.schoolOrFaculty = new SchoolOrFaculty().getSchoolById(Long.parseLong(school_id));
+        institutionCourse.campus = new Campus().getCampusById(Long.parseLong(campus_id));
+        institutionCourse.saveInstitutionCourse();
+        //Examination Body
+        examinationBody.institutionCourse = institutionCourse;
+        examinationBody.saveExaminationBody();
+        flash("institutioncoursesuccess","Course has been added successfully");
+        return redirect(routes.InstitutionActions.addCourse());
+    }
+
+    public static Result fetchCampusSchools(Long campus_id){
+        Campus campus = new Campus().getCampusById(campus_id);
+        if ( campus== null){
+            return badRequest();
+        }
+        if (campus.schoolOrFacultyCampusList.isEmpty()){
+            return badRequest();
+        }
+        JSONArray jsonArray = new SchoolOrFaculty().getSchoolBycampus(campus);
+        return ok(Json.parse(jsonArray.toJSONString()));
+    }
+
+    public static Result addModeOfStudy(){
+        return ok(addModeOfStudy.render(courseInstitutionModeOfStudyForm,ModeOfStudy.modeOfStudyMap(),new InstitutionCourse().getAllInstitutionCourses()));
+    }
+
+    public static Result saveModeOfStudy(){
+       //bind the form
+        Form<CourseInstitutionModeOfStudy> courseInstitutionModeOfStudyBoundForm = courseInstitutionModeOfStudyForm.bindFromRequest();
+        if(courseInstitutionModeOfStudyBoundForm.hasErrors()){
+            flash("modeofstudyerror","Correct form errors anf resubmit");
+            return redirect(routes.InstitutionActions.addModeOfStudy());
+        }
+        Map<String, String[]> formDatamap = request().body().asFormUrlEncoded();
+        String institution_course = formDatamap.get("institution_course")[0];
+        String [] mode_of_study = formDatamap.get("mode_of_study");
+
+        if (mode_of_study.length == 0){
+            flash("modeofstudyerror","No  mode of study was selected");
+            return redirect(routes.InstitutionActions.addModeOfStudy());
+        }
+        //Logger.info("institutionCourse selected:" + institution_course);
+        //Logger.info("Number" + mode_of_study.length);
+
+        for (int i = 0; i < mode_of_study.length; i++){
+            //create object
+            CourseInstitutionModeOfStudy courseInstitutionModeOfStudy = new CourseInstitutionModeOfStudy();
+            InstitutionCourse institutionCourse = new InstitutionCourse().getInstitutionCourseById(Long.parseLong(institution_course));
+
+            courseInstitutionModeOfStudy.institutionCourse = institutionCourse;
+            courseInstitutionModeOfStudy.modeOfStudy = ModeOfStudy.valueOf(mode_of_study[i]);
+
+            if (new CourseInstitutionModeOfStudy().modeOfStudyAlreadyExist(institutionCourse,ModeOfStudy.valueOf(mode_of_study[i]))){
+                flash("modeofstudyerror","This mode of study has been added to the selected course");
+                return redirect(routes.InstitutionActions.addModeOfStudy());
+            }
+
+            courseInstitutionModeOfStudy.save();
+            //Logger.info("DONE");
+        }
+
+        flash("modeofstudysuccess","Mode of study has been added");
+        return redirect(routes.InstitutionActions.addModeOfStudy());
+    }
+
+    public static Result getInstitutionCampusCourses(Long institution_id, Long campus_id){
+        if (new  Campus().getCampusById(campus_id) == null || new Institution().getInstitutionById(institution_id) == null){
+            return badRequest();
+        }
+        Course course = new Course();
+        List<Course> courseList = course.filterCoursesByInstitutionByCampus(new Institution().getInstitutionById(institution_id),new Campus().getCampusById(campus_id));
+        return ok(Json.parse(course.getCampusCourses(courseList).toJSONString()));
+    }
+
+    public static Result addCourseFees(){return TODO;}
+
+    public static Result saveCourseFees(){return TODO;}
 }

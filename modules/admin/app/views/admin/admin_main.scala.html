@@ -48,6 +48,8 @@
     <script type="text/javascript" src='@routes.Assets.at("js/institution.js")'></script>
     <script type="text/javascript" src='@routes.Assets.at("js/addcampus.js")'></script>
     <script type="text/javascript" src='@routes.Assets.at("js/addschool.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/addcourse.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/addmodeofstudy.js")'></script>
 
     <style>.panel-heading{font-weight: bold;}</style>
 
@@ -139,8 +141,8 @@
                 <a href="@controllers.admincontrollers.routes.InstitutionActions.allInstitutions()"> View all Institutions</a><br>
                 <a href="@controllers.admincontrollers.routes.InstitutionActions.newCampus()"> Add campuses</a><br>
                 <a href="@controllers.admincontrollers.routes.InstitutionActions.newSchool()"> Add Schools/Faculty</a><br>
-                <a href="#"> Add Courses</a><br> <!----state the examination body---->
-                <a href="#"> Add Course Mode of study</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.addCourse()"> Add Courses</a><br> <!----state the examination body---->
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.addModeOfStudy"> Add Course Mode of study</a><br>
                 <a href="#"> Add Course Fees</a> <br><!----Mode of study has to be selected--->
                 <a href="#"> Add Clubs/Societies</a><br>
                 <a href="#"> Add Partners</a><br>

@@ -5,6 +5,8 @@ import play.db.ebean.Model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by derdus on 6/22/16.
@@ -25,4 +27,51 @@ public class CourseInstitutionModeOfStudy extends Model {
     //Entity relationships
     @ManyToOne
     public InstitutionCourse institutionCourse;
+
+
+
+    //methods
+    public static Finder<Long, CourseInstitutionModeOfStudy> find(){
+        return new Finder<Long, CourseInstitutionModeOfStudy>(Long.class,CourseInstitutionModeOfStudy.class);
+    }
+
+    public Long saveModeOfStudy(){
+        if (this.course_institution_mode_of_study_id == null){
+            save();
+            return course_institution_mode_of_study_id;
+        }
+        update();
+        return course_institution_mode_of_study_id;
+    }
+
+    public CourseInstitutionModeOfStudy getModeOfStudyById(Long id){
+        return find().byId(id);
+    }
+
+    public List<CourseInstitutionModeOfStudy> getAllCoursesModeOfStudy(){return find().all();}
+
+
+    public List<ModeOfStudy> getModesOfStudyByInstitutionCampusAndCourse(Institution institution, Campus campus, Course course){
+        //We return a list of modes of study
+        List<ModeOfStudy> modeOfStudyList = new ArrayList<ModeOfStudy>();
+        for (CourseInstitutionModeOfStudy courseInstitutionModeOfStudy: getAllCoursesModeOfStudy()){
+            if (courseInstitutionModeOfStudy.institutionCourse.course.equals(course) &&
+                    courseInstitutionModeOfStudy.institutionCourse.campus.equals(campus) &&
+                    courseInstitutionModeOfStudy.institutionCourse.institution.equals(institution)){
+                modeOfStudyList.add(courseInstitutionModeOfStudy.modeOfStudy);
+            }
+        }
+        return modeOfStudyList;
+    }
+
+    public boolean modeOfStudyAlreadyExist(InstitutionCourse institutionCourse, ModeOfStudy modeOfStudy){
+        boolean found = false;
+        for (CourseInstitutionModeOfStudy courseInstitutionModeOfStudy : getAllCoursesModeOfStudy()){
+            if (courseInstitutionModeOfStudy.modeOfStudy.equals(modeOfStudy) && courseInstitutionModeOfStudy.institutionCourse.equals(institutionCourse)){
+                found = true;
+            }
+        }
+        return found;
+    }
+
 }

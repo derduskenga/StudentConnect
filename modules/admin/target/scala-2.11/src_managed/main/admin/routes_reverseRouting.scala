@@ -1,6 +1,6 @@
 // @SOURCE:/home/derdus/studentconnect/modules/admin/conf/admin.routes
-// @HASH:f95ffd13176ba4ae3b1b81b6a605506c3f45da6a
-// @DATE:Sun Jul 24 14:18:05 EAT 2016
+// @HASH:4751fe6b258751a55ce2d458bb6306584e4c0ab4
+// @DATE:Sun Jul 31 22:36:43 EAT 2016
 
 import admin.Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,13 +15,20 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:64
+// @LINE:63
 // @LINE:62
 // @LINE:61
 // @LINE:60
 // @LINE:59
-// @LINE:58
-// @LINE:57
 // @LINE:56
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -64,13 +71,20 @@ import Router.queryString
 // @LINE:6
 package controllers.admincontrollers {
 
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:64
+// @LINE:63
 // @LINE:62
 // @LINE:61
 // @LINE:60
 // @LINE:59
-// @LINE:58
-// @LINE:57
 // @LINE:56
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -86,6 +100,13 @@ package controllers.admincontrollers {
 class ReverseInstitutionActions {
 
 
+// @LINE:69
+def saveModeOfStudy(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/course/modeofstudy/save")
+}
+                        
+
 // @LINE:44
 def allInstitutionCategory(): Call = {
    import ReverseRouteContext.empty
@@ -93,7 +114,7 @@ def allInstitutionCategory(): Call = {
 }
                         
 
-// @LINE:57
+// @LINE:60
 def saveCampus(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "campus/save")
@@ -114,6 +135,13 @@ def editInstitutionCategory(institution_category_id:Long): Call = {
 }
                         
 
+// @LINE:54
+def addCourse(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/addcourse")
+}
+                        
+
 // @LINE:51
 def deleteInstitution(id:Long): Call = {
    import ReverseRouteContext.empty
@@ -128,7 +156,14 @@ def newInstitution(): Call = {
 }
                         
 
-// @LINE:62
+// @LINE:72
+def addCourseFees(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/course/fees/new")
+}
+                        
+
+// @LINE:65
 def saveSchool(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "school/save")
@@ -149,7 +184,21 @@ def editInstitution(id:Long): Call = {
 }
                         
 
-// @LINE:59
+// @LINE:55
+def saveCourseInstitution(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/savecourseinstitution")
+}
+                        
+
+// @LINE:68
+def addModeOfStudy(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "institution/course/modeofstudy/new")
+}
+                        
+
+// @LINE:62
 def viewCampus(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "campus/view/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -170,21 +219,21 @@ def fetchInstitutionCampuses(institution_id:Long): Call = {
 }
                         
 
-// @LINE:60
+// @LINE:63
 def editCampus(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "campus/edit/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:61
+// @LINE:64
 def newSchool(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "school/new")
 }
                         
 
-// @LINE:58
+// @LINE:61
 def deleteCampus(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "campus/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -192,9 +241,23 @@ def deleteCampus(id:Long): Call = {
                         
 
 // @LINE:56
+def fetchCampusSchools(campus_id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/fetchschool/" + implicitly[PathBindable[Long]].unbind("campus_id", campus_id))
+}
+                        
+
+// @LINE:59
 def newCampus(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "campus/new")
+}
+                        
+
+// @LINE:73
+def saveCourseFees(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "institution/course/fees/save")
 }
                         
 
@@ -461,13 +524,20 @@ def index(): Call = {
                   
 
 
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:64
+// @LINE:63
 // @LINE:62
 // @LINE:61
 // @LINE:60
 // @LINE:59
-// @LINE:58
-// @LINE:57
 // @LINE:56
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -511,13 +581,20 @@ def index(): Call = {
 package controllers.admincontrollers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:64
+// @LINE:63
 // @LINE:62
 // @LINE:61
 // @LINE:60
 // @LINE:59
-// @LINE:58
-// @LINE:57
 // @LINE:56
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -533,6 +610,17 @@ import ReverseRouteContext.empty
 class ReverseInstitutionActions {
 
 
+// @LINE:69
+def saveModeOfStudy : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveModeOfStudy",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/course/modeofstudy/save"})
+      }
+   """
+)
+                        
+
 // @LINE:44
 def allInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.allInstitutionCategory",
@@ -544,7 +632,7 @@ def allInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:57
+// @LINE:60
 def saveCampus : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.saveCampus",
    """
@@ -577,6 +665,17 @@ def editInstitutionCategory : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:54
+def addCourse : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.addCourse",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/addcourse"})
+      }
+   """
+)
+                        
+
 // @LINE:51
 def deleteInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.deleteInstitution",
@@ -599,7 +698,18 @@ def newInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:62
+// @LINE:72
+def addCourseFees : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.addCourseFees",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/course/fees/new"})
+      }
+   """
+)
+                        
+
+// @LINE:65
 def saveSchool : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.saveSchool",
    """
@@ -632,7 +742,29 @@ def editInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:59
+// @LINE:55
+def saveCourseInstitution : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveCourseInstitution",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/savecourseinstitution"})
+      }
+   """
+)
+                        
+
+// @LINE:68
+def addModeOfStudy : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.addModeOfStudy",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/course/modeofstudy/new"})
+      }
+   """
+)
+                        
+
+// @LINE:62
 def viewCampus : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.viewCampus",
    """
@@ -665,7 +797,7 @@ def fetchInstitutionCampuses : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:60
+// @LINE:63
 def editCampus : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.editCampus",
    """
@@ -676,7 +808,7 @@ def editCampus : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:61
+// @LINE:64
 def newSchool : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.newSchool",
    """
@@ -687,7 +819,7 @@ def newSchool : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:58
+// @LINE:61
 def deleteCampus : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.deleteCampus",
    """
@@ -699,11 +831,33 @@ def deleteCampus : JavascriptReverseRoute = JavascriptReverseRoute(
                         
 
 // @LINE:56
+def fetchCampusSchools : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.fetchCampusSchools",
+   """
+      function(campus_id) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/fetchschool/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("campus_id", campus_id)})
+      }
+   """
+)
+                        
+
+// @LINE:59
 def newCampus : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.admincontrollers.InstitutionActions.newCampus",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "campus/new"})
+      }
+   """
+)
+                        
+
+// @LINE:73
+def saveCourseFees : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.admincontrollers.InstitutionActions.saveCourseFees",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "institution/course/fees/save"})
       }
    """
 )
@@ -1096,13 +1250,20 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:64
+// @LINE:63
 // @LINE:62
 // @LINE:61
 // @LINE:60
 // @LINE:59
-// @LINE:58
-// @LINE:57
 // @LINE:56
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -1146,13 +1307,20 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.admincontrollers.ref {
 
 
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:64
+// @LINE:63
 // @LINE:62
 // @LINE:61
 // @LINE:60
 // @LINE:59
-// @LINE:58
-// @LINE:57
 // @LINE:56
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -1168,13 +1336,19 @@ package controllers.admincontrollers.ref {
 class ReverseInstitutionActions {
 
 
+// @LINE:69
+def saveModeOfStudy(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveModeOfStudy(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveModeOfStudy", Seq(), "POST", """""", _prefix + """institution/course/modeofstudy/save""")
+)
+                      
+
 // @LINE:44
 def allInstitutionCategory(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.allInstitutionCategory(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "allInstitutionCategory", Seq(), "GET", """""", _prefix + """institution/category/all""")
 )
                       
 
-// @LINE:57
+// @LINE:60
 def saveCampus(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.saveCampus(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveCampus", Seq(), "POST", """""", _prefix + """campus/save""")
 )
@@ -1192,6 +1366,12 @@ def editInstitutionCategory(institution_category_id:Long): play.api.mvc.HandlerR
 )
                       
 
+// @LINE:54
+def addCourse(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.addCourse(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "addCourse", Seq(), "GET", """""", _prefix + """institution/addcourse""")
+)
+                      
+
 // @LINE:51
 def deleteInstitution(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.deleteInstitution(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "deleteInstitution", Seq(classOf[Long]), "GET", """""", _prefix + """institution/delete/$id<[^/]+>""")
@@ -1204,7 +1384,13 @@ def newInstitution(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:62
+// @LINE:72
+def addCourseFees(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.addCourseFees(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "addCourseFees", Seq(), "GET", """Course fees""", _prefix + """institution/course/fees/new""")
+)
+                      
+
+// @LINE:65
 def saveSchool(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.saveSchool(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveSchool", Seq(), "POST", """""", _prefix + """school/save""")
 )
@@ -1222,7 +1408,19 @@ def editInstitution(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.Hand
 )
                       
 
-// @LINE:59
+// @LINE:55
+def saveCourseInstitution(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveCourseInstitution(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveCourseInstitution", Seq(), "POST", """""", _prefix + """institution/savecourseinstitution""")
+)
+                      
+
+// @LINE:68
+def addModeOfStudy(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.addModeOfStudy(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "addModeOfStudy", Seq(), "GET", """Mode of study""", _prefix + """institution/course/modeofstudy/new""")
+)
+                      
+
+// @LINE:62
 def viewCampus(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.viewCampus(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "viewCampus", Seq(classOf[Long]), "GET", """""", _prefix + """campus/view/$id<[^/]+>""")
 )
@@ -1240,27 +1438,39 @@ def fetchInstitutionCampuses(institution_id:Long): play.api.mvc.HandlerRef[_] = 
 )
                       
 
-// @LINE:60
+// @LINE:63
 def editCampus(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.editCampus(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "editCampus", Seq(classOf[Long]), "GET", """""", _prefix + """campus/edit/$id<[^/]+>""")
 )
                       
 
-// @LINE:61
+// @LINE:64
 def newSchool(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.newSchool(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "newSchool", Seq(), "GET", """""", _prefix + """school/new""")
 )
                       
 
-// @LINE:58
+// @LINE:61
 def deleteCampus(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.deleteCampus(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "deleteCampus", Seq(classOf[Long]), "GET", """""", _prefix + """campus/delete/$id<[^/]+>""")
 )
                       
 
 // @LINE:56
+def fetchCampusSchools(campus_id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.fetchCampusSchools(campus_id), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "fetchCampusSchools", Seq(classOf[Long]), "POST", """""", _prefix + """institution/fetchschool/$campus_id<[^/]+>""")
+)
+                      
+
+// @LINE:59
 def newCampus(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.admincontrollers.InstitutionActions.newCampus(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "newCampus", Seq(), "GET", """Campuses""", _prefix + """campus/new""")
+)
+                      
+
+// @LINE:73
+def saveCourseFees(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.admincontrollers.InstitutionActions.saveCourseFees(), HandlerDef(this.getClass.getClassLoader, "", "controllers.admincontrollers.InstitutionActions", "saveCourseFees", Seq(), "POST", """""", _prefix + """institution/course/fees/save""")
 )
                       
 
