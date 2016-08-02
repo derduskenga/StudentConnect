@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160731214311"/>
+		date="20160802212827"/>
 	<dependencies>
 		<module organisation="org.webjars" name="bootswatch-cerulean">
 			<revision name="3.2.0-1" status="release" pubdate="20140705192232" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">
@@ -21,7 +21,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="web_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160731214306" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="79">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160802212824" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="79">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -40,7 +40,7 @@
 			</revision>
 		</module>
 		<module organisation="com.myweb" name="common_2.11">
-			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160731214303" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="1.0-SNAPSHOT" status="integration" pubdate="20160802212818" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.myweb" name="admin_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.myweb" name="web_2.11" conf="compile" rev="1.0-SNAPSHOT" rev-constraint-default="1.0-SNAPSHOT" rev-constraint-dynamic="1.0-SNAPSHOT" callerrev="1.0-SNAPSHOT"/>

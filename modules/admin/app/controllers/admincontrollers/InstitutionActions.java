@@ -20,6 +20,7 @@ import views.html.admin.campusFormView;
 import views.html.admin.schoolFormView;
 import views.html.admin.InstitutionCourseFormView;
 import views.html.admin.addModeOfStudy;
+import views.html.admin.addFees;
 import java.io.File;
 import com.google.common.io.Files;
 import org.apache.commons.io.FileUtils;
@@ -346,7 +347,32 @@ public class InstitutionActions extends Controller {
         return ok(Json.parse(course.getCampusCourses(courseList).toJSONString()));
     }
 
-    public static Result addCourseFees(){return TODO;}
+    public static Result addCourseFees(){
+        return ok(addFees.render(courseInstitutionModeOfStudyForm,
+                new CourseInstitutionModeOfStudy().getInstitutionCoursesWithoutFees()));
+    }
 
-    public static Result saveCourseFees(){return TODO;}
+    public static Result saveCourseFees(){
+        //bind the form
+        Form<CourseInstitutionModeOfStudy> courseInstitutionModeOfStudyBoundForm = courseInstitutionModeOfStudyForm.bindFromRequest();
+        if(courseInstitutionModeOfStudyBoundForm.hasErrors()){
+            flash("modeofstudyerror","Correct form errors anf resubmit");
+            return redirect(routes.InstitutionActions.addCourseFees());
+        }
+        Map<String, String[]> formDatamap = request().body().asFormUrlEncoded();
+        String institution_course_mode_of_study = formDatamap.get("institution_course_mode_of_study")[0];
+
+        if(institution_course_mode_of_study.equals("")){
+            flash("modeofstudyerror","Correct form errors anf resubmit");
+            return redirect(routes.InstitutionActions.addCourseFees());
+        }
+
+        CourseInstitutionModeOfStudy courseInstitutionModeOfStudy = courseInstitutionModeOfStudyBoundForm.get();
+        //Override id
+        courseInstitutionModeOfStudy.course_institution_mode_of_study_id = Long.parseLong(institution_course_mode_of_study);
+        courseInstitutionModeOfStudy.saveModeOfStudy();
+        flash("modeofstudysuccess","Fees has been aded");
+        return redirect(routes.InstitutionActions.addCourseFees());
+
+    }
 }

@@ -1,0 +1,86 @@
+@(courseInstitutionModeOfStudyForm: Form[models.web.CourseInstitutionModeOfStudy])(courseInstitutionModeOfStudy: List[models.web.CourseInstitutionModeOfStudy])
+@import helper._
+@import formfieldtemplates._
+@import java.util._
+
+@admin_main("New School | Admin"){
+@helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveCourseFees(),'id->"modeofstudyfeesform",'name->"modeofstudyfeesform",'method->"post"){
+@if(flash.containsKey("modeofstudysuccess")){
+<div class="alert alert-success">
+    @flash.get("modeofstudysuccess")
+</div>
+}
+
+@if(flash.containsKey("modeofstudyerror")){
+<div class="alert alert-danger">
+    @flash.get("modeofstudyerror")
+</div>
+}
+
+<fieldset>
+    <legend>Add scchool feesto Courses - Only course with no fees are shown</legend>
+
+    <input type="hidden"  value="@courseInstitutionModeOfStudyForm("course_institution_mode_of_study_id").valueOr("")" name="course_institution_mode_of_study_id"/>
+    <div class="form-group">
+        <label class="col-sm-3 control-label" for="course_name">Select course with mode of study</label>
+        <div class="col-sm-9">
+
+            <table id="certification-courses-table">
+                <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>University</th>
+                    <th>Campus</th>
+                    <th>mode of study</th>
+                    <th>Select</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                <tr>
+                    <th>Course Name</th>
+                    <th>University</th>
+                    <th>Campus</th>
+                    <th>mode of study</th>
+                    <th>Select</th>
+                </tr>
+                </tfoot>
+
+                <tbody>
+                @for(courseModeOfStudy <- courseInstitutionModeOfStudy){
+                <tr>
+                    <td>@courseModeOfStudy.institutionCourse.course.course_name</td>
+                    <td>@courseModeOfStudy.institutionCourse.institution.institution_name</td>
+                    <td>@courseModeOfStudy.institutionCourse.campus.campus_name</td>
+                    <td>@courseModeOfStudy.modeOfStudy.name()</td>
+                    <td><input type="radio" required name="institution_course_mode_of_study" value="@courseModeOfStudy.course_institution_mode_of_study_id"></td>
+                </tr>
+                }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    @textemail(courseInstitutionModeOfStudyForm("institution_course_fees"),
+    label = "Course fees",
+    placeholder = "Type course fees here.....",
+    fieldcontrolattr = "required",
+    input_type = "number",
+    divClass="col-sm-9")
+
+
+    @formfieldtemplates.text_url(courseInstitutionModeOfStudyForm("institution_course_fees_url"),
+    label = "Job blog link",
+    placeholder = "Link to school fees infom here.....",
+    divClass="col-sm-9")
+
+</fieldset>
+<hr>
+<div class="row">
+    <p align="right"> <input  type="submit" class="btn btn-primary" value="Add course school fees" id="course-fees-submit-btn"/></p>
+
+</div>
+
+}
+}

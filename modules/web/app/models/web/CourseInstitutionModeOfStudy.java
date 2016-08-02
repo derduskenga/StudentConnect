@@ -50,6 +50,10 @@ public class CourseInstitutionModeOfStudy extends Model {
 
     public List<CourseInstitutionModeOfStudy> getAllCoursesModeOfStudy(){return find().all();}
 
+    public List<CourseInstitutionModeOfStudy> getInstitutionCoursesWithoutFees(){
+        return find().where().eq("institution_course_fees",0).eq("institution_course_fees_url",null).findList();
+    }
+
 
     public List<ModeOfStudy> getModesOfStudyByInstitutionCampusAndCourse(Institution institution, Campus campus, Course course){
         //We return a list of modes of study
