@@ -13,6 +13,7 @@ target/
 modules/common/target/
 modules/web/target/
 modules/admin/target/
+logs/
 
 # Play
 logs
