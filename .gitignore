@@ -8,11 +8,11 @@ dist
 project/boot
 project/target
 project/plugins/target
-target
-.target
-modules/common/target
-modules/web/target
-modules/admin/target
+target/
+.target/
+modules/common/target/
+modules/web/target/
+modules/admin/target/
 
 # Play
 logs
