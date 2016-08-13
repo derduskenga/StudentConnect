@@ -6,7 +6,7 @@ dump
 #SBT
 dist
 project/boot
-project/target
+project/target/
 project/plugins/target/
 target/
 .target/
