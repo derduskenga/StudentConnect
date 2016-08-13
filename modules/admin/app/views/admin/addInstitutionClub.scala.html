@@ -1,0 +1,49 @@
+@(clubForm: Form[models.web.ClubSociety])(institutionMap: Map[Map[Long, String],Boolean])
+
+@admin_main("New School | Admin"){
+        @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveClub(),'id->"clubform",'name->"clubform",'method->"post"){
+                @if(flash.containsKey("clubsuccess")){
+                <div class="alert alert-success">
+                    @flash.get("clubsuccess")
+                </div>
+                }
+
+                @if(flash.containsKey("cluberror")){
+                <div class="alert alert-danger">
+                    @flash.get("cluberror")
+                </div>
+                }
+
+                <fieldset>
+                        <legend>Add Clubs/Societies to institutions</legend>
+                        <input type="hidden"  value="@clubForm("club_society_id").valueOr("")" name="club_society_id"/>
+
+                        @formfieldtemplates.fieldselect(clubForm("institution_id"),
+                        label = "Select Institution",
+                        optionMap=institutionMap,
+                        default="Select institution",
+                        includeStaticDefault=true,
+                        fieldcontrolattr = "required",
+                        divClass="col-sm-9")
+
+                        @formfieldtemplates.text(clubForm("club_society_name"),
+                        label = "Club/Society name",
+                        placeholder = "club/society name here.....",
+                        fieldcontrolattr="required",
+                        divClass="col-sm-9")
+
+                        @formfieldtemplates.textarea(clubForm("club_society_description"),
+                        label="Club description",
+                        placeholder = "Write description here including club activities ",
+                        rows="4",
+                        fieldcontrolattr = "required",
+                        divClass="col-sm-9")
+
+                </fieldset>
+
+                <div class="row">
+                        <p align="right"> <input  type="submit" class="btn btn-primary" value="Add Club/Society" id="institution-club-submit-btn"/></p>
+
+                </div>
+        }
+}

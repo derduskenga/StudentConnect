@@ -1,0 +1,67 @@
+@(partnerForm: Form[models.web.Partner])(institutionPartnershipForm: Form[models.web.InstitutionPartnership])(institutionMap: Map[Map[Long, String],Boolean])
+
+@admin_main("New Partner | Admin"){
+        @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.savePartner(),'id->"partnerform",'name->"partnerform",'method->"post"){
+                @if(flash.containsKey("partnersuccess")){
+                <div class="alert alert-success">
+                    @flash.get("partnersuccess")
+                </div>
+                }
+
+                @if(flash.containsKey("partnererror")){
+                <div class="alert alert-danger">
+                    @flash.get("partnererror")
+                </div>
+                }
+
+                <fieldset>
+                        <legend>Add partners to institutions</legend>
+                        <input type="hidden"  value="@partnerForm("partner_id").valueOr("")" name="partner_id"/>
+
+                        @formfieldtemplates.fieldselect(partnerForm("institution_id"),
+                        label = "Select Institution",
+                        optionMap=institutionMap,
+                        default="Select institution",
+                        includeStaticDefault=true,
+                        fieldcontrolattr = "required",
+                        divClass="col-sm-9")
+
+                        @formfieldtemplates.text(partnerForm("partner_name"),
+                        label = "Partner name",
+                        placeholder = "partner name here.....",
+                        fieldcontrolattr="required",
+                        input_class = "typeahead tt-query",
+                        divClass="col-sm-9")
+
+                        @formfieldtemplates.text_url(partnerForm("partner_website_url"),
+                        label = "Partner website URL",
+                        placeholder = "Partner website URL",
+                        divClass="col-sm-9")
+
+                        @formfieldtemplates.textarea(partnerForm("partner_description"),
+                        label="Partner description",
+                        placeholder = "Write description here including club activities ",
+                        rows="4",
+                        fieldcontrolattr = "required",
+                        divClass="col-sm-9")
+
+
+                        <input type="hidden"  value="@institutionPartnershipForm("institution_partnership_id").valueOr("")" name="institution_partnership_id"/>
+
+                        @formfieldtemplates.textarea(institutionPartnershipForm("institution_partnership_description"),
+                        label="Reason for partnership",
+                        placeholder = "Reason for partnership ",
+                        rows="4",
+                        fieldcontrolattr = "required",
+                        divClass="col-sm-9")
+
+
+                </fieldset>
+
+                <div class="row">
+                        <p align="right"> <input  type="submit" class="btn btn-primary" value="Add Partner" id="institution-partner-submit-btn"/></p>
+
+                </div>
+
+        }
+}

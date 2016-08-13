@@ -1,10 +1,14 @@
 package models.web;
 
 import models.web.utility.Utility;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import play.Logger;
 import play.db.ebean.Model;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.*;
+
 import play.data.validation.Constraints;
 
 /**
@@ -37,6 +41,8 @@ public class Course extends Model {
     public List<JobPlacement> jobPlacementList;
     @OneToMany(mappedBy = "certificationCourse")
     public List<CourseCertification> courseCertificationList; /*For any course picked, we fetch all associated cetification courses*/
+    @OneToMany(mappedBy = "course")
+    public List<CampusCourse> campusCourseList;
 
 
     //Methods
@@ -61,11 +67,51 @@ public class Course extends Model {
         return find().all();
     }
 
-    public void deleteCourse(Long id){
+    public boolean deleteCourse(Long id){
         if(getCourseById(id) != null){
-            getCourseById(id).delete();
+            try {
+                getCourseById(id).delete();
+                return true;
+            }catch (PersistenceException pe){
+                Logger.error("Error: " + pe.getMessage().toString());
+                return false;
+            }catch (Exception ex){
+                Logger.error("Error:" + ex.getMessage().toString());
+                return false;
+            }
         }
+        return false;
     }
 
+    public List<Course> filterCoursesByInstitutionByCampus(Institution institution, Campus campus){
+        List<Course> courseList = new ArrayList<Course>();
+        for (int i = 0;i<institution.institutionCourseList.size(); i++){
+            if(institution.institutionCourseList.get(i).campus.equals(campus)){
+                courseList.add(institution.institutionCourseList.get(i).course);
+            }
+        }
+        return courseList;
+    }
 
+    public Map<Map<Long,String>,Boolean> coursesMap(){
+        List<Course> courseList = find().orderBy("course_name").findList();
+        Map<Map<Long,String>,Boolean> courseMap = new LinkedHashMap<Map<Long,String>,Boolean>();
+        for(int i = 0; i < courseList.size(); i++){
+            Map<Long,String> innerCourseMap  = new HashMap<Long,String>();
+            innerCourseMap.put(courseList.get(i).course_id,courseList.get(i).course_name + "-" + courseList.get(i).courseLevel.course_level_name);
+            courseMap.put(innerCourseMap,false);
+        }
+        return courseMap;
+    }
+
+    public JSONArray getCampusCourses(List<Course> courseList){
+        JSONArray jsonArray = new JSONArray();
+        for (Course course: courseList){
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("id",course.course_id);
+            jsonObject.put("name",course.course_name);
+            jsonArray.add(jsonObject);
+        }
+        return jsonArray;
+    }
 }

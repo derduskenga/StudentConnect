@@ -1,0 +1,40 @@
+@import models.web.InstitutionCategory
+
+@(institutionCategoryList: List[InstitutionCategory])
+
+@admin_main("All Institution Categories| Admin Panel"){
+@if(institutionCategoryList.isEmpty){
+<div class="alert-info">
+    No institution Categories were found. <a href="@controllers.admincontrollers.routes.InstitutionActions.newInstitutionCategory()" title="Click here to start adding institution Categories"><i class="fa fa-plus-square" aria-hidden="true"></i>
+    Add here</a>
+</div>
+}else{
+@if(flash.containsKey("institutioncategorydeleted")){
+<div class="alert alert-success">
+    @flash.get("institutioncategorydeleted")
+</div>
+}
+@if(flash.containsKey("institutioncategoryerror")){
+<div class="alert alert-danger">
+    @flash.get("institutioncategoryerror")
+</div>
+}
+<a href="@controllers.admincontrollers.routes.InstitutionActions.newInstitutionCategory()" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i>
+    Add Institution Category</a>
+<table>
+    <tr>
+        <th>Institution Category</th>
+        <th><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Edit"></i></th>
+        <th><i class="fa fa-trash-o fa-2x" aria-hidden="true" title="Delete"></i></th>
+    </tr>
+    @for(institutionCategories <- institutionCategoryList){
+    <tr>
+        <td>@institutionCategories.institution_category_name</td>
+        <td><a href="@controllers.admincontrollers.routes.InstitutionActions.editInstitutionCategory(institutionCategories.institution_category_id)" title="Edit"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Edit"></i></a></td>
+        <td><a href="@controllers.admincontrollers.routes.InstitutionActions.deleteInstitutionCategory(institutionCategories.institution_category_id)" title="Edit" class="delete-institution-category"><i class="fa fa-trash-o fa-2x delete_course" aria-hidden="true" title="Delete @institutionCategories.institution_category_name"></i></a></td>
+    </tr>
+    }
+
+</table>
+}
+}

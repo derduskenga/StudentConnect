@@ -1,11 +1,11 @@
-@(field: Field, label: String = "CHANGEME", optionMap: Map[Map[Long,String], Boolean], isMultiple: Boolean=false,
+@(field: Field, label: String = "CHANGEME", optionMap: Map[Map[Long,String], Boolean], isMultiple: Boolean=false, controlClass: String="",
 help: String = "",default:String="Please select a value",divClass:String="col-sm-10",includeStaticDefault: Boolean = true,fieldcontrolattr:String="",fieldsizing:String="")
 
 <div class="form-group @if(field.hasErrors) {has-error}">
     <label class="col-sm-3 control-label" for="@field.id">@label</label>
     <div class="@divClass">
         <select
-                class="form-control @fieldsizing"
+                class="form-control @fieldsizing @controlClass"
                 id="@field.id"
                 name="@if(isMultiple) {@(field.name + "[]")} else {@field.name}"
         @if(isMultiple) {multiple="multiple"} @fieldcontrolattr>

@@ -1,0 +1,63 @@
+@(schoolForm: Form[models.web.SchoolOrFaculty])(institutionMap: Map[Map[Long, String],Boolean])(campusMap: Map[Map[Long, String],Boolean])
+@import helper._
+@import formfieldtemplates._
+@import java.util._
+
+@admin_main("New School | Admin"){
+
+    <!---fields: institution, campus,fuculty name and description-->
+    <!--we need a relationship between schools and campus......many-to-many......we need a 3rd entity SchoolOrFacultyCampus--->
+        <div id="add-school-div">
+                @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveSchool(),
+                'id->"schoolform",'name->"schoolform", 'method->"post"){
+                        @if(flash.containsKey("schoolformsuccess")){
+                                <div class="alert alert-success">
+                                    @flash.get("schoolformsuccess")
+                                </div>
+                        }
+
+                        <fieldset>
+                                <legend>Add School/Faculty</legend>
+                                <input type="hidden"  value="@schoolForm("school_id").valueOr("")" name="school_id"/>
+
+                                @formfieldtemplates.fieldselect(schoolForm("institution_id"),
+                                label = "Select Institution",
+                                optionMap=institutionMap,
+                                default="Select institution",
+                                includeStaticDefault=true,
+                                fieldcontrolattr = "required",
+                                controlClass = "detect-change",
+                                divClass="col-sm-9")
+
+                                @formfieldtemplates.fieldselect(schoolForm("campus_id"),
+                                label = "Select Campus",
+                                optionMap=campusMap,
+                                default="Select campus",
+                                includeStaticDefault=true,
+                                fieldcontrolattr = "required",
+                                divClass="col-sm-9")
+
+                                @text(schoolForm("school_name"),
+                                label = "faculty/school name",
+                                placeholder = "campus name here...",
+                                fieldcontrolattr="required",
+                                divClass="col-sm-9")
+
+                                @formfieldtemplates.textarea(schoolForm("school_description"),
+                                label="Description",
+                                placeholder = "Type your description here",
+                                fieldcontrolattr="required",
+                                rows="4",
+                                divClass="col-sm-9")
+
+                        </fieldset>
+
+                        <div class="row">
+                            <p align="right"> <input  type="submit" class="btn btn-primary" value="Add School/Faculty" id="school-submit-btn"/></p>
+
+                        </div>
+
+
+                }
+        </div>
+}

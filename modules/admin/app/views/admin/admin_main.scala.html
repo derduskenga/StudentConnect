@@ -10,17 +10,27 @@
     <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/style.css")'>
     <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/reset.css")'>
     <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/ctable.css")'>
-
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/jobtitles.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/typeahead.css")'>
 
     <!-- jquery js -->
 
     <script type="text/javascript" src='@routes.Assets.at("components/jquery/dist/jquery.min.js")'></script>
+    <!--select 2 plugin-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
+
+    <!--valiate-->
+    <!--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>-->
+    <script type="text/javascript" src='@routes.Assets.at("components/jqueryvalidation/dist/jquery.validate.min.js")'></script>
+
+    <!---typeahead--->
+    <script type="text/javascript" src='@routes.Assets.at("typeahead/typeahead.min.js")'></script>
     <!-- bootstrap js -->
 
     <!---tinymce--->
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
 
     <!---Custom js files--->
     <script type="text/javascript" src='@routes.Assets.at("js/course_field.js")'></script>
@@ -28,6 +38,20 @@
     <script type="text/javascript" src='@routes.Assets.at("js/course_files.js")'></script>
     <script type="text/javascript" src='@routes.Assets.at("js/datatablesjs.js")'></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/managecourse.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/select2trigger.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/jobtitles.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/typeaheadtrigger.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/coursespecialization.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/coursecertificationdatatable.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/institution_category.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/institution.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/addcampus.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/addschool.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/addcourse.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/addmodeofstudy.js")'></script>
+
+    <style>.panel-heading{font-weight: bold;}</style>
 
 
     <!-- fonts -->
@@ -67,7 +91,7 @@
 
     <!-- Main Content area -->
     <section id="content">
-        @content
+       <div class="row"> @content </div>
     </section>
 
     <!-- Sidebar -->
@@ -95,9 +119,9 @@
             <div class="panel-body">
                 <a href="@controllers.admincontrollers.routes.CourseActions.newCourse()"> New Course</a><br>
                 <a href="@controllers.admincontrollers.routes.CourseActions.fetchAllCourses()"> View all courses</a><br>
-                <a href="#"> Add Job Placement</a> <br><!--we add job placement areas/titles or institutions where i can work---->
-                <a href="#"> Add course specialization</a><br>
-                <a href="#"> Add course certifications</a>
+                <a href="@controllers.admincontrollers.routes.CourseActions.courseNewJobPlacement()"> Add Job Placement</a> <br><!--we add job placement areas/titles or institutions where i can work---->
+                <a href="@controllers.admincontrollers.routes.CourseActions.courseNewSpecialization()"> Add course specialization</a><br>
+                <a href="@controllers.admincontrollers.routes.CourseActions.newCourseCertification()"> Add course certifications</a>
              </div>
 
         </div>
@@ -105,24 +129,24 @@
         <div class="panel panel-info">
             <div class="panel-heading">Institution categories </div>
             <div class="panel-body">
-                <a href="#"> New Institution category</a><br>
-                <a href="#"> View all categories</a>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newInstitutionCategory()"> New Institution category</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.allInstitutionCategory()"> View all categories</a>
             </div>
         </div>
 
         <div class="panel panel-info">
             <div class="panel-heading">Institutions</div>
             <div class="panel-body">
-                <a href="#"> New Institution</a><br>
-                <a href="#"> View all Institutions</a><br>
-                <a href="#"> Add campuses</a><br>
-                <a href="#"> Add Schools/Faculty</a><br>
-                <a href="#"> Add Courses</a><br> <!----state the examination body---->
-                <a href="#"> Add Course Mode of study</a><br>
-                <a href="#"> Add Course Fees</a> <br><!----Mode of study has to be selected--->
-                <a href="#"> Add Clubs/Societies</a><br>
-                <a href="#"> Add Partners</a><br>
-                <a href="#"> Add Research Centers/Labs</a>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newInstitution()"> New Institution</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.allInstitutions()"> View all Institutions</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newCampus()"> Add campuses</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newSchool()"> Add Schools/Faculty</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.addCourse()"> Add Courses</a><br> <!----state the examination body---->
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.addModeOfStudy"> Add Course Mode of study</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.addCourseFees()"> Add Course Fees</a> <br><!----Mode of study has to be selected--->
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newClub()"> Add Clubs/Societies</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newPartner()"> Add Partners</a><br>
+                <a href="@controllers.admincontrollers.routes.InstitutionActions.newLab()"> Add Research Centers/Labs</a>
             </div>
         </div>
 

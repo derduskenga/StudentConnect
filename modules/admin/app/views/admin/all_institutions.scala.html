@@ -1,0 +1,59 @@
+@import models.web.Institution
+@(institutionList: List[Institution])
+@admin_main("All Institution | Admin Panel"){
+    @if(flash.containsKey("institutiondeletesuccess")){
+        <div class="alert alert-success">
+            @flash.get("institutiondeletesuccess")
+        </div>
+    }
+
+    @if(flash.containsKey("institutiondeleteerror")){
+    <div class="alert alert-danger">
+        @flash.get("institutiondeleteerror")
+    </div>
+    }
+
+    @if(institutionList.isEmpty){
+        <div class="alert alert-info">
+            No institution were found
+        </div>
+    }else{
+        <a href="@controllers.admincontrollers.routes.InstitutionActions.newInstitution()" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i>
+            Add new institution</a>
+        <table id="example" class="display" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>Institution Name</th>
+                <th>Category</th>
+                <th>Town</th>
+                <th>Edit </th>
+                <th>Delete</th>
+                <th>View Details</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <th>Institution Name</th>
+                <th>Category</th>
+                <th>Town</th>
+                <th>Edit </th>
+                <th>Delete</th>
+                <th>View Details</th>
+            </tr>
+            </tfoot>
+            <tbody>
+            @for(institution <- institutionList){
+                <tr>
+                    <td>@institution.institution_name</td>
+                    <td>@institution.institutionCategory.institution_category_name</td>
+                    <td>@institution.institution_nearest_town</td>
+                    <td><a href="@controllers.admincontrollers.routes.InstitutionActions.editInstitution(institution.institution_id)" title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit"></i></a></td>
+                    <td><a href="@controllers.admincontrollers.routes.InstitutionActions.deleteInstitution(institution.institution_id)" title="Delete" class="delete-institution"><i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></a></td>
+                    <td><a href="@controllers.admincontrollers.routes.InstitutionActions.viewInstitution(institution.institution_id)" title="View institution details"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                </tr>
+            }
+
+            </tbody>
+        </table>
+    }
+}

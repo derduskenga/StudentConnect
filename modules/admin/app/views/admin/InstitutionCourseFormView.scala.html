@@ -1,0 +1,122 @@
+@(examBodyForm: Form[models.web.ExaminationBody])(institutionCourseForm: Form[models.web.InstitutionCourse])(institutionMap: Map[Map[Long, String],Boolean])(campusMap: Map[Map[Long, String],Boolean])(courseList: List[models.web.Course])(schoolMap: Map[Map[Long, String],Boolean])
+@import helper._
+@import formfieldtemplates._
+@import java.util._
+
+@admin_main("New School | Admin"){
+    @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveCourseInstitution(), 'onsubmit->"return validateAddCourseForm()",'id->"institutioncourseform",'name->"institutioncourseform",'method->"post"){
+        @if(flash.containsKey("institutioncoursesuccess")){
+        <div class="alert alert-success">
+            @flash.get("institutioncoursesuccess")
+        </div>
+        }
+
+        @if(flash.containsKey("institutioncourseerror")){
+        <div class="alert alert-danger">
+            @flash.get("institutioncourseerror")
+        </div>
+        }
+
+
+        <fieldset>
+            <legend>Add courses to institutions</legend>
+            <input type="hidden"  value="@institutionCourseForm("institution_course_id").valueOr("")" name="institution_course_id"/>
+
+            @formfieldtemplates.fieldselect(institutionCourseForm("institution_id"),
+            label = "Select Institution",
+            optionMap=institutionMap,
+            default="Select institution",
+            includeStaticDefault=true,
+            fieldcontrolattr = "required",
+            controlClass = "detect-change",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.fieldselect(institutionCourseForm("campus_id"),
+            label = "Select Campus",
+            optionMap=campusMap,
+            default="Select campus",
+            includeStaticDefault=true,
+            fieldcontrolattr = "required",
+            controlClass = "detect-change",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.fieldselect(institutionCourseForm("school_id"),
+            label = "Select school/faculty",
+            optionMap=schoolMap,
+            default="Select school/faculty",
+            includeStaticDefault=true,
+            fieldcontrolattr = "required",
+            divClass="col-sm-9")
+
+            @text(institutionCourseForm("course_department_name"),
+            label = "Name of Dept",
+            placeholder = "Dept name here...",
+            fieldcontrolattr="required",
+            divClass="col-sm-9")
+
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="course_name">Select course </label>
+                <div class="col-sm-9">
+
+                    <table id="certification-courses-table">
+                        <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Level</th>
+                            <th>Course field</th>
+                            <th>Select</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Level</th>
+                            <th>Course field</th>
+                            <th>Select</th>
+                        </tr>
+                        </tfoot>
+
+                        <tbody>
+                        @for(course <- courseList){
+                            <tr>
+                                <td>@course.course_name</td>
+                                <td>@course.courseLevel.course_level_name</td>
+                                <td>@course.courseField.course_field_name</td>
+                                <td><input type="radio" required name="institution_course" value="@course.course_id"></td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <!---Examination boby form starts here--->
+            <input type="hidden"  value="@examBodyForm("examination_body_id").valueOr("")" name="examination_body_id"/>
+
+            @text(examBodyForm("examination_body_name"),
+            label = "Exam body",
+            placeholder = "Exam body name here...",
+            fieldcontrolattr="required",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.text_url(examBodyForm("examination_body_website_url"),
+            label = "Website ",
+            placeholder = "Exam body website URL",
+            divClass="col-sm-9")
+
+            @formfieldtemplates.textarea(examBodyForm("examination_body_description"),
+            label="Description",
+            placeholder = "Exam body description here...... ",
+            rows="4",
+            divClass="col-sm-9")
+        </fieldset>
+
+        <div class="row">
+            <p align="right"> <input  type="submit" class="btn btn-primary" value="Add course" id="institution-course-submit-btn"/></p>
+
+        </div>
+
+    }
+}

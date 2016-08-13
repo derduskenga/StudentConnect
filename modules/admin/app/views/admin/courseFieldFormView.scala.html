@@ -3,7 +3,8 @@
 @import formfieldtemplates._
 
 @admin_main("New Course Fields | Admin"){
-    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(),
+<script>tinymce.init({ selector:'textarea' });</script>
+@helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseField(),
 'id->"coursefieldform",'name->"coursefieldform", 'method->"post"){
         @if(flash.containsKey("coursefieldformsuccess")){
         <div class="alert alert-success">

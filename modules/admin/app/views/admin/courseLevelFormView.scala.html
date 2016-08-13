@@ -3,6 +3,7 @@
 @import formfieldtemplates._
 
 @admin_main("New Course Level | Admin"){
+<script>tinymce.init({ selector:'textarea' });</script>
     @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourseLevel(),
     'id->"courselevelform",'name->"courselevelform", 'method->"post"){
     @if(flash.containsKey("courselevelformsuccess")){

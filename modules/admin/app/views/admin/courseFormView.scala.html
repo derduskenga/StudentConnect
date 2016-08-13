@@ -7,84 +7,91 @@
 @import models.web.CourseLevel
 
 @admin_main("New Course | Admin Panel"){
+@if(courseFieldMap.isEmpty && courseLevelMap.isEmpty){<div class="alert alert-info">No course levels or fields have been added</div>}else{
+            <script>tinymce.init({ selector:'textarea' });</script>
+            @if(course("course_id").value == null){
+                    <div class="row">
+                        <h3>Upload excel file with courses - First download excel sample to learn how your data should look like</h3>
+                        @if(flash.containsKey("fileerror")){
+                        <div class="alert alert-danger">
+                            @flash.get("fileerror")
+                        </div>
+                        }
+                        @if(flash.containsKey("filesuccess")){
+                        <div class="alert alert-success">
+                            @flash.get("filesuccess")
+                        </div>
+                        }
+                            <form action="@controllers.admincontrollers.routes.CourseActions.saveCourseExcelFile" method="post" name="courseformexcelfile" enctype="multipart/form-data">
+                                <div>
+                                    <div class="col-sm-4"> <input type="file" name="courseexcelfilecontrol" id="courseexcelfilecontrol"/></div>
+                                    <div class="col-sm-2 form-group"> <input type="submit" name="courses-submit-btn" class="btn btn-primary" value="Upload"></div>
+                                </div> Or
+                                | <i class="fa fa-download"></i> <i class="fa fa-file-excel-o" aria-hidden="true"></i> <a href="#" title="Download sample excel file" class="download-sample-excel-file">
+                                Download Sample </a> |
+                            </form>
+                    </div>
+                            <hr>
+                            <h1>---OR---</h1>
 
-<div class="row">
-    <h3>Upload excel file with courses - First download excel sample to learn how your data should look like</h3>
-    @if(flash.containsKey("fileerror")){
-    <div class="alert alert-danger">
-        @flash.get("fileerror")
-    </div>
-    }
-    @if(flash.containsKey("filesuccess")){
-    <div class="alert alert-success">
-        @flash.get("filesuccess")
-    </div>
-    }
-    <form action="@controllers.admincontrollers.routes.CourseActions.saveCourseExcelFile" method="post" name="courseformexcelfile" enctype="multipart/form-data">
-        <div>
-            <div class="col-sm-4"> <input type="file" name="courseexcelfilecontrol" id="courseexcelfilecontrol"/></div>
-            <div class="col-sm-2 form-group"> <input type="submit" name="courses-submit-btn" class="btn btn-primary" value="Upload"></div>
-        </div> Or
-        | <i class="fa fa-download"></i> <i class="fa fa-file-excel-o" aria-hidden="true"></i> <a href="#" title="Download sample excel file" class="download-sample-excel-file">
-        Download Sample </a> |
-    </form></div>
-<hr>
-    <h1>---OR---</h1>
-
-
-
-<div class="row">
-    @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourse(),
-    'id->"courseform",'name->"courseform", 'method->"post"){
-        <fieldset>
-            <legend>Add Courses One By One </legend>
-
-            @if(flash.containsKey("coursesavesuccess")){
-            <div class="alert alert-success">
-                @flash.get("coursesavesuccess")
-            </div>
             }
 
-            <!--Used to differentiate new form or form editing-->
-            <input type="hidden"  value='@course("course_id").valueOr("")' name="course_id"/>
+            <div class="row">
 
-            @text(course("course_name"),
-            label = "Course name",
-            placeholder = "Course name (e.g. Computer Science, Commerce etc..)",
-            divClass="col-sm-9")
+                        @helper.form(action=controllers.admincontrollers.routes.CourseActions.saveCourse(),
+                        'id->"courseform",'name->"courseform", 'method->"post"){
+                            <fieldset>
+                                <legend>Add Courses One By One </legend>
 
-            @formfieldtemplates.fieldselect(course("course_field_name"),
-            label = "Select course field",
-            optionMap=courseFieldMap,
-            default="Select course field",
-            includeStaticDefault=false,
-            divClass="col-sm-9")
+                                @if(flash.containsKey("coursesavesuccess")){
+                                <div class="alert alert-success">
+                                    @flash.get("coursesavesuccess")
+                                </div>
+                                }
 
-            @formfieldtemplates.fieldselect(course("course_level_name"),
-            label = "Select course level",
-            optionMap=courseLevelMap,
-            default="Select course level",
-            includeStaticDefault=false,
-            divClass="col-sm-9")
+                                <!--Used to differentiate new form or form editing-->
+                                <input type="hidden"  value='@course("course_id").valueOr("")' name="course_id"/>
 
-            @formfieldtemplates.textarea(course("course_description"),
-            label="Course  description",
-            placeholder = "Type your course description here...... ",
-            rows="4",
-            divClass="col-sm-9")
+                                @text(course("course_name"),
+                                label = "Course name",
+                                placeholder = "Course name (e.g. Computer Science, Commerce etc..)",
+                                divClass="col-sm-9")
 
-            @formfieldtemplates.text_url(course("course_name"),
-            label = "Course blog link",
-            placeholder = "course link to our blog",
-            divClass="col-sm-9")
+                                @formfieldtemplates.fieldselect(course("course_field_name"),
+                                label = "Select course field",
+                                optionMap=courseFieldMap,
+                                default="Select course field",
+                                includeStaticDefault=false,
+                                divClass="col-sm-9")
 
-        </fieldset>
-        <div class="row">
-        <p align="right"> <input  type="submit" class="btn btn-primary" value="Save" id="course-submit-btn"/></p>
+                                @formfieldtemplates.fieldselect(course("course_level_name"),
+                                label = "Select course level",
+                                optionMap=courseLevelMap,
+                                default="Select course level",
+                                includeStaticDefault=false,
+                                divClass="col-sm-9")
 
-        </div>
-}
+                                @formfieldtemplates.text_url(course("course_blog_url"),
+                                label = "Course blog link",
+                                placeholder = "course link to our blog",
+                                divClass="col-sm-9")
 
-    </div>
+                                @formfieldtemplates.textarea(course("course_description"),
+                                label="Course  description",
+                                placeholder = "Type your course description here...... ",
+                                rows="4",
+                                divClass="col-sm-9")
+
+
+
+                            </fieldset>
+                            <div class="row">
+                            <p align="right"> <input  type="submit" class="btn btn-primary" value="Save" id="course-submit-btn"/></p>
+
+                            </div>
+                    }
+
+            </div>
+        }
 
 }
