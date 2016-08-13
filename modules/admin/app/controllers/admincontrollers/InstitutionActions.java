@@ -5,6 +5,8 @@ import org.json.simple.JSONArray;
 import play.Logger;
 import play.Play;
 import play.data.Form;
+
+import static controllers.admincontrollers.InstitutionActions.clubSocietyForm;
 import static play.data.Form.form;
 
 import play.libs.Json;
@@ -21,6 +23,9 @@ import views.html.admin.schoolFormView;
 import views.html.admin.InstitutionCourseFormView;
 import views.html.admin.addModeOfStudy;
 import views.html.admin.addFees;
+import views.html.admin.addInstitutionClub;
+import views.html.admin.addPartner;
+import views.html.admin.addLab;
 import java.io.File;
 import com.google.common.io.Files;
 import org.apache.commons.io.FileUtils;
@@ -41,6 +46,10 @@ public class InstitutionActions extends Controller {
     public static Form<ExaminationBody> examinationBodyForm = form(ExaminationBody.class);
     public static Form<InstitutionCourse> institutionCourseForm = form(InstitutionCourse.class);
     public static Form<CourseInstitutionModeOfStudy> courseInstitutionModeOfStudyForm = form(CourseInstitutionModeOfStudy.class);
+    public static Form<ClubSociety> clubSocietyForm = form(ClubSociety.class);
+    public static Form<Partner> partnerForm = form(Partner.class);
+    public static Form<InstitutionPartnership> institutionPartnershipForm = form(InstitutionPartnership.class);
+    public static Form<ResearchCenter> researchCenterForm = form(ResearchCenter.class);
 
     public static Result newInstitutionCategory(){
         return ok(institutionCategoryFormView.render(institutionCategoryForm));
@@ -371,8 +380,75 @@ public class InstitutionActions extends Controller {
         //Override id
         courseInstitutionModeOfStudy.course_institution_mode_of_study_id = Long.parseLong(institution_course_mode_of_study);
         courseInstitutionModeOfStudy.saveModeOfStudy();
-        flash("modeofstudysuccess","Fees has been aded");
+        flash("modeofstudysuccess","Fees has been added");
         return redirect(routes.InstitutionActions.addCourseFees());
 
     }
+
+    public static Result newClub(){
+        return ok(addInstitutionClub.render(clubSocietyForm,new Institution().getInstitutionMap()));
+    }
+    public static Result saveClub(){
+        Form<ClubSociety> clubSocietyBoundForm = clubSocietyForm.bindFromRequest();
+        Map<String,String> clubFormData = clubSocietyBoundForm.data();
+        String institution_id = clubFormData.get("institution_id");
+
+        if (clubSocietyBoundForm.hasErrors()){
+            flash("cluberror","Correct form errors and resubmit");
+            return badRequest(addInstitutionClub.render(clubSocietyBoundForm,new Institution().getInstitutionMap(Long.parseLong(institution_id))));
+        }
+
+        ClubSociety clubSociety = clubSocietyBoundForm.get();
+        clubSociety.institution = new Institution().getInstitutionById(Long.parseLong(institution_id));
+        //save society/club
+        clubSociety.saveClub();
+        flash("clubsuccess","Club/society has been added");
+        return redirect(routes.InstitutionActions.newClub());
+    }
+
+    public static Result newPartner(){
+        return ok(addPartner.render(partnerForm,institutionPartnershipForm,new Institution().getInstitutionMap()));
+    }
+
+    public static Result savePartner(){
+        Form<Partner> partnerBoundForm = partnerForm.bindFromRequest();
+        Form<InstitutionPartnership> institutionPartnershipBoundForm = institutionPartnershipForm.bindFromRequest();
+        Map<String,String> partnerFormData = partnerBoundForm.data();
+        String institution_id = partnerFormData.get("institution_id");
+
+        if (partnerBoundForm.hasErrors() || institutionPartnershipBoundForm.hasErrors()){
+            flash("partnererror","Correct form errors then resubmit");
+            return badRequest(addPartner.render(partnerBoundForm,institutionPartnershipBoundForm,new Institution().getInstitutionMap(Long.parseLong(institution_id))));
+        }
+
+        Partner new_partner = partnerBoundForm.get();
+
+        if(new_partner.partnerExists(new_partner.partner_name)){
+            InstitutionPartnership institutionPartnership = institutionPartnershipBoundForm.get();
+            institutionPartnership.partner = new_partner.getPartnerByName(new_partner.partner_name);
+            institutionPartnership.institution = new Institution().getInstitutionById(Long.parseLong(institution_id));
+            //save partnership only
+            //Logger.info("Exists:" + new_partner.partner_name);
+            institutionPartnership.saveInstitutionPartnership();
+            flash("partnersuccess","Partner has been added successfully");
+            return redirect(routes.InstitutionActions.newPartner());
+        }
+        //Logger.info("does not exist:" + new_partner.partner_name);
+        InstitutionPartnership institutionPartnership = institutionPartnershipBoundForm.get();
+        institutionPartnership.partner = new_partner;
+        institutionPartnership.institution = new Institution().getInstitutionById(Long.parseLong(institution_id));
+        //save partner and partnership
+        new_partner.savePartner();
+        institutionPartnership.saveInstitutionPartnership();
+        flash("partnersuccess","Partner has been added successfully");
+        return redirect(routes.InstitutionActions.newPartner());
+    }
+
+    public static Result searchPartners(String key){return ok(Json.parse(Partner.searchPartners(key)));}
+
+    public static Result newLab(){
+        return ok(addLab.render(researchCenterForm,new Institution().getInstitutionMap()));
+    }
+
+    public static Result saveLab(){return TODO;}
 }

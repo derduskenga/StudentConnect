@@ -15,5 +15,12 @@ $(document).ready(function() {
                 limit : 10
     });
 
+    /*For Institution partners*/
+    $('input#partner_name').typeahead({
+                name: 'partner_name',
+                remote:'/institution/partner/search/%QUERY',
+                limit : 10
+    });
+
 
 });

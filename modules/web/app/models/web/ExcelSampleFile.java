@@ -110,12 +110,15 @@ public class ExcelSampleFile extends Model{
         out.close();
         return true;
         } catch (FileNotFoundException fnfe) {
+            Logger.error("Error:" + fnfe.getMessage().toString());
             return false;
         } catch (IOException ioe) {
+            Logger.error("Error:" + ioe.getMessage().toString());
             return false;
         }catch (Exception e){
+            Logger.error("Error:" + e.getMessage().toString());
             return false;
-            }
+        }
     }
 
     public String generateInstruction(){

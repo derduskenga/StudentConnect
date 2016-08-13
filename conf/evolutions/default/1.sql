@@ -178,7 +178,7 @@ create table job_placement (
 create table partner (
   partner_id                bigint not null,
   partner_name              varchar(255),
-  partner_description       varchar(255),
+  partner_description       TEXT,
   partner_website_url       varchar(255),
   constraint pk_partner primary key (partner_id))
 ;

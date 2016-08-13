@@ -5,6 +5,7 @@ import play.db.ebean.Model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import java.util.List;
 
 /**
  * Created by derdus on 6/21/16.
@@ -36,5 +37,20 @@ public class CourseCertification extends Model{
     }
 
     public CourseCertification getCourseCertificationById(Long id){return find().byId(id);}
+
+    public List<CourseCertification> getAllCertifications(){
+        return find().all();
+    }
+
+
+    public boolean certificationCourseAlreadyAdded(Course mainCourse, Course minoCourse){
+        boolean found = false;
+        for (CourseCertification certifications : getAllCertifications()){
+            if (certifications.mainCourse.equals(mainCourse) && certifications.certificationCourse.equals(minoCourse)){
+                found = true;
+            }
+        }
+        return found;
+    }
 
 }

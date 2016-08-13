@@ -1,3 +1,3129 @@
-2016-08-02 21:23:58,920 - [INFO] - from play in pool-4-thread-4 
+2016-08-13 15:53:34,727 - [INFO] - from play in pool-4-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-08-13 15:54:27,678 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-08-13 15:54:31,875 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-08-13 17:30:16,396 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/studentconnect
+
+2016-08-13 17:30:16,923 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2016-08-13 17:31:37,432 - [ERROR] - from application in play-akka.actor.default-dispatcher-50 
+Error:The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+
+2016-08-13 17:34:02,334 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:1 Inner:1 course_name		
+
+2016-08-13 17:34:02,335 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:1 Inner:2 course_description		
+
+2016-08-13 17:34:02,335 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:1 Inner:3 course_blog_url		
+
+2016-08-13 17:34:02,335 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:1 Inner:4 course_level_id		
+
+2016-08-13 17:34:02,335 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:1 Inner:5 course_field_id		
+
+2016-08-13 17:34:02,335 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,335 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:2 Inner:1 Certificate in Agricultural Information and Communication Management		
+
+2016-08-13 17:34:02,336 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:2 Inner:2 <p>Certificate in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:34:02,336 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:2 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,336 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,336 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,336 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,336 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:3 Inner:1 B.Sc. (Agriculture) 		
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:3 Inner:2 <p>B.Sc. (Agriculture)</p> 		
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:3 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:4 Inner:1 B.Sc. ( Food Science & Technology) 		
+
+2016-08-13 17:34:02,337 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:4 Inner:2 <p>B.Sc. ( Food Science & Technology)</p> 		
+
+2016-08-13 17:34:02,338 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:4 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,338 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,338 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,338 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,338 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:5 Inner:1 B.Sc. ( Range Management		
+
+2016-08-13 17:34:02,338 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:5 Inner:2 <p>B.Sc. ( Range Management</p>		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:5 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:6 Inner:1 Bsc. Management Of Agroecosystems & Environment 		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:6 Inner:2 <p>Bsc. Management Of Agroecosystems & Environment </p>		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:6 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,339 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:7 Inner:1 B.Sc. ( Agriculture,Education And Extension) 		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:7 Inner:2 <p>B.Sc. ( Agriculture,Education And Extension)</p> 		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:7 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:8 Inner:1 B.Sc. (Agribusiness Management) 		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:8 Inner:2 <p>B.Sc. (Agribusiness Management)</p> 		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:8 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,340 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:9 Inner:1 B.Sc. (Food Science, Nutrition & Dietetics) 		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:9 Inner:2 <p>B.Sc. (Food Science, Nutrition & Dietetics)</p> 		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:9 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:10 Inner:1 Bachelor Of Science In Horticulture 		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:10 Inner:2 <p>Bachelor Of Science In Horticulture</p> 		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:10 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:11 Inner:1 Climate Change & Development		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:11 Inner:2 <p>Climate Change & Development</p>		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:11 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,341 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:12 Inner:1  Certificate in Agricultural Information and Communication Management		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:12 Inner:2 <p>Certificate in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:12 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:13 Inner:1 BSc.Agricultural Education and Extension 		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:13 Inner:2 <p>BSc.Agricultural Education and Extension</p> 		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:13 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:14 Inner:1 Bachelor of Science in Agribusiness Management 		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:14 Inner:2 <p>Bachelor of Science in Agribusiness Management </P>		
+
+2016-08-13 17:34:02,342 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:14 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:15 Inner:1 BSc.Agricultural Economics		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:15 Inner:2 <p>BSc.Agricultural Economics</p>		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:15 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:16 Inner:1 BSc Food Science and Technology 		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:16 Inner:2 <p>BSc Food Science and Technology</p> 		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:16 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,343 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:17 Inner:1 BSc Food Science and Technology 		
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:17 Inner:2 <p>BSc Food Science and Technology</p> 		
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:17 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:18 Inner:1 BSc Food Nutrition and Dietetics 		
+
+2016-08-13 17:34:02,344 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:18 Inner:2 <p>BSc Food Nutrition and Dietetics</P> 		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:18 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:19 Inner:1 Land Resource Management & Agricultural Technology		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:19 Inner:2 <p>Land Resource Management & Agricultural Technology</p>		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:19 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,345 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:20 Inner:1 B.Sc. (Agriculture) 		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:20 Inner:2 <p>B.Sc. (Agriculture)</p> 		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:20 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,346 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:21 Inner:1 B.Sc. (Range Management) 		
+
+2016-08-13 17:34:02,347 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:21 Inner:2 <p>B.Sc. (Range Management)</p> 		
+
+2016-08-13 17:34:02,348 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:21 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:22 Inner:1 Bsc. Management of Agro ecosystems & Environment		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:22 Inner:2 <p>Bsc. Management of Agro ecosystems & Environment</p>		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:22 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:23 Inner:1 Bachelor of Science in Horticulture 		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:23 Inner:2 <p>Bachelor of Science in Horticulture</p> 		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:23 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,349 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,353 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,353 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,353 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:24 Inner:1 Certificate in Phytosanitary Measures 		
+
+2016-08-13 17:34:02,353 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:24 Inner:2 <p>Certificate in Phytosanitary Measures</p> 		
+
+2016-08-13 17:34:02,353 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:24 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,353 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:25 Inner:1 Certificate in Artificial Insemination 		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:25 Inner:2 <p>Certificate in Artificial Insemination</p> 		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:25 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:26 Inner:1 Certificate in Epidemiology and Disease Surveillance 		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:26 Inner:2 <P>Certificate in Epidemiology and Disease Surveillance</p> 		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:26 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:27 Inner:1 Certificate in Dairy Management 		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:27 Inner:2 <p>Certificate in Dairy Management</p> 		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:27 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:28 Inner:1 Certificate in Poultry Management		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:28 Inner:2 <p>Certificate in Poultry Management</p>		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:28 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,354 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:29 Inner:1 Certificate in Dairy Management 		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:29 Inner:2 <p>Certificate in Dairy Management </p>		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:29 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:30 Inner:1 Certificate in Poultry Management		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:30 Inner:2 <p>Certificate in Poultry Management</p>		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:30 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:31 Inner:1 B.Sc. (Bio-Medical Technology) 		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:31 Inner:2 <p>B.Sc. (Bio-Medical Technology)</p> 		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:31 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:32 Inner:1 Bachelor of Science in Wildlife Management 		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:32 Inner:2 <p>Bachelor of Science in Wildlife Management</p> 		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:32 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,355 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:33 Inner:1 Bachelor of Science Fisheries and Aquaculture Management		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:33 Inner:2 <p>Bachelor of Science Fisheries and Aquaculture Management</p>		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:33 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:34 Inner:1 Bachelor of Science in Agriculture (Animal Science Major)		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:34 Inner:2 <p>Bachelor of Science in Agriculture (Animal Science Major)</p>		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:34 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:35 Inner:1 Certificate in Epidemiology and Disease Surveillance 		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:35 Inner:2 <p>Certificate in Epidemiology and Disease Surveillance</p> 		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:35 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:36 Inner:1 Certificate in Artificial Insemination and Fertility Management		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:36 Inner:2 <p>Certificate in Artificial Insemination and Fertility Management</p>		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:36 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,356 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:37 Inner:1 Bachelor of Science in Wildlife Management and Conservation		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:37 Inner:2 <p>Bachelor of Science in Wildlife Management and Conservation</p>		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:37 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:38 Inner:1 Bachelor of Veterinary Medicine		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:38 Inner:2 <p>Bachelor of Veterinary Medicine</p>		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:38 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:39 Inner:1 Diploma in Leather Technology		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:39 Inner:2 <p>Diploma in Leather Technology</p>		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:39 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+2.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:40 Inner:1 Bachelor of Veterinary Medicine 		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:40 Inner:2 <p>Bachelor of Veterinary Medicine</p> 		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:40 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,357 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:41 Inner:1 Bsc. In Wildlife Management and Conservation		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:41 Inner:2 <p>Bsc. In Wildlife Management and Conservation</p>		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:41 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+3.0		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:42 Inner:1 Master of Science in Plant Breeding 		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:42 Inner:2 <p>Master of Science in Plant Breeding</p> 		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:42 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:43 Inner:1 Msc Horticulture 		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:43 Inner:2 <p>Msc Horticulture</p> 		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:43 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:44 Inner:1 Msc Range Management 		
+
+2016-08-13 17:34:02,358 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:44 Inner:2 <p>Msc Range Management</p> 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:44 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:45 Inner:1 Msc Agricultural Resource Management 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:45 Inner:2 <p>Msc Agricultural Resource Management</p> 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:45 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:46 Inner:1 Msc Crop Protection 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:46 Inner:2 <p>Msc Crop Protection</p> 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:46 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:47 Inner:1 Msc Plant Pathology 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:47 Inner:2 <p>Msc Plant Pathology</p> 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:47 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:48 Inner:1 Msc Agronomy 		
+
+2016-08-13 17:34:02,359 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:48 Inner:2 <p>Msc Agronomy</p> 		
+
+2016-08-13 17:34:02,360 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:48 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:49 Inner:1 Msc Applied Human Nutrition 		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:49 Inner:2 <p>Msc Applied Human Nutrition</p> 		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:49 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:50 Inner:1 Master of Science (Food Science and Technology) 		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:50 Inner:2 <p>Master of Science (Food Science and Technology)</p> 		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:50 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,366 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:51 Inner:1 Master of Science (Agricultural and Applied Economics) 		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:51 Inner:2 <p>Master of Science (Agricultural and Applied Economics)</p> 		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:51 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:52 Inner:1 Master of Science in Agricultural Information and Communication Management 		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:52 Inner:2 <p>Master of Science in Agricultural Information and Communication Management</p> 		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:52 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:53 Inner:1 Master of Science in Land and Water Management 		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:53 Inner:2 <p>Master of Science in Land and Water Management</p> 		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:53 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:54 Inner:1 Master of Science in Soil Science		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:54 Inner:2 <p>Master of Science in Soil Science</p>		
+
+2016-08-13 17:34:02,367 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:54 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:55 Inner:1 Postgraduate Diploma in Agricultural Information and Communication Management		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:55 Inner:2 <p>Postgraduate Diploma in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:55 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+13.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:56 Inner:1 Postgraduate Diploma in Agricultural Information and Communication Management 		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:56 Inner:2 <p>Postgraduate Diploma in Agricultural Information and Communication Management</p> 		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:56 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+13.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:57 Inner:1 Postgraduate Diploma in Agricultural Information and Communication Management		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:57 Inner:2 <p>Postgraduate Diploma in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:57 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+13.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:58 Inner:1 Postgraduate Diploma Food Safety and Quality		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:58 Inner:2 <p>Postgraduate Diploma Food Safety and Quality</p>		
+
+2016-08-13 17:34:02,368 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:58 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+13.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:59 Inner:1 Postgraduate Diploma Food Safety and Quality		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:59 Inner:2 <p>Postgraduate Diploma Food Safety and Quality<p/>		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:59 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+13.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:60 Inner:1 Postgraduate Diploma in Phytosanitary Measures		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:60 Inner:2 <p>Postgraduate Diploma in Phytosanitary Measures</p>		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:60 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+13.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:61 Inner:1 D.Sc. Agriculture 		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:61 Inner:2 <p>D.Sc. Agriculture </p>		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:61 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,369 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:62 Inner:1 Doctor of Philosophy in Dryland Resource Management		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:62 Inner:2 <p>Doctor of Philosophy in Dryland Resource Management</p>		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:62 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:63 Inner:1 Master of Science in Agricultural Information and Communication Management 		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:63 Inner:2 <p>Master of Science in Agricultural Information and Communication Management </p>		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:63 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:64 Inner:1 Master of Science in Agricultural and Applied Economics 		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:64 Inner:2 <p>Master of Science in Agricultural and Applied Economics</p> 		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:64 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:65 Inner:1 Agricultural Economics (Local) 		
+
+2016-08-13 17:34:02,370 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:65 Inner:2 <p>Agricultural Economics (Local)</p> 		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:65 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:66 Inner:1 Msc.Agricultural and Applied Economics		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:66 Inner:2 <p>Msc.Agricultural and Applied Economics</p>		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:66 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+5.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:67 Inner:1 Phd in Agricultural Economics 		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:67 Inner:2 <p>Phd in Agricultural Economics </p>		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:67 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:68 Inner:1 Phd Agricultural Education and Extension (By Research) 		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:68 Inner:2 <p>Phd Agricultural Education and Extension (By Research)</p> 		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:68 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,371 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:69 Inner:1 Phd Agribusiness Management 		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:69 Inner:2 <p>Phd Agribusiness Management</p> 		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:69 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:70 Inner:1 Phd Agricultural Information and Communication Management (By Research)		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:70 Inner:2 <p>Phd Agricultural Information and Communication Management (By Research)</p>		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:70 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:71 Inner:1 Ph.D Food Science & Technology 		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:71 Inner:2 <p>Ph.D Food Science & Technology</p> 		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:71 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:72 Inner:1 Ph.D Applied Human Nutrition		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:72 Inner:2 <p>Ph.D Applied Human Nutrition</p>		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:72 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,372 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:73 Inner:1 Ph.D Food Science & Technology 		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:73 Inner:2 <p>Ph.D Food Science & Technology</p> 		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:73 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:74 Inner:1 Ph.D Applied Human Nutrition		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:74 Inner:2 <p>Ph.D Applied Human Nutrition</p>		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:74 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:75 Inner:1 Doctor of Philosophy in Dryland Resource Management 		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:75 Inner:2 <p>Doctor of Philosophy in Dryland Resource Management</p> 		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:75 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:76 Inner:1 Doctor of Philosophy in Management Of Agroecosystem And Environment 		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:76 Inner:2 <p>Doctor of Philosophy in Management Of Agroecosystem And Environment</p> 		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:76 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,373 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:77 Inner:1 Doctor of Philosophy in Range Management 		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:77 Inner:2 <p>Doctor of Philosophy in Range Management</p> 		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:77 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:78 Inner:1 Doctor of Philosophy in Soil Science 		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:78 Inner:2 <p>Doctor of Philosophy in Soil Science</p> 		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:78 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:79 Inner:1 Doctor of Philosophy in Sustainable Soil Resource Management 		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:79 Inner:2 <p>Doctor of Philosophy in Sustainable Soil Resource Management</p> 		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:79 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:80 Inner:1 Doctor of Philosophy in Agroforestry		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:80 Inner:2 <p>Doctor of Philosophy in Agroforestry</p>		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:80 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,374 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:81 Inner:1 Doctor of Philosophy in Environmental Governance and Management 		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:81 Inner:2 <p>Doctor of Philosophy in Environmental Governance and Management</p> 		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:81 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:82 Inner:1 Doctor of Philosophy in Environmental Governance and Management		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:82 Inner:2 <p>Doctor of Philosophy in Environmental Governance and Management</p> 		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:82 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:83 Inner:1 Phd (Vet. Medicine)		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:83 Inner:2 <p>Phd (Vet. Medicine)</p>		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:83 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:84 Inner:1 Phd in Clinical Studies		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:84 Inner:2 <p>Phd in Clinical Studies</p>		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:84 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,375 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:85 Inner:1 Doctor of Philosophy		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:85 Inner:2 <p>Doctor of Philosophy</p>		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:85 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:86 Inner:1 Doctor of Philosophy (Phd.) In the Faculty of Veterinary Medicine		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:86 Inner:2 <p>Doctor of Philosophy (Phd.) In the Faculty of Veterinary Medicine</p>		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+outer:86 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+6.0		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+1.0		
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:34:02,376 - [INFO] - from application in play-akka.actor.default-dispatcher-75 
+
+
+2016-08-13 17:36:23,982 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:1 Inner:1 course_name		
+
+2016-08-13 17:36:23,983 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:1 Inner:2 course_description		
+
+2016-08-13 17:36:23,983 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:1 Inner:3 course_blog_url		
+
+2016-08-13 17:36:23,983 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:1 Inner:4 course_level_id		
+
+2016-08-13 17:36:23,983 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:1 Inner:5 course_field_id		
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:2 Inner:1 Certificate in Agricultural Information and Communication Management		
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:2 Inner:2 <p>Certificate in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:2 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,984 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:3 Inner:1 B.Sc. (Agriculture) 		
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:3 Inner:2 <p>B.Sc. (Agriculture)</p> 		
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:3 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,985 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:4 Inner:1 B.Sc. ( Food Science & Technology) 		
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:4 Inner:2 <p>B.Sc. ( Food Science & Technology)</p> 		
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:4 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:5 Inner:1 B.Sc. ( Range Management		
+
+2016-08-13 17:36:23,986 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:5 Inner:2 <p>B.Sc. ( Range Management</p>		
+
+2016-08-13 17:36:23,987 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:5 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,987 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,987 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,987 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,987 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:6 Inner:1 Bsc. Management Of Agroecosystems & Environment 		
+
+2016-08-13 17:36:23,987 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:6 Inner:2 <p>Bsc. Management Of Agroecosystems & Environment </p>		
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:6 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:7 Inner:1 B.Sc. ( Agriculture,Education And Extension) 		
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:7 Inner:2 <p>B.Sc. ( Agriculture,Education And Extension)</p> 		
+
+2016-08-13 17:36:23,988 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:7 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:8 Inner:1 B.Sc. (Agribusiness Management) 		
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:8 Inner:2 <p>B.Sc. (Agribusiness Management)</p> 		
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:8 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,989 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:9 Inner:1 B.Sc. (Food Science, Nutrition & Dietetics) 		
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:9 Inner:2 <p>B.Sc. (Food Science, Nutrition & Dietetics)</p> 		
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:9 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,990 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:10 Inner:1 Bachelor Of Science In Horticulture 		
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:10 Inner:2 <p>Bachelor Of Science In Horticulture</p> 		
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:10 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,991 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,992 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:11 Inner:1 Climate Change & Development		
+
+2016-08-13 17:36:23,992 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:11 Inner:2 <p>Climate Change & Development</p>		
+
+2016-08-13 17:36:23,992 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:11 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,992 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,992 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,994 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,995 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:12 Inner:1  Certificate in Agricultural Information and Communication Management		
+
+2016-08-13 17:36:23,995 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:12 Inner:2 <p>Certificate in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:36:23,995 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:12 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,995 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,996 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,997 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,997 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:13 Inner:1 BSc.Agricultural Education and Extension 		
+
+2016-08-13 17:36:23,997 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:13 Inner:2 <p>BSc.Agricultural Education and Extension</p> 		
+
+2016-08-13 17:36:23,997 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:13 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,997 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,997 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:14 Inner:1 Bachelor of Science in Agribusiness Management 		
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:14 Inner:2 <p>Bachelor of Science in Agribusiness Management </P>		
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:14 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,998 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:15 Inner:1 BSc.Agricultural Economics		
+
+2016-08-13 17:36:23,999 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:15 Inner:2 <p>BSc.Agricultural Economics</p>		
+
+2016-08-13 17:36:23,999 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:15 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:23,999 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:23,999 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:23,999 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:23,999 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:16 Inner:1 BSc Food Science and Technology 		
+
+2016-08-13 17:36:24,000 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:16 Inner:2 <p>BSc Food Science and Technology</p> 		
+
+2016-08-13 17:36:24,000 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:16 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,001 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,001 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,001 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,001 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:17 Inner:1 BSc Food Science and Technology 		
+
+2016-08-13 17:36:24,001 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:17 Inner:2 <p>BSc Food Science and Technology</p> 		
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:17 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:18 Inner:1 BSc Food Nutrition and Dietetics 		
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:18 Inner:2 <p>BSc Food Nutrition and Dietetics</P> 		
+
+2016-08-13 17:36:24,002 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:18 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:19 Inner:1 Land Resource Management & Agricultural Technology		
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:19 Inner:2 <p>Land Resource Management & Agricultural Technology</p>		
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:19 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,003 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,004 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,004 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,004 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:20 Inner:1 B.Sc. (Agriculture) 		
+
+2016-08-13 17:36:24,004 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:20 Inner:2 <p>B.Sc. (Agriculture)</p> 		
+
+2016-08-13 17:36:24,005 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:20 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,005 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,005 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,005 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,005 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:21 Inner:1 B.Sc. (Range Management) 		
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:21 Inner:2 <p>B.Sc. (Range Management)</p> 		
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:21 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:22 Inner:1 Bsc. Management of Agro ecosystems & Environment		
+
+2016-08-13 17:36:24,006 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:22 Inner:2 <p>Bsc. Management of Agro ecosystems & Environment</p>		
+
+2016-08-13 17:36:24,007 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:22 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,007 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,007 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,007 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,007 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:23 Inner:1 Bachelor of Science in Horticulture 		
+
+2016-08-13 17:36:24,009 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:23 Inner:2 <p>Bachelor of Science in Horticulture</p> 		
+
+2016-08-13 17:36:24,009 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:23 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,009 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,009 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,009 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,010 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:24 Inner:1 Certificate in Phytosanitary Measures 		
+
+2016-08-13 17:36:24,010 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:24 Inner:2 <p>Certificate in Phytosanitary Measures</p> 		
+
+2016-08-13 17:36:24,010 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:24 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:25 Inner:1 Certificate in Artificial Insemination 		
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:25 Inner:2 <p>Certificate in Artificial Insemination</p> 		
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:25 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,011 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,013 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,013 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,013 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:26 Inner:1 Certificate in Epidemiology and Disease Surveillance 		
+
+2016-08-13 17:36:24,013 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:26 Inner:2 <P>Certificate in Epidemiology and Disease Surveillance</p> 		
+
+2016-08-13 17:36:24,013 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:26 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:27 Inner:1 Certificate in Dairy Management 		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:27 Inner:2 <p>Certificate in Dairy Management</p> 		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:27 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,014 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:28 Inner:1 Certificate in Poultry Management		
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:28 Inner:2 <p>Certificate in Poultry Management</p>		
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:28 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,015 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:29 Inner:1 Certificate in Dairy Management 		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:29 Inner:2 <p>Certificate in Dairy Management </p>		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:29 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:30 Inner:1 Certificate in Poultry Management		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:30 Inner:2 <p>Certificate in Poultry Management</p>		
+
+2016-08-13 17:36:24,017 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:30 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:31 Inner:1 B.Sc. (Bio-Medical Technology) 		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:31 Inner:2 <p>B.Sc. (Bio-Medical Technology)</p> 		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:31 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,018 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:32 Inner:1 Bachelor of Science in Wildlife Management 		
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:32 Inner:2 <p>Bachelor of Science in Wildlife Management</p> 		
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:32 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,019 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:33 Inner:1 Bachelor of Science Fisheries and Aquaculture Management		
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:33 Inner:2 <p>Bachelor of Science Fisheries and Aquaculture Management</p>		
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:33 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:34 Inner:1 Bachelor of Science in Agriculture (Animal Science Major)		
+
+2016-08-13 17:36:24,020 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:34 Inner:2 <p>Bachelor of Science in Agriculture (Animal Science Major)</p>		
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:34 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:35 Inner:1 Certificate in Epidemiology and Disease Surveillance 		
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:35 Inner:2 <p>Certificate in Epidemiology and Disease Surveillance</p> 		
+
+2016-08-13 17:36:24,021 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:35 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:36 Inner:1 Certificate in Artificial Insemination and Fertility Management		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:36 Inner:2 <p>Certificate in Artificial Insemination and Fertility Management</p>		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:36 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,022 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:37 Inner:1 Bachelor of Science in Wildlife Management and Conservation		
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:37 Inner:2 <p>Bachelor of Science in Wildlife Management and Conservation</p>		
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:37 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,023 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:38 Inner:1 Bachelor of Veterinary Medicine		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:38 Inner:2 <p>Bachelor of Veterinary Medicine</p>		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:38 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:39 Inner:1 Diploma in Leather Technology		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:39 Inner:2 <p>Diploma in Leather Technology</p>		
+
+2016-08-13 17:36:24,024 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:39 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+2.0		
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:40 Inner:1 Bachelor of Veterinary Medicine 		
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:40 Inner:2 <p>Bachelor of Veterinary Medicine</p> 		
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:40 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,025 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:41 Inner:1 Bsc. In Wildlife Management and Conservation		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:41 Inner:2 <p>Bsc. In Wildlife Management and Conservation</p>		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:41 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+3.0		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,026 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:42 Inner:1 Master of Science in Plant Breeding 		
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:42 Inner:2 <p>Master of Science in Plant Breeding</p> 		
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:42 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:43 Inner:1 Msc Horticulture 		
+
+2016-08-13 17:36:24,027 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:43 Inner:2 <p>Msc Horticulture</p> 		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:43 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:44 Inner:1 Msc Range Management 		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:44 Inner:2 <p>Msc Range Management</p> 		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:44 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,028 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,030 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,030 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,030 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:45 Inner:1 Msc Agricultural Resource Management 		
+
+2016-08-13 17:36:24,030 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:45 Inner:2 <p>Msc Agricultural Resource Management</p> 		
+
+2016-08-13 17:36:24,030 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:45 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:46 Inner:1 Msc Crop Protection 		
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:46 Inner:2 <p>Msc Crop Protection</p> 		
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:46 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,031 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:47 Inner:1 Msc Plant Pathology 		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:47 Inner:2 <p>Msc Plant Pathology</p> 		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:47 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,032 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,033 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:48 Inner:1 Msc Agronomy 		
+
+2016-08-13 17:36:24,033 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:48 Inner:2 <p>Msc Agronomy</p> 		
+
+2016-08-13 17:36:24,033 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:48 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,033 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,033 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,033 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:49 Inner:1 Msc Applied Human Nutrition 		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:49 Inner:2 <p>Msc Applied Human Nutrition</p> 		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:49 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:50 Inner:1 Master of Science (Food Science and Technology) 		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:50 Inner:2 <p>Master of Science (Food Science and Technology)</p> 		
+
+2016-08-13 17:36:24,034 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:50 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:51 Inner:1 Master of Science (Agricultural and Applied Economics) 		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:51 Inner:2 <p>Master of Science (Agricultural and Applied Economics)</p> 		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:51 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,035 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:52 Inner:1 Master of Science in Agricultural Information and Communication Management 		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:52 Inner:2 <p>Master of Science in Agricultural Information and Communication Management</p> 		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:52 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:53 Inner:1 Master of Science in Land and Water Management 		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:53 Inner:2 <p>Master of Science in Land and Water Management</p> 		
+
+2016-08-13 17:36:24,036 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:53 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:54 Inner:1 Master of Science in Soil Science		
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:54 Inner:2 <p>Master of Science in Soil Science</p>		
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:54 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,037 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:55 Inner:1 Postgraduate Diploma in Agricultural Information and Communication Management		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:55 Inner:2 <p>Postgraduate Diploma in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:55 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+13.0		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,038 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:56 Inner:1 Postgraduate Diploma in Agricultural Information and Communication Management 		
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:56 Inner:2 <p>Postgraduate Diploma in Agricultural Information and Communication Management</p> 		
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:56 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+13.0		
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,042 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:57 Inner:1 Postgraduate Diploma in Agricultural Information and Communication Management		
+
+2016-08-13 17:36:24,043 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:57 Inner:2 <p>Postgraduate Diploma in Agricultural Information and Communication Management</p>		
+
+2016-08-13 17:36:24,043 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:57 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,043 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+13.0		
+
+2016-08-13 17:36:24,043 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,043 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:58 Inner:1 Postgraduate Diploma Food Safety and Quality		
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:58 Inner:2 <p>Postgraduate Diploma Food Safety and Quality</p>		
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:58 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+13.0		
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:59 Inner:1 Postgraduate Diploma Food Safety and Quality		
+
+2016-08-13 17:36:24,044 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:59 Inner:2 <p>Postgraduate Diploma Food Safety and Quality<p/>		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:59 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+13.0		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:60 Inner:1 Postgraduate Diploma in Phytosanitary Measures		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:60 Inner:2 <p>Postgraduate Diploma in Phytosanitary Measures</p>		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:60 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,045 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+13.0		
+
+2016-08-13 17:36:24,046 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,047 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,047 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:61 Inner:1 D.Sc. Agriculture 		
+
+2016-08-13 17:36:24,047 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:61 Inner:2 <p>D.Sc. Agriculture </p>		
+
+2016-08-13 17:36:24,047 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:61 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,047 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:62 Inner:1 Doctor of Philosophy in Dryland Resource Management		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:62 Inner:2 <p>Doctor of Philosophy in Dryland Resource Management</p>		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:62 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,048 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:63 Inner:1 Master of Science in Agricultural Information and Communication Management 		
+
+2016-08-13 17:36:24,049 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:63 Inner:2 <p>Master of Science in Agricultural Information and Communication Management </p>		
+
+2016-08-13 17:36:24,049 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:63 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:64 Inner:1 Master of Science in Agricultural and Applied Economics 		
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:64 Inner:2 <p>Master of Science in Agricultural and Applied Economics</p> 		
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:64 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,050 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:65 Inner:1 Agricultural Economics (Local) 		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:65 Inner:2 <p>Agricultural Economics (Local)</p> 		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:65 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,051 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:66 Inner:1 Msc.Agricultural and Applied Economics		
+
+2016-08-13 17:36:24,052 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:66 Inner:2 <p>Msc.Agricultural and Applied Economics</p>		
+
+2016-08-13 17:36:24,052 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:66 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,053 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+5.0		
+
+2016-08-13 17:36:24,054 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,054 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,054 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:67 Inner:1 Phd in Agricultural Economics 		
+
+2016-08-13 17:36:24,054 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:67 Inner:2 <p>Phd in Agricultural Economics </p>		
+
+2016-08-13 17:36:24,054 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:67 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:68 Inner:1 Phd Agricultural Education and Extension (By Research) 		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:68 Inner:2 <p>Phd Agricultural Education and Extension (By Research)</p> 		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:68 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,055 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:69 Inner:1 Phd Agribusiness Management 		
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:69 Inner:2 <p>Phd Agribusiness Management</p> 		
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:69 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:70 Inner:1 Phd Agricultural Information and Communication Management (By Research)		
+
+2016-08-13 17:36:24,056 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:70 Inner:2 <p>Phd Agricultural Information and Communication Management (By Research)</p>		
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:70 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:71 Inner:1 Ph.D Food Science & Technology 		
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:71 Inner:2 <p>Ph.D Food Science & Technology</p> 		
+
+2016-08-13 17:36:24,057 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:71 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,058 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,058 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,058 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:72 Inner:1 Ph.D Applied Human Nutrition		
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:72 Inner:2 <p>Ph.D Applied Human Nutrition</p>		
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:72 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:73 Inner:1 Ph.D Food Science & Technology 		
+
+2016-08-13 17:36:24,059 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:73 Inner:2 <p>Ph.D Food Science & Technology</p> 		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:73 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:74 Inner:1 Ph.D Applied Human Nutrition		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:74 Inner:2 <p>Ph.D Applied Human Nutrition</p>		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:74 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,060 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:75 Inner:1 Doctor of Philosophy in Dryland Resource Management 		
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:75 Inner:2 <p>Doctor of Philosophy in Dryland Resource Management</p> 		
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:75 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,061 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:76 Inner:1 Doctor of Philosophy in Management Of Agroecosystem And Environment 		
+
+2016-08-13 17:36:24,062 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:76 Inner:2 <p>Doctor of Philosophy in Management Of Agroecosystem And Environment</p> 		
+
+2016-08-13 17:36:24,062 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:76 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,062 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,062 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,063 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,063 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:77 Inner:1 Doctor of Philosophy in Range Management 		
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:77 Inner:2 <p>Doctor of Philosophy in Range Management</p> 		
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:77 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:78 Inner:1 Doctor of Philosophy in Soil Science 		
+
+2016-08-13 17:36:24,064 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:78 Inner:2 <p>Doctor of Philosophy in Soil Science</p> 		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:78 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:79 Inner:1 Doctor of Philosophy in Sustainable Soil Resource Management 		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:79 Inner:2 <p>Doctor of Philosophy in Sustainable Soil Resource Management</p> 		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:79 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,065 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,066 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,066 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,066 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:80 Inner:1 Doctor of Philosophy in Agroforestry		
+
+2016-08-13 17:36:24,067 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:80 Inner:2 <p>Doctor of Philosophy in Agroforestry</p>		
+
+2016-08-13 17:36:24,067 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:80 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:81 Inner:1 Doctor of Philosophy in Environmental Governance and Management 		
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:81 Inner:2 <p>Doctor of Philosophy in Environmental Governance and Management</p> 		
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:81 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,069 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:82 Inner:1 Doctor of Philosophy in Environmental Governance and Management		
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:82 Inner:2 <p>Doctor of Philosophy in Environmental Governance and Management</p> 		
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:82 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,070 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:83 Inner:1 Phd (Vet. Medicine)		
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:83 Inner:2 <p>Phd (Vet. Medicine)</p>		
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:83 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,071 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:84 Inner:1 Phd in Clinical Studies		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:84 Inner:2 <p>Phd in Clinical Studies</p>		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:84 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:85 Inner:1 Doctor of Philosophy		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:85 Inner:2 <p>Doctor of Philosophy</p>		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:85 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,072 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:86 Inner:1 Doctor of Philosophy (Phd.) In the Faculty of Veterinary Medicine		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:86 Inner:2 <p>Doctor of Philosophy (Phd.) In the Faculty of Veterinary Medicine</p>		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+outer:86 Inner:3 http://blog.ourdomain.com"		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+6.0		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+1.0		
+
+2016-08-13 17:36:24,073 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:36:24,074 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+
+
+2016-08-13 17:37:01,932 - [ERROR] - from application in play-akka.actor.default-dispatcher-101 
+Error:The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+
+2016-08-13 17:38:21,389 - [ERROR] - from application in play-akka.actor.default-dispatcher-101 
+Error:The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+
+2016-08-13 17:42:34,924 - [ERROR] - from application in play-akka.actor.default-dispatcher-131 
+Error:The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
 

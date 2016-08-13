@@ -34,6 +34,7 @@ public class Institution extends Model{
     public String institution_chancellor;
     public String institution_vc;
     @Constraints.Required(message = "This field is required")
+    @Constraints.Email(message = "Invalid email")
     public String institution_email;
     public String institution_tel;
     @Constraints.Required(message = "This field is required")

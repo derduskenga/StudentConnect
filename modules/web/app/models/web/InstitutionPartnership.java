@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import java.util.List;
 
 /**
  * Created by derdus on 6/17/16.
@@ -27,4 +28,20 @@ public class InstitutionPartnership extends Model {
     @ManyToOne
     public Partner partner;
 
+
+    //Methods
+    public static Finder<Long, InstitutionPartnership> find(){
+        return new Finder<Long, InstitutionPartnership>(Long.class,InstitutionPartnership.class);
+    }
+
+    public Long saveInstitutionPartnership(){
+        if(this.institution_partnership_id == null){
+            save();
+            return institution_partnership_id;
+        }
+        update();
+        return institution_partnership_id;
+    }
+
+    public List<InstitutionPartnership> getAllInstitutionPartnership(){return find().all();}
 }

@@ -55,6 +55,21 @@ GET         /institution/addcourse                                  controllers.
 POST        /institution/savecourseinstitution                      controllers.admincontrollers.InstitutionActions.saveCourseInstitution()
 POST        /institution/fetchschool/:campus_id                     controllers.admincontrollers.InstitutionActions.fetchCampusSchools(campus_id: Long)
 
+#Institution Clubs
+GET         /institution/club/new                           controllers.admincontrollers.InstitutionActions.newClub()
+POST        /institution/club/save                          controllers.admincontrollers.InstitutionActions.saveClub()
+
+
+#Institution Partners
+GET         /institution/partner/new                        controllers.admincontrollers.InstitutionActions.newPartner()
+POST        /institution/partner/save                       controllers.admincontrollers.InstitutionActions.savePartner()
+GET         /institution/partner/search/:key                controllers.admincontrollers.InstitutionActions.searchPartners(key: String)
+
+#Institution research Lab/Centers
+GET         /institution/lab/new                            controllers.admincontrollers.InstitutionActions.newLab()
+POST        /institution/lab/save                           controllers.admincontrollers.InstitutionActions.saveLab()
+
+
 #Campuses
 GET         /campus/new                              controllers.admincontrollers.InstitutionActions.newCampus()
 POST        /campus/save                             controllers.admincontrollers.InstitutionActions.saveCampus()
@@ -71,8 +86,6 @@ POST        /institution/course/modeofstudy/save        controllers.admincontrol
 #Course fees
 GET         /institution/course/fees/new                controllers.admincontrollers.InstitutionActions.addCourseFees()
 POST        /institution/course/fees/save               controllers.admincontrollers.InstitutionActions.saveCourseFees()
-
-
 
 
 

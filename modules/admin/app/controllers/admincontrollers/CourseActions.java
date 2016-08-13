@@ -339,7 +339,10 @@ public class CourseActions extends Controller{
 
             courseCertification.mainCourse = mainCourse;
             courseCertification.certificationCourse = minorCourse;
-            courseCertification.saveCourseCertification();
+
+            if(!new CourseCertification().certificationCourseAlreadyAdded(mainCourse,minorCourse)){
+                courseCertification.saveCourseCertification();
+            }
         }
         flash("certificationsubmitsuccess","Course certifications have been added");
         return redirect(routes.CourseActions.newCourseCertification());

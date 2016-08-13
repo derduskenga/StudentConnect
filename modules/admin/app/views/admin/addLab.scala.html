@@ -1,0 +1,55 @@
+@(labForm: Form[models.web.ResearchCenter])(institutionMap: Map[Map[Long, String],Boolean])
+
+@admin_main("New Research Lab | Admin"){
+        @helper.form(action=controllers.admincontrollers.routes.InstitutionActions.saveLab(),'id->"labform",'name->"labform",'method->"post"){
+                @if(flash.containsKey("partnersuccess")){
+                <div class="alert alert-success">
+                    @flash.get("labsuccess")
+                </div>
+                }
+
+                @if(flash.containsKey("partnererror")){
+                <div class="alert alert-danger">
+                    @flash.get("laberror")
+                </div>
+                }
+
+                <fieldset>
+                    <legend>Add Research lab to institutions</legend>
+                    <input type="hidden"  value="@labForm("research_center_id").valueOr("")" name="research_center_id"/>
+
+                    @formfieldtemplates.fieldselect(labForm("institution_id"),
+                    label = "Select Institution",
+                    optionMap=institutionMap,
+                    default="Select institution",
+                    includeStaticDefault=true,
+                    fieldcontrolattr = "required",
+                    divClass="col-sm-9")
+
+                    @formfieldtemplates.textemail(labForm("research_center_email"),
+                    label = "Research lab email",
+                    placeholder = "email here...",
+                    input_type="email",
+                    divClass="col-sm-9")
+
+                    @formfieldtemplates.text(labForm("research_center_contact_person"),
+                    label = "Lab contact person",
+                    placeholder = "Contact person here......",
+                    divClass="col-sm-9")
+
+                    @formfieldtemplates.text_url(labForm("research_center_url"),
+                    label = "Lab website URL",
+                    placeholder = "Research lab/center website URL",
+                    divClass="col-sm-9")
+
+
+
+                </fieldset>
+
+                <div class="row">
+                    <p align="right"> <input  type="submit" class="btn btn-primary" value="Add Research lab" id="institution-lab-submit-btn"/></p>
+
+                </div>
+
+        }
+}
